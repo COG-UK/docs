@@ -41,6 +41,13 @@
       <section>
 
       {{ content }}
+        
+      <hr>
+      {% if page.date_published %}
+      <span style="font-size:0.5em;">
+          Published {{ page.date_published | date: "%Y-%m-%d" }}. Updated {{ page.date_modified | date: "%Y-%m-%d" }}. Page maintainer {{ page.maintainer }}.
+      </span>
+      {% endif %}
 
       </section>
       <footer>
