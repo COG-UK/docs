@@ -2,7 +2,7 @@
 layout: docpost
 title: Upload instructions
 date_published: 2017-12-17 10:00:00 +0000
-date_modified:  2020-03-18 09:45:00 +0000
+date_modified:  2020-03-18 16:45:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -17,6 +17,7 @@ Request access by sending a message to the `#account-requests` Slack channel wit
 
 **You will not be able to upload data until your key has been added to the server.**  
 **Your username will begin with <code>climb-covid19-</code>. Remember to use this prefix when accessing systems later.**
+**The server accepts public SSH keys only. You will not be allowed to login with a password.**
 
 ### 1. Prepare you data
 We are accepting:
