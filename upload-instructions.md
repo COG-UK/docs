@@ -60,4 +60,4 @@ ssh **USERNAME**@bham.covid19.climb.ac.uk
 ```
 
 <hr>
-Updated {% page.last_modified_at %}
+Updated {% last_modified_at %}
