@@ -1,4 +1,5 @@
 ---
+layout: docpost
 date_published: 2017-12-17 10:00:00 +0000
 date_modified:  2020-03-18 09:45:00 +0000
 author: @samstudio8
