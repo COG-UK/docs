@@ -1,3 +1,10 @@
+---
+date_published: 2017-12-17 10:00:00 +0000
+date_modified:  2020-03-18 09:45:00 +0000
+author: @samstudio8
+maintainer: @samstudio8
+---
+
 # Upload instructions
 ### 0. Request access to CLIMB
 Request access by sending a message to the `#account-requests` Slack channel with the following information:
