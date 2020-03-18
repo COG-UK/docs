@@ -1,4 +1,5 @@
 ---
+layout: post
 date_published: 2017-12-17 10:00:00 +0000
 date_modified:  2020-03-18 09:45:00 +0000
 author: @samstudio8
@@ -66,5 +67,5 @@ You may check your upload was successful by logging in with SSH:
 ssh **USERNAME**@bham.covid19.climb.ac.uk
 ```
 
-<hr>
-Updated {% last_modified_at %}
+
+
