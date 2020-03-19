@@ -2,18 +2,13 @@
 layout: docpost
 title: Upload instructions
 date_published: 2017-12-17 10:00:00 +0000
-date_modified:  2020-03-18 16:45:00 +0000
+date_modified:  2020-03-19 10:45:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
 
 ### 0. Request access to CLIMB
-Request access by sending a message to the `#account-requests` Slack channel with the following information:
-
-* Full name
-* Organisation
-* Email address
-* SSH Public Key
+Request access by filling out the [registration form](https://majora.covid19.climb.ac.uk/forms/register/).
 
 **You will not be able to upload data until your key has been added to the server.**  
 **Your username will begin with <code>climb-covid19-</code>. Remember to use this prefix when accessing systems later.**
