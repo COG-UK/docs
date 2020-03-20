@@ -18,7 +18,7 @@ The last digit of the hexadecimal string is a checksum calculated based on the p
 * Separately, add up the values of the hex digits in odd positions, and multiply the total by 3. (B)
 * Add up the two numbers A and B.
 * Calculate the remainder when the total is divided by 16.
-* Subtract the result from 16.
+* If the result is nonzero, subtract it from 16.
 * Convert the number to hexadecimal.
 That should be the value of the checksum character.
 
