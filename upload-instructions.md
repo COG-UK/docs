@@ -2,7 +2,7 @@
 layout: docpost
 title: Upload instructions
 date_published: 2020-03-17 10:00:00 +0000
-date_modified:  2020-03-19 10:45:00 +0000
+date_modified:  2020-03-20 17:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -18,7 +18,7 @@ Request access by filling out the [registration form](https://majora.covid19.cli
 We are accepting:
 
 * `.bam` Reads aligned to the `MN908947.3` \ `NC_045512` reference. The BAM must be **sorted** and unmapped reads must be **filtered**.
-* `.fa` Consensus sequence as FASTA
+* `.fa|.fas|.fasta` Consensus sequence as FASTA
 
 Arrange your <code>DATA_DIR</code> by creating a directory for each sample.
 Each sample's directory should be named with the identifier you are using internally for that sample.
