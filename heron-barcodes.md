@@ -55,3 +55,35 @@ TOTAL = (1 + 2 + 1) + (B + 0) * 3 = 25 HEX = 37 DEC
 * The remainder when divided by 16 is 5.
 * Subtract that from 16 to give B (11 DEC).
 * B is the value of the checksum.
+
+```
+    // This Java code is equivalent to the description above, though
+    // not following exactly the same steps.
+
+    private static int hexCharToInt(char ch) {
+        if (ch>='0' && ch<='9') return ch-'0';
+        if (ch>='A' && ch<='F') return ch-'A'+10;
+        throw new IllegalArgumentException("Illegal hex char: "+ch);
+    }
+    private static char intToHexChar(int n) {
+        if ((n&0xf)!=n) {
+            throw new IllegalArgumentException("Hex char out of range: "+n);
+        }
+        if (n<10) return (char) ('0'+n);
+        return (char) ('A'+n-10);
+    }
+
+    // hex is the hex part of the barcode string (without the checksum)
+    private static char calculateChecksum(String hex) {
+        final int l = hex.length();
+        int sum = 0;
+        for (int i = 0; i < l; ++i) {
+            int v = hexCharToInt(hex.charAt(l-1-i));
+            if ((i&1)!=0) {
+                v *= 3;
+            }
+            sum += v;
+        }
+        return intToHexChar((-sum)&0xf);
+    }
+```
