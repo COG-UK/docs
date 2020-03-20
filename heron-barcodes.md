@@ -2,9 +2,9 @@
 layout: docpost
 title: Validating a heron barcode
 date_published: 2020-03-19 16:00:00 +0000
-date_modified:  2020-03-19 16:00:00 +0000
+date_modified:  2020-03-20 12:00:00 +0000
 author: rl15 sanger.ac.uk
-maintainer: rl15 sanger.ac.uk
+maintainer: khelwood
 ---
 
 The barcode is made up of a prefix, followed by a hyphen, followed by a hexadecimal string, all in capitals.
