@@ -9,7 +9,7 @@ maintainer: samstudio8
 
 ### Responses
 
-Each request to the Majora API will return the following basic structure:
+Each **valid** request to the Majora API will return the following basic structure:
 
 ```json
 {
