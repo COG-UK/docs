@@ -51,7 +51,17 @@ Each **valid** request to the Majora API will return the following basic structu
 | ignored   | list[uuid, str]     |  List of UUIDs or string IDs ignored by your request due to errors |
 | success   | bool           | `true` if `errors == 0`             |
 
-### Add a sample
+<hr>
+
+# Actions
+
+| Action              | Description                                                            | Endpoint                              |
+|---------------------|------------------------------------------------------------------------|---------------------------------------|
+| `api.artifact.biosample.add`       | Add biosample metadata, and additionally biosamplesource metadata      | `api/v2/artifact/biosample/add/` |
+
+Note that the examples in the following section assume that you are providing the mandatory fields described above.
+
+### Add a sample: `api.artifact.biosample.add`
 
 Example
 ```json
