@@ -76,7 +76,7 @@ Example
 
 | Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
-| adm1_region          |                               | **Yes**      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
+| adm1          | adm1_region                              | **Yes**      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally generated "Heron" barcode assigned to this sample. If this sample does not have a Heron barcode, use the `root_sample_id`. |
 | collection_date      |                               | **Yes**      | str | The date the sample was collected. **YYYY-MM-DD** only. |
 | source_age           |                               | **Yes**      | int        | Age of the patient in years |
@@ -84,7 +84,7 @@ Example
 | override_heron       |                               | **Yes**, if non-Heron ID           | str        | If you are using a `central_sample_id` that is not a Heron barcode, you must provide this key as `1` or `true` to prevent the identifier being validated |
 | secondary_accession     | gisaid_accession              | **Yes**, if in GISAID | str | GISAID accession if the sample has already been uploaded to GISAID |
 | secondary_identifier    | gisaid_identifier             | **Yes**, if in GISAID | str | GISAID identifier (eg. hCov-19/.../2020) if the sample has already been uploaded to GISAID
-| adm2_county          |                               | No       | str        | The county that the patient lives in (no abbreviations or short hand) |
+| adm2          | adm2_county                              | No       | str        | The county that the patient lives in (no abbreviations or short hand) |
 | biosample_source_id  |                               | No       | str        | Unique identifier of patient or environmental sample. **Do not use an NHS number here**. This field will be backfilled later by PHx and HDR-UK. |
 | collecting_org       |                               | No       | str       | The site (eg. hospital or surgery) that this sample was originally collected by. Use the first line of the 'sender' from the E28 form.
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
