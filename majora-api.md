@@ -80,6 +80,7 @@ Example
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally generated "Heron" barcode assigned to this sample. If this sample does not have a Heron barcode, use the `root_sample_id`. |
+| override_heron       |                               | No           | str        | If you are using a `central_sample_id` that is not a Heron barcode, you must provide this key as `1` or `true` to prevent the identifier being validated |
 | collection_date      |                               | **Yes**      | str | The date the sample was collected. **YYYY-MM-DD** only. |
 | adm1_region          |                               | **Yes**      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
 | adm2_county          |                               | No       | str        | The county that the patient lives in (no abbreviations or short hand) |
