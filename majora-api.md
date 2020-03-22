@@ -76,7 +76,7 @@ Example
 
 | Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
-| biosample_source_id  | sample_source_id              | No       | str        | Unique identifier of patient or environmental sample. **Do not use an NHS number here**. This field will be backfilled later by PHx and HDR-UK. |
+| biosample_source_id  |                               | No       | str        | Unique identifier of patient or environmental sample. **Do not use an NHS number here**. This field will be backfilled later by PHx and HDR-UK. |
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally generated "Heron" barcode assigned to this sample. If this sample does not have a Heron barcode, use the `root_sample_id`. |
