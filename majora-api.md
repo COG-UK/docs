@@ -80,13 +80,13 @@ Example
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | central_sample_id    | coguk_sample_id               | Yes      | str        | The centrally generated "Heron" barcode assigned to this sample. If this sample does not have a Heron barcode, use the `root_sample_id`. |
-| collection_date      |                               | Yes      | str:YYYY-MM-DD | The date the sample was collected. YYYY-MM-DD only. |
-| adm1_region          |                               | Yes      | str:`UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR` ||
+| collection_date      |                               | Yes      | str | The date the sample was collected. **YYYY-MM-DD** only. |
+| adm1_region          |                               | Yes      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
 | adm2_county          |                               | No       | str        | The county that the patient lives in (no abbreviations or short hand) |
 | source_age           |                               | Yes      | int        | Age of the patient in years |
-| source_sex           |                               | Yes      | str:`F`,`M`,`Other` | Sex of the patient |
-| sample_type          |                               | No       | str:`swab`,`sputum`,`BAL`,`extract`,`culture` ||
-| swab_site            |                               | No       | str:`nose`,`throat`,`nose-throat` ||
+| source_sex           |                               | Yes      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
+| sample_type          |                               | No       | str | Sample type. **Options** `swab`,`sputum`,`BAL`,`extract`,`culture` |
+| swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`|
 | secondary_identifier    | gisaid_identifier             | Yes, if in GISAID | str | GISAID identifier (eg. hCov-19/.../2020) if the sample has already been uploaded to GISAID
 | gisaid_accession     |                               | Yes, if in GISAID | str | GISAID accession if the sample has already been uploaded to GISAID |
 | collecting_org       |                               | No       | str       | The site (eg. hospital or surgery) that this sample was originally collected by. Use the first line of the 'sender' from the E28 form.
