@@ -2,7 +2,7 @@
 layout: docpost
 title: Using the Majora API
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-03-22 14:10:00 +0000
+date_modified:  2020-03-22 21:50:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -58,6 +58,7 @@ Each **valid** request to the Majora API will return the following basic structu
 | Action              | Description                                                            | Endpoint                              |
 |---------------------|------------------------------------------------------------------------|---------------------------------------|
 | `api.artifact.biosample.add`       | Add biosample metadata, and additionally biosamplesource metadata      | `api/v2/artifact/biosample/add/` |
+| `api.process.sequencing.add`       | Add sequencing library and sequencing run metadata      | `api/v2/process/sequencing/add/` |
 
 Note that the examples in the following section assume that you are providing the mandatory fields described above.
 
@@ -114,3 +115,30 @@ The following fields are also required, but are submitted automatically. **You d
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
 | submitting_user |              | Yes, but provided automatically       | str        | Your username 
 | submitting_org  |              | Yes, but provided automatically       | str        | Your organisation
+
+
+<hr>
+
+### Add a sequencing run: `api.process.sequencing.add`
+
+Example
+```json
+{
+    "library_name": "BIRM-LIBRARY-20200322",
+    "samples": [
+        "BIRM-XXXXX",
+        "BIRM-YYYYY",
+        "BIRM-ZZZZZ",
+    ],
+    
+    "sequencing_id": "09ef4b3a-1bad-453a-a291-029ac9bd705d",
+    "instrument_make": "OXFORD_NANOPORE",
+}
+```
+
+| Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
+|----------------------|-------------------------------|----------|------------|---------------------------------------|
+| instrument_make        |                               | **Yes**      | str        | **Options** `ILLUMINA`, `OXFORD_NANOPORE` |
+| library_name    |                                    | **Yes**      | str, unique        | A unique, somewhat memorable name for your library. |
+| samples              |                               | **Yes**      | list[str] | The `central_sample_id` of each sample in the library |
+| sequencing_id        |                               | **Yes**      | uuid        | A UUID corresponding to your sequencing run, you can use the one your sequencer gives you, or generate one yourself |
