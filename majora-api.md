@@ -67,7 +67,23 @@ Example
 ```json
 {
     "biosamples": [
-    ]
+        {
+            "adm1": "UK-ENG",
+            "central_sample_id": "BIRM-XXXXX",
+            "collection_date": "2020-03-22",
+            "source_age": 29,
+            "source_sex": "M",
+            "secondary_accession": "EPI_ISL_XXXXXX",
+            "secondary_identifier": "hCov-19/England/Patient0/2020",
+            "adm2": "WEST MIDLANDS",
+            "collecting_org": "Queen Elizabeth Hospital Birmingham",
+            "root_sample_id": "H20XXXXXXXX",
+            "sample_type": "swab",
+            "sender_sample_id": "QELAB-01",
+            "swab_site": "nose",
+        },
+        {...},
+    ],
 }
 ```
 
