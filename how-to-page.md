@@ -29,3 +29,5 @@ The title of the page specified in the `title` field will automatically be added
 For instructions on how to use markdown, see [Github's guide on mastering markdown](https://guides.github.com/features/mastering-markdown/).
 
 Once you've finished, use Github to file a pull request against the repository.
+
+Don't forget to edit `index.md` and add the link to your new page. Use the existing links in `index.md` as an example.
