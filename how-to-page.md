@@ -7,7 +7,7 @@ author: samstudio8
 maintainer: samstudio8
 ---
 
-Fork this repository on Github, or clone it locally to your system.
+[Fork this repository on Github](http://github.com/cog-UK/docs/), or clone it locally to your system.
 
 Create `<yourpagename>.md` in an appropriate location. You may wish to group some pages by creating a directory for them. You can do all of those from your browser if you wish.
 
