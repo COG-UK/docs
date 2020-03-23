@@ -46,8 +46,8 @@ Each **valid** request to the Majora API will return the following basic structu
 | errors    | int            | Number of errors encountered          |
 | warnings  | int            | Number of warnings raised             |
 | messages  | list[list, str]| List (of lists) with warnings and messages as strings |
-| new       | list[uuid]     | List of UUIDs created as a result of your request |
-| updated   | list[uuid]     | List of UUIDs updated by your request |
+| new       | list[ [str, uuid, str],... ]     | List of tuples in the format (object_type, object_uuid, object_id) for objects created as a result of your request |
+| updated   | list[ [str, uuid, str],... ]   | List of tuples in the format (object_type, object_uuid, object_id) for objects updated as a result of your request |
 | ignored   | list[uuid, str]     |  List of UUIDs or string IDs ignored by your request due to errors |
 | success   | bool           | `true` if `errors == 0`             |
 
