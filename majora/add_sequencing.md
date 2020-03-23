@@ -2,7 +2,7 @@
 layout: docpost
 title: api.process.sequencing.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-03-22 21:50:00 +0000
+date_modified:  2020-03-23 20:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -12,7 +12,7 @@ maintainer: samstudio8
 ```json
 {
     "library_name": "BIRM-LIBRARY-20200322",
-    "samples": [
+    "biosamples": [
         "BIRM-XXXXX",
         "BIRM-YYYYY",
         "BIRM-ZZZZZ",
@@ -29,5 +29,5 @@ maintainer: samstudio8
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
 | instrument_make        |                               | **Yes**      | str        | **Options** `ILLUMINA`, `OXFORD_NANOPORE` |
 | library_name    |                                    | **Yes**      | str, unique        | A unique, somewhat memorable name for your library. |
-| samples              |                               | **Yes**      | list[str] | The `central_sample_id` of each sample in the library |
-| sequencing_id        |                               | **Yes**      | uuid        | A UUID corresponding to your sequencing run, you can use the one your sequencer gives you, or generate one yourself |
+| biosamples              |                               | **Yes**      | list[str] | The `central_sample_id` of each biosample in the library |
+| sequencing_id        |                               | **Yes**      | uuid        | A single UUID corresponding to your sequencing run, you can use the one your sequencer gives you, or generate one yourself |
