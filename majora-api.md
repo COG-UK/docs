@@ -29,8 +29,8 @@ Send your request as a `POST`, with `"Content-Type: application/json"`:
 curl --header "Content-Type: application/json" \
      --request POST \
      --data '{
-         "username":"s.nicholls",
-         "token":"9bf59acb-bd52-4ee8-9e75-dfeab4a2f28b",
+         "username":"USERNAME",
+         "token":"TOKEN",
          [...]
      }' \
      <ENDPOINT>
