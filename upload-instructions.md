@@ -2,7 +2,7 @@
 layout: docpost
 title: Upload instructions
 date_published: 2020-03-17 10:00:00 +0000
-date_modified:  2020-03-24 14:00:00 +0000
+date_modified:  2020-03-24 14:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -53,9 +53,12 @@ Recall your username begins with `climb-covid19-`.
 
 ### 3. Metadata
 We are building a central database for sample metadata.
-In the meantime, samples metadata is organised into a Google Sheet, the link can be found in the `#inbound-distribution` channel. When you have **finished** uploading samples for a run, please contact `Sam Nicholls` on Slack to have your new samples pulled into the sheet.
+In the meantime, sample metadata is organised into a Google Sheet, the link can be found in the `#inbound-distribution` channel. When you have **finished** uploading samples for a run, please contact `Sam Nicholls` on Slack to have your new samples pulled into the sheet.
 When your samples appear, please fill in the mandatory fields as best as possible.
-You will not be able to run analyses of your samples on climb without providing metadata.
+
+This is a temporary measure this week. Starting Saturday 28th March, sample metadata must be provided via one of the approved routes. Documentation for these metadata routes will be made available in the next day or so. Thanks for your patience!
+
+**You will not be able to run analyses of your samples on climb without providing metadata.**
 
 ### 4. SSH
 You may check your upload was successful by logging in with SSH:
