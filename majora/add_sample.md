@@ -50,7 +50,8 @@ maintainer: samstudio8
 | biosample_source_id  |                               | No       | str        | Unique identifier of patient or environmental sample. **Do not use an NHS number here**. This field will be backfilled later by PHx and HDR-UK. |
 | collecting_org       |                               | No       | str       | The site (eg. hospital or surgery) that this sample was originally collected by. Use the first line of the 'sender' from the E28 form.
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
-| sample_type          |                               | No       | str | Sample type. **Options** `swab`,`sputum`,`BAL`,`extract`,`culture` |
+| sample_type_collected          |                               | No       | str | Sample type. **Options** `swab`,`sputum`,`BAL`|
+| sample_type_received         |                               | No       | str | Sample type. **Options** `primary`,`extract`,`culture`|
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`|
 
