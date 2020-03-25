@@ -41,11 +41,11 @@ Each **valid** request to the Majora API will return the following basic structu
     "errors": 0,
     "warnings": 0,
     "messages": [],
-    
+
     "new": [],
     "updated": [],
     "ignored": [],
-    
+
     "success": true
 }
 ```
@@ -67,7 +67,7 @@ Each **valid** request to the Majora API will return the following basic structu
 | Action              | Description                                                            | Endpoint                              |
 |---------------------|------------------------------------------------------------------------|---------------------------------------|
 | [api.artifact.biosample.add](majora/add_sample)       | Add biosample metadata, and additionally biosamplesource metadata      | `api/v2/artifact/biosample/add/` |
-| [api.process.sequencing.add](majora/add_sequencing)       | Add sequencing library and sequencing run metadata      | `api/v2/process/sequencing/add/` |
+| [api.artifact.library.add](majora/add_library)       | Add sequencing library for pooled samples | `api/v2/artifact/library/add/` |
+| [api.process.sequencing.add](majora/add_sequencing)       | Add sequencing runs for a library      | `api/v2/process/sequencing/add/` |
 
 Note that the examples in the following section assume that you are providing the mandatory fields described above.
-
