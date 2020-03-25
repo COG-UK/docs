@@ -2,7 +2,7 @@
 layout: docpost
 title: Upload instructions
 date_published: 2020-03-17 10:00:00 +0000
-date_modified:  2020-03-24 14:30:00 +0000
+date_modified:  2020-03-25 10:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -35,6 +35,18 @@ As an example, the following `data_dir` contains two samples: `Sample1` and `Sam
         |--| Sample2
            |-- sample2.bam
            |-- sample2.fa
+```
+
+To update a sample, append `.X` to the directory name, where `X` is the current version of the results for that sample.
+
+```
+        | data_dir/
+        |--| Sample1
+           |-- sample1.bam
+           |-- sample1.fa
+        |--| Sample1.2
+           |-- sample1.bam
+           |-- sample1.fa
 ```
 
 ### 2. Upload with rsync or scp
