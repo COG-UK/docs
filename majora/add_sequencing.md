@@ -57,8 +57,7 @@ maintainer: samstudio8
             "sequencing_id": "09ef4b3a-1bad-453a-a291-029ac9bd705d",
             "instrument_make": "OXFORD_NANOPORE",
             "instrument_model": "GridION",
-            "flowcell_type": "MIN-XXX",
-            "flowcell_version": "9.4.1 D",
+            "flowcell_type": "R9.4.1D",
             "flowcell_id": "00000",
             "start_time": "YYYY-MM-DD HH:MM:SS",
             "end_time": "YYYY-MM-DD HH:MM:SS",
@@ -68,8 +67,7 @@ maintainer: samstudio8
             "sequencing_id": "2f3b14e7-7f60-4442-a199-71eee0b52e6c",
             "instrument_make": "OXFORD_NANOPORE",
             "instrument_model": "GridION",
-            "flowcell_type": "MIN-XXX",
-            "flowcell_version": "9.4.1 D",
+            "flowcell_type": "R9.4.1D",
             "flowcell_id": "00000",
             "start_time": "YYYY-MM-DD HH:MM:SS",
             "end_time": "YYYY-MM-DD HH:MM:SS",
@@ -78,8 +76,7 @@ maintainer: samstudio8
             "sequencing_id": "82c9831c-fe2f-4c3c-9655-611ba1f13fec",
             "instrument_make": "OXFORD_NANOPORE",
             "instrument_model": "GridION",
-            "flowcell_type": "MIN-XXX",
-            "flowcell_version": "9.4.1 D",
+            "flowcell_type": "R10.3",
             "flowcell_id": "00001"
             "start_time": "YYYY-MM-DD HH:MM:SS",
             "end_time": "YYYY-MM-DD HH:MM:SS",
@@ -98,7 +95,7 @@ maintainer: samstudio8
 | library_seq_kit    |                                    | **Yes**      | str        | e.g. `LSK109` |
 | library_seq_protocol    |                                    | **Yes**      | str   | e.g. `LIGATION`|
 | runs              |                               | **Yes**      | list[ str: {}] |  |
-| library_layout_nominal_length*        |                               | No      | int        | Nominal length of sequencing library. Illumina runs only. |
+| library_layout_nominal_length*        |                               | No      | int        | Nominal length of sequencing library. Illumina runs only. If left blank we will try and infer it from uploaded data. |
 
 
 Each `biosample` is an object that contains the following keys:
