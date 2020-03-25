@@ -2,7 +2,7 @@
 layout: docpost
 title: Upload instructions
 date_published: 2020-03-17 10:00:00 +0000
-date_modified:  2020-03-20 17:00:00 +0000
+date_modified:  2020-03-25 10:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -37,6 +37,18 @@ As an example, the following `data_dir` contains two samples: `Sample1` and `Sam
            |-- sample2.fa
 ```
 
+To update a sample, append `.X` to the directory name, where `X` is the current version of the results for that sample.
+
+```
+        | data_dir/
+        |--| Sample1
+           |-- sample1.bam
+           |-- sample1.fa
+        |--| Sample1.2
+           |-- sample1.bam
+           |-- sample1.fa
+```
+
 ### 2. Upload with rsync or scp
 #### rsync
 
@@ -52,10 +64,13 @@ scp -r **DATA_DIR** **USERNAME**@bham.covid19.climb.ac.uk:upload/
 Recall your username begins with `climb-covid19-`.
 
 ### 3. Metadata
-Discussion on minimal and desired metadata is ongoing (see the `#metadata` Slack channel).
-Please do not upload metadata in any format at this time.
-CLIMB will be storing a subset of the mandatory sample and sequencing run information in SQL, primarily for orchestrating pipelines on CLIMB and automating submissions to public databases (e.g. ENA).
-We will provide an interface through which metadata can be provided (e.g. JSON over HTTPS POST and web form), once the list of fields has been confirmed.
+We are building a central database for sample metadata.
+In the meantime, sample metadata is organised into a Google Sheet, the link can be found in the `#inbound-distribution` channel. When you have **finished** uploading samples for a run, please contact `Sam Nicholls` on Slack to have your new samples pulled into the sheet.
+When your samples appear, please fill in the mandatory fields as best as possible.
+
+This is a temporary measure this week. Starting Saturday 28th March, sample metadata must be provided via one of the approved routes. Documentation for these metadata routes will be made available in the next day or so. Thanks for your patience!
+
+**You will not be able to run analyses of your samples on climb without providing metadata.**
 
 ### 4. SSH
 You may check your upload was successful by logging in with SSH:

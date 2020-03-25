@@ -23,6 +23,15 @@ If you do not have access to COG-UK CLIMB, [register for a COG-UK account](https
 Existing users can check their key by logging in and [viewing their profile](https://majora.covid19.climb.ac.uk/accounts/profile).
 **Treat your key as securely as your password. Anyone with your key can perform API actions, as you**.
 
+Send your request as a `POST`, with `"Content-Type: application/json"`:
+
+```
+curl --header "Content-Type: application/json" \
+     --request POST \
+     --data '{ "username":"USERNAME", "token":"TOKEN", [...] }' \
+     <ENDPOINT>
+```
+
 ## Responses
 
 Each **valid** request to the Majora API will return the following basic structure:
@@ -61,3 +70,4 @@ Each **valid** request to the Majora API will return the following basic structu
 | [api.process.sequencing.add](majora/add_sequencing)       | Add sequencing library and sequencing run metadata      | `api/v2/process/sequencing/add/` |
 
 Note that the examples in the following section assume that you are providing the mandatory fields described above.
+
