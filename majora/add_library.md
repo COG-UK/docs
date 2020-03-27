@@ -62,7 +62,6 @@ maintainer: samstudio8
 | library_name    |                                    | **Yes**      | str, unique        | A unique, somewhat memorable name for your library. |
 | library_seq_kit    |                                    | **Yes**      | str        | e.g. `LSK109` |
 | library_seq_protocol    |                                    | **Yes**      | str   | e.g. `LIGATION`|
-| runs              |                               | **Yes**      | list[ str: {}] |  |
 | library_layout_insert_length*        |                               | No      | int        | Nominal length of sequencing library insert. Illumina runs only. If left blank we will try and infer it from uploaded data. |
 | library_layout_read_length*        |                               | No      | int        | Nominal length of sequencing library reads. Illumina runs only. If left blank we will try and infer it from uploaded data. |
 | metadata | | No | { str: { str: str, ... }} | Arbitrary metadata |
