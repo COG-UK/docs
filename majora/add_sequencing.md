@@ -16,7 +16,7 @@ maintainer: samstudio8
 
         "runs": [
             {
-                "sequencing_id": "09ef4b3a-1bad-453a-a291-029ac9bd705d",
+                "run_name": "BIRM-my_first_run",
                 "instrument_make": "OXFORD_NANOPORE",
                 "instrument_model": "GridION",
                 "flowcell_type": "R9.4.1D",
@@ -26,7 +26,7 @@ maintainer: samstudio8
 
             },
             {
-                "sequencing_id": "2f3b14e7-7f60-4442-a199-71eee0b52e6c",
+                "run_name": "BIRM-my_first_rerun",
                 "instrument_make": "OXFORD_NANOPORE",
                 "instrument_model": "GridION",
                 "flowcell_type": "R9.4.1D",
@@ -35,8 +35,7 @@ maintainer: samstudio8
                 "end_time": "YYYY-MM-DD HH:MM:SS",
             },
             {
-                "sequencing_id": "82c9831c-fe2f-4c3c-9655-611ba1f13fec",
-                "instrument_make": "OXFORD_NANOPORE",
+                "run_name": "BIRM-my_second_run",                "instrument_make": "OXFORD_NANOPORE",
                 "instrument_model": "GridION",
                 "flowcell_type": "R10.3",
                 "flowcell_id": "00001",
@@ -53,9 +52,9 @@ Each `run` is an object with the following keys:
 
 | Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
-| sequencing_id        |                               | **Yes**      | uuid        | A single UUID corresponding to your sequencing run, you can use the one your sequencer gives you, or generate one yourself |
 | instrument_make*        |                               | **Yes**      | str        | **Options** `ILLUMINA`, `OXFORD_NANOPORE`, `PACIFIC_BIOSCIENCES` |
 | instrument_model*        |                               | **Yes**      | str        |  |
+| run_name        |                               | **Yes**      | str, unique        | A unique name that corresponds to your run. You may use any string identifier, including a UUID |
 | end_time        |                               | No      | str        |  |
 | flowcell_id        |                               | No      | str        | Flowcell serial number |
 | flowcell_type        |                               | No      | str        | Flowcell description |
