@@ -35,7 +35,8 @@ maintainer: samstudio8
                 "end_time": "YYYY-MM-DD HH:MM:SS",
             },
             {
-                "run_name": "BIRM-my_second_run",                "instrument_make": "OXFORD_NANOPORE",
+                "run_name": "BIRM-my_second_run",                
+                "instrument_make": "OXFORD_NANOPORE",
                 "instrument_model": "GridION",
                 "flowcell_type": "R10.3",
                 "flowcell_id": "00001",
