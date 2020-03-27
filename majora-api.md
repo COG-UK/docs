@@ -70,4 +70,10 @@ Each **valid** request to the Majora API will return the following basic structu
 | [api.artifact.library.add](majora/add_library)       | Add sequencing library for pooled samples | `api/v2/artifact/library/add/` |
 | [api.process.sequencing.add](majora/add_sequencing)       | Add sequencing runs for a library      | `api/v2/process/sequencing/add/` |
 
-Note that the examples in the following section assume that you are providing the mandatory fields described above.
+Note that the examples in the documentation assume that you are providing the mandatory fields as described above to every request.
+
+# Important Notes
+
+* Every request must specify the mandatory fields as specified at the top of this page.
+* Submitting a request for an artifact that already exists will allow you to change some properties of that object. The `messages` response will let you know if this is not the case.
+* Sending a request to update an artifact that already exists is an overwriting operation. If you submit blank fields, those fields will be irreversibly deleted from the model.
