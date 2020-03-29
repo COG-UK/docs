@@ -1,6 +1,6 @@
 ---
 layout: docpost
-title: Accessing and using CLIMB hosted data
+title: Accessing and using CLIMB data
 date_published: 2020-03-29 23:20:00 +0000
 date_modified:  2020-03-29 23:20:00 +0000
 author: samstudio8
@@ -26,6 +26,8 @@ Once `elan` has finished, the following artifacts are automatically published wi
 * `qc`: A basic quality report for each COGUK ID.
 
 ## Pulling your own copy of the CLIMB data
+
+You need a CLIMB account to upload or access data. If you haven't got one, [see instructions on registering and uploading to CLIMB](upload-instructions).
 
 You can grab a copy of artifacts that meet some basic quality thresholds of your choosing with the [`elan-pull` nextflow pipeline](https://github.com/SamStudio8/elan-pull-nextflow).
 You can use the pipeline directly from GitHub:
