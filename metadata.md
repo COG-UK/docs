@@ -25,7 +25,7 @@ It is our intention that working between the health agencies, the NHS and HDR-UK
 * Where a biosample is split into **multiple aliquots** or **shared with other sequencing centres**, that biosample **should not be relabelled** by the receiving site. This ambiguity can be resolved later by providing a library and sequencing run name that corresponds to your site.
 
 * A **library** is a collection of extracted and processed **biosamples** that have been prepared for simultaneous sequencing.
-* A **sequencing run** corresponds to the sequencing of a single library.
+* A **sequencing run** corresponds to the sequencing of a single library. *e.g.* A flowcell.
 
 ## Reporting standards for the consortium
 
