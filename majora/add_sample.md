@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-03-25 18:45:00 +0000
+date_modified:  2020-03-29 21:50:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -47,6 +47,7 @@ maintainer: samstudio8
 | secondary_accession     | gisaid_accession              | **Yes**, if in GISAID | str | GISAID accession if the sample has already been uploaded to GISAID |
 | secondary_identifier    | gisaid_identifier             | **Yes**, if in GISAID | str | GISAID identifier (eg. hCov-19/.../2020) if the sample has already been uploaded to GISAID
 | adm2          | adm2_county                              | No       | str        | The county that the patient lives in (no abbreviations or short hand) |
+| adm2_private          | adm2_postcode                              | No       | str        | The outer postcode for the patient's home address (**first half of the postcode only**) |
 | biosample_source_id  |                               | No       | str        | Unique identifier of patient or environmental sample. **Do not use an NHS number here**. This field will be backfilled later by PHx and HDR-UK. |
 | collection_date      |                               | No      | str | The date the sample was collected. **YYYY-MM-DD** only. |
 | collecting_org       |                               | No       | str       | The site (eg. hospital or surgery) that this sample was originally collected by. Use the first line of the 'sender' from the E28 form.
