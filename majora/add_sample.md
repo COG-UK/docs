@@ -40,8 +40,6 @@ maintainer: samstudio8
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
 | adm1          | adm1_region                              | **Yes**      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally generated "Heron" barcode assigned to this sample. If this sample does not have a Heron barcode, use the `root_sample_id`. |
-| source_age           |                               | **Yes**      | int        | Age of the patient in years |
-| source_sex           |                               | **Yes**      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
 | override_heron       |                               | **Yes**, if non-Heron ID           | str        | If you are using a `central_sample_id` that is not a Heron barcode, you must provide this key as `1` or `true` to prevent the identifier being validated |
 | received_date      |                               | **Yes**, if collection_date not available      | str | The date the sample was received. **YYYY-MM-DD** only. |
 | secondary_accession     | gisaid_accession              | **Yes**, if in GISAID | str | GISAID accession if the sample has already been uploaded to GISAID |
@@ -55,6 +53,8 @@ maintainer: samstudio8
 | sample_type_collected          |                               | No       | str | Sample type. **Options** `swab`,`sputum`,`BAL`|
 | sample_type_received         |                               | No       | str | Sample type. **Options** `primary`,`extract`,`culture`|
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
+| source_age           |                               | No      | int        | Age of the patient in years |
+| source_sex           |                               | No      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
 | swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`|
 
 The following fields are also required, but are submitted automatically. **You do not need to provide these fields**.
