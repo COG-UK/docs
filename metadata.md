@@ -43,6 +43,8 @@ For a sample to be accepted for upload to CLIMB, and used in downstream analyses
 You should aim to provide as much information as possible about a sample to the consortium. 
 [See a full list of fields that have been deemed acceptable for the consortium to collect](majora/add_sample).
 
+Be sure that you have the governance and permission in place to share metadata **before** it is uploaded to CLIMB. Uploaded information may quickly be incorporated into downstream artifacts and shared around the consortium. **Do not simply follow what other sites are doing, rules will differ between countries and health boards in the UK**.
+
 ### Libraries
 
 For a library to be listed on CLIMB, you must provide the following:
