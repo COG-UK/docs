@@ -24,17 +24,46 @@ It is our intention that working between the health agencies, the NHS and HDR-UK
 * Where a patient or environment has been **sampled multiple times**: each biosample should have its own COGUK identifier. You can use the *first* COGUK identifier for that patient or environment as the **biosample source** as a means to link them together in the interim.
 * Where a biosample is split into **multiple aliquots** or **shared with other sequencing centres**, that biosample **should not be relabelled** by the receiving site. This ambiguity can be resolved later by providing a library and sequencing run name that corresponds to your site.
 
+* A **library** is a collection of extracted and processed **biosamples** that have been prepared for simultaneous sequencing.
+* A **sequencing run** corresponds to the sequencing of a single library.
+
 ## Reporting standards for the consortium
+
+### Biosamples
 
 For a sample to be accepted for upload to CLIMB, and used in downstream analyses, you must provide the following:
 
-* A single, unique, shareable identifier (either a Heron barcode, or a suitable barcode from your own lab)
+* A single, unique, shareable identifier the "COGUK ID" (either a Heron barcode, or a suitable barcode from your own lab)
 * Country of origin (UK-ENG, UK-SCT, UK-WLS, UK-NIR)
 * Either a sample collection date (YYYY-MM-DD) **or** a sample `received_date` (YYYY-MM-DD). Do not attempt to impute the collection date. You must provide the day of the month.
 * A GISAID strain ID and strain identifier **if** you have already made the sequence available on GISAID yourself
 
 You should aim to provide as much information as possible about a sample to the consortium. 
-[See a full list of fields that have been deemed acceptable for the consortium to collect](https://docs.covid19.climb.ac.uk/majora/add_sample).
+[See a full list of fields that have been deemed acceptable for the consortium to collect](majora/add_sample).
+
+### Libraries
+
+For a library to be listed on CLIMB, you must provide the following:
+
+* A unique library name
+* One or more COGUK IDs that refer to the biosamples that were pooled into the library
+    * Additionally, for each biosample you must provide the library source, selection and strategy.
+* The sequencing kit
+* The sequencing protocol
+* Whether the run has single or paired reads
+
+You *should* also provide information pertinent to performing QC and filtering on your downstream analyses here, such as the version of the ARTIC protocol and primer pools (if used).
+
+[See more information on library metadata](majora/add_library).
+
+### Sequencing Runs
+
+* A unique run name
+* The corresponding library name
+* The sequencing instrument make and model
+
+[See more information on run metadata](majora/add_sequencing).
+
 
 ## Methods for metadata submission
 
