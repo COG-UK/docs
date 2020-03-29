@@ -22,7 +22,7 @@ maintainer: samstudio8
             "adm2": "WEST MIDLANDS",
             "collecting_org": "Queen Elizabeth Hospital Birmingham",
             "root_sample_id": "H20XXXXXXXX",
-            "sample_type": "swab",
+            "sample_type_collected": "swab",
             "sender_sample_id": "QELAB-01",
             "swab_site": "nose",
         },
