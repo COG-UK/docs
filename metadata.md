@@ -62,6 +62,8 @@ You *should* also provide information pertinent to performing QC and filtering o
 * The corresponding library name
 * The sequencing instrument make and model
 
+The API will allow you to tag your sequencing runs with arbitrary key value pairs if you wish to provide more information about your sequencing run, or the downstream bioinformatics.
+
 [See more information on run metadata](majora/add_sequencing).
 
 
