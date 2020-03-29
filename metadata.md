@@ -27,6 +27,8 @@ It is our intention that working between the health agencies, the NHS and HDR-UK
 * A **library** is a collection of extracted and processed **biosamples** that have been prepared for simultaneous sequencing.
 * A **sequencing run** corresponds to the sequencing of a single library. *e.g.* A flowcell.
 
+* Insufficient metadata will preclude the use of your sample in downstream analyses and project reports. It may also prevent automated uploading of your data to ENA and GISAID.
+
 ## Reporting standards for the consortium
 
 ### Biosamples
@@ -67,10 +69,14 @@ The API will allow you to tag your sequencing runs with arbitrary key value pair
 [See more information on run metadata](majora/add_sequencing).
 
 
+## Metadata storage
+
+Metadata is stored by `Majora`. [You can log into Majora](https://majora.covid19.climb.ac.uk/) with your CLIMB unified account. New users [should register](https://majora.covid19.climb.ac.uk/forms/register) and wait to have their account approved by the system administrators.
+
 ## Methods for metadata submission
 
 Metadata can be submitted in three ways:
-* By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://www.cog-uk.io/login)
+* By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://docs.cog-uk.io/metadata/)
 * Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/)
 * By sending POST requests to our [JSON endpoints directly](https://docs.covid19.climb.ac.uk/majora-api)
 
