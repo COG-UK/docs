@@ -17,7 +17,7 @@ Request access by filling out the [registration form](https://majora.covid19.cli
 ### 1. Prepare you data
 We are accepting:
 
-* `.bam` Reads aligned to the `MN908947.3` \ `NC_045512` reference. The BAM must be **sorted** and unmapped reads must be **filtered**.
+* `.bam` Reads aligned to the `MN908947.3` \ `NC_045512` reference. The BAM must be **sorted** and unmapped reads must be **filtered**. If you used the ARTIC pipeline, provide the **untrimmed** BAM.
 * `.fa|.fas|.fasta` Consensus sequence as FASTA
 
 Arrange your <code>DATA_DIR</code> by creating a directory for each sample.
