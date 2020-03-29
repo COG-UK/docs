@@ -71,3 +71,5 @@ Metadata can be submitted in three ways:
 * By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://www.cog-uk.io/login)
 * Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/)
 * By sending POST requests to our [JSON endpoints directly](https://docs.covid19.climb.ac.uk/majora-api)
+
+We anticipate that sites will find using the CSV/TSV interface for uploading biosamples the most straightforward, and the `ocarina` command line tool for providing library and sequencing information. Advanced users are welcome to communicate with the API directly.
