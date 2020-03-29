@@ -80,8 +80,14 @@ Metadata is stored by `Majora`. [You can log into Majora](https://majora.covid19
 ## Methods for metadata submission
 
 Metadata can be submitted in three ways:
-* By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://docs.cog-uk.io/metadata/)
-* Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/)
-* By sending POST requests to our [JSON endpoints directly](https://docs.covid19.climb.ac.uk/majora-api)
+* By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://docs.cog-uk.io/metadata/), supported by Anthony Underwood (CGPS)
+* Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/), supported by Sam Nicholls (UoB)
+* By sending POST requests to our [JSON endpoints directly](https://docs.covid19.climb.ac.uk/majora-api), supported by Sam Nicholls (UoB)
 
 We anticipate that sites will find using the CSV/TSV interface for uploading biosamples the most straightforward, and the `ocarina` command line tool for providing library and sequencing information. Advanced users are welcome to communicate with the API directly.
+
+## Help and support
+
+* For questions about metadata collection and minimum reporting, see `#metadata`
+* For questions about metadata submission or using the APIs, see `#metadata-apis`
+
