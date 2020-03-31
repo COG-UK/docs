@@ -2,7 +2,7 @@
 layout: docpost
 title: Providing metadata
 date_published: 2020-03-29 22:30:00 +0000
-date_modified:  2020-03-29 22:30:00 +0000
+date_modified:  2020-03-30 15:45:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -42,7 +42,7 @@ For a sample to be accepted for upload to CLIMB, and used in downstream analyses
 * A single, unique, shareable identifier the "COGUK ID" (either a Heron barcode, or a suitable barcode from your own lab)
 * Country of origin (UK-ENG, UK-SCT, UK-WLS, UK-NIR)
 * Either a sample collection date (YYYY-MM-DD) **or** a sample `received_date` (YYYY-MM-DD). Do not attempt to impute the collection date. You must provide the day of the month.
-* A GISAID strain ID and strain identifier **if** you have already made the sequence available on GISAID yourself
+* A GISAID strain ID and GISAID strain accession **if** you have already made the sequence available on GISAID yourself. **If you do not provide a strain ID and accession, and your organisation has requested that we upload strains for you, it will be automatically uploaded after it passes QC**. Please provide this identifier to prevent duplicate strains being added to public databases.
 
 You should aim to provide as much information as possible about a sample to the consortium. 
 [See a full list of fields that have been deemed acceptable for the consortium to collect](majora/add_sample).
