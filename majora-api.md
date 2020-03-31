@@ -77,3 +77,4 @@ Note that the examples in the documentation assume that you are providing the ma
 * Every request must specify the mandatory fields as specified at the top of this page.
 * Submitting a request for an artifact that already exists will allow you to change some properties of that object. The `messages` response will let you know if this is not the case.
 * Sending a request to update an artifact that already exists is an overwriting operation. If you submit blank fields, those fields will be irreversibly deleted from the model.
+* If metadata is missing, do not send the field. **Do not submit 'unknown' or 'null' or any other text that attempts to explain that the field is missing**.
