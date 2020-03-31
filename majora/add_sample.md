@@ -63,3 +63,7 @@ The following fields are also required, but are submitted automatically. **You d
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
 | submitting_user |              | Yes, but provided automatically       | str        | Your username 
 | submitting_org  |              | Yes, but provided automatically       | str        | Your organisation
+
+### Frequently asked questions
+
+* Ages should be whole numbers. Neonatals should be entered as 0. Leave the field blank for not recorded.
