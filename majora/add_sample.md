@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-03-29 21:50:00 +0000
+date_modified:  2020-03-30 15:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -40,7 +40,6 @@ maintainer: samstudio8
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
 | adm1          | adm1_region                              | **Yes**      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally shared ID that you will use to refer to this sample inside the consortium. |
-| override_heron       |                               | **Yes**, if non-Heron ID           | str        | If you are using a `central_sample_id` that is not a Heron barcode, you must provide this key as `1` or `true` to prevent the identifier being validated |
 | received_date      |                               | **Yes**, if collection_date not available      | str | The date the sample was received. **YYYY-MM-DD** only. |
 | secondary_accession     | gisaid_accession              | **Yes**, if in GISAID | str | GISAID accession if the sample has already been uploaded to GISAID |
 | secondary_identifier    | gisaid_identifier             | **Yes**, if in GISAID | str | GISAID identifier (eg. hCov-19/.../2020) if the sample has already been uploaded to GISAID
