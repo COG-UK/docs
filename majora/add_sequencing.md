@@ -12,6 +12,7 @@ maintainer: samstudio8
 ```json
 {
     "library_name": "BIRM-LIBRARY-20200322",
+    "run_group": "my-merged-runs",
 
 
         "runs": [
@@ -49,6 +50,11 @@ maintainer: samstudio8
 
 ### Reference
 
+| Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
+|----------------------|-------------------------------|----------|------------|---------------------------------------|
+| library_name        |                               | **Yes**      | str        | The name of the `library` as submitted to `add_library` |
+| run_group        |                               | **Yes**, if multiple run objects      | str, unique        | A unique name that corresponds to a grouping of runs (an experiment). **Only provide a run group if the results of all the listed runs were merged for downstream analysis** |
+
 Each `run` is an object with the following keys:
 
 | Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
@@ -59,5 +65,4 @@ Each `run` is an object with the following keys:
 | end_time        |                               | No      | str        |  |
 | flowcell_id        |                               | No      | str        | Flowcell serial number |
 | flowcell_type        |                               | No      | str        | Flowcell description |
-| run_group        |                               | No      | str, unique        | A unique name that corresponds to a grouping of runs (an experiment). |
 | start_time          |                               | No      | str        |||
