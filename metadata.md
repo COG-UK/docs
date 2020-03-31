@@ -26,6 +26,8 @@ It is our intention that working between the health agencies, the NHS and HDR-UK
 
 * A **library** is a collection of extracted and processed **biosamples** that have been prepared for simultaneous sequencing.
 * A **sequencing run** corresponds to the sequencing of a single library. *e.g.* A flowcell.
+* If a library is sequenced multiple times, each run should be considered a separate and distinct sequencing run.
+* Sequencing runs may be joined into a **sequencing run group** (or **sequencing experiment**) if and only if the reads from all runs in the group are merged for downstream analysis.
 
 * More generally, an object such as a biosample, sequencing library or data file may be referred to as an **artifact**. Something that causes a change or creates a new object (such as library pooling, or sequencing) is referred to as a **process**.
 
