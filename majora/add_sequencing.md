@@ -2,7 +2,7 @@
 layout: docpost
 title: api.process.sequencing.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-03-25 10:45:00 +0000
+date_modified:  2020-03-30 12:25:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -59,4 +59,5 @@ Each `run` is an object with the following keys:
 | end_time        |                               | No      | str        |  |
 | flowcell_id        |                               | No      | str        | Flowcell serial number |
 | flowcell_type        |                               | No      | str        | Flowcell description |
+| run_group        |                               | No      | str, unique        | A unique name that corresponds to a grouping of runs (an experiment). |
 | start_time          |                               | No      | str        |||
