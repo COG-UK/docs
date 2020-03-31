@@ -53,7 +53,7 @@ maintainer: samstudio8
 | Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
 | library_name        |                               | **Yes**      | str        | The name of the `library` as submitted to `add_library` |
-| run_group        |                               | **Yes**, if multiple run objects      | str, unique        | A unique name that corresponds to a grouping of runs (an experiment). **Only provide a run group if the results of all the listed runs were merged for downstream analysis** |
+| run_group        |                               | **Yes**, **only** if multiple run objects **should** be merged      | str, unique        | A unique name that corresponds to a grouping of runs (an experiment). **Only provide a run group if the results of all the listed runs were merged for downstream analysis** |
 
 Each `run` is an object with the following keys:
 
