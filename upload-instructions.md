@@ -2,7 +2,7 @@
 layout: docpost
 title: Upload instructions
 date_published: 2020-03-17 10:00:00 +0000
-date_modified:  2020-03-29 22:45:00 +0000
+date_modified:  2020-04-01 08:15:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -20,33 +20,60 @@ We are accepting:
 * `.bam` Reads aligned to the `MN908947.3` \ `NC_045512` reference. The BAM must be **sorted** and unmapped reads must be **filtered**. If you used the ARTIC pipeline, provide the **untrimmed** BAM.
 * `.fa|.fas|.fasta` Consensus sequence as FASTA
 
-Arrange your <code>DATA_DIR</code> by creating a directory for each sample.
-Each sample's directory should be named with the identifier you are using internally for that sample.
+Arrange your <code>DATA_DIR</code> by creating a directory for each sequencing run.
+Each run directory should be named with your sequencing `run_name`, **exactly** as it appears in the associated metadata.
+
+Inside each run directory, you should create a directory for each sample, named with the sample's `central_sample_id`, **exactly** as it appears in your metadata.
+
+**You must name your directories in this way to ensure they are collected by the system when your metadata is uploaded**.
+
 The file names are less important, but must end with the right file extension to be detected (see list above).
 In lieu of a formal unified naming scheme at this time, please ensure that your sample directories are named such that you will be able to identify them in the future and at the least, are unique to your site.
 
-As an example, the following `data_dir` contains two samples: `Sample1` and `Sample2`:
+As an example, the following `data_dir` contains two runs with two samples each:
 
 ```
         | data_dir/
-        |--| Sample1
-           |-- sample1.bam
-           |-- sample1.fa
-        |--| Sample2
-           |-- sample2.bam
-           |-- sample2.fa
+        |--| 200320_M00001_0001
+           |--| BIRM-XXXXX
+              |-- alignment.bam
+              |-- consensus.fa
+           |--| BIRM-YYYYY
+              |-- alignment.bam
+              |-- consensus.fa
+        |--| 200320_M00001_0002
+           |--| BIRM-AAAAA
+              |-- alignment.bam
+              |-- consensus.fa
+           |--| BIRM-BBBBB
+              |-- alignment.bam
+              |-- consensus.fa
+
 ```
-
-To update a sample, append `.X` to the directory name, where `X` is the current version of the results for that sample.
-
+Further runs on the same sample can be added in future by adding a new run directory and re-using the original sample name. Do not delete the old data.
 ```
         | data_dir/
-        |--| Sample1
-           |-- sample1.bam
-           |-- sample1.fa
-        |--| Sample1.2
-           |-- sample1.bam
-           |-- sample1.fa
+        |--| 200320_M00001_0001
+           |--| BIRM-XXXXX
+              |-- alignment.bam
+              |-- consensus.fa
+           |--| BIRM-YYYYY
+              |-- alignment.bam
+              |-- consensus.fa
+        |--| 200320_M00001_0002
+           |--| BIRM-AAAAA
+              |-- alignment.bam
+              |-- consensus.fa
+           |--| BIRM-BBBBB
+              |-- alignment.bam
+              |-- consensus.fa
+        |--| 200320_M00001_0003
+           |--| BIRM-AAAAA
+              |-- alignment.bam
+              |-- consensus.fa
+           |--| BIRM-BBBBB
+              |-- alignment.bam
+              |-- consensus.fa
 ```
 
 ### 2. Upload with rsync or scp
