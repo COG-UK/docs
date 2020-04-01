@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-03-30 15:30:00 +0000
+date_modified:  2020-04-01 18:20:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -25,6 +25,12 @@ maintainer: samstudio8
             "sample_type_collected": "swab",
             "sender_sample_id": "QELAB-01",
             "swab_site": "nose",
+            
+            "metadata": {
+                "epi": {
+                    "cluster": "my cluster identifier",
+                }
+            }
         },
         {...},
     ],
@@ -55,6 +61,19 @@ maintainer: samstudio8
 | source_age           |                               | No      | int        | Age of the patient in years |
 | source_sex           |                               | No      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
 | swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`|
+
+
+Additionally, one may optionally provid metadata for a biosample using the `metadata` key.
+Each object inside `metadata` will be created as a tag to hold one or more key: value pairs.
+
+You can specify any tags you like. However, the following tags are used within the project and should be followed if you want to provide this information meaningfully.
+
+| Tag         | Name      | Description                           |
+|-------------|-----------|---------------------------------------|
+| `epi`     | `cluster` | A local identifier for a known case cluster |
+
+All metadata is optional. Metadata can be updated at any time.
+
 
 The following fields are also required, but are submitted automatically. **You do not need to provide these fields**.
 
