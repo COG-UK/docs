@@ -2,7 +2,7 @@
 layout: docpost
 title: Providing metadata
 date_published: 2020-03-29 22:30:00 +0000
-date_modified:  2020-03-30 15:45:00 +0000
+date_modified:  2020-04-01 08:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -44,6 +44,8 @@ For a sample to be accepted for upload to CLIMB, and used in downstream analyses
 * Either a sample collection date (YYYY-MM-DD) **or** a sample `received_date` (YYYY-MM-DD). Do not attempt to impute the collection date. You must provide the day of the month.
 * A GISAID strain ID and GISAID strain accession **if** you have already made the sequence available on GISAID yourself. **If you do not provide a strain ID and accession, and your organisation has requested that we upload strains for you, it will be automatically uploaded after it passes QC**. If you have submitted to GISAID, please provide this identifier to prevent duplicate strains being added to public databases.
 
+**You cannot change the COGUK ID once it has been submitted**.
+
 You should aim to provide as much information as possible about a sample to the consortium. 
 [See a full list of fields that have been deemed acceptable for the consortium to collect](majora/add_sample).
 
@@ -53,12 +55,14 @@ Be sure that you have the governance and permission in place to share metadata *
 
 For a library to be listed on CLIMB, you must provide the following:
 
-* A unique library name
+* A unique library name. It must be unique across the entire project, so consider prefixing yours with the date and or your site.
 * One or more COGUK IDs that refer to the biosamples that were pooled into the library
     * Additionally, for each biosample you must provide the library source, selection and strategy.
 * The sequencing kit
 * The sequencing protocol
 * Whether the run has single or paired reads
+
+**You cannot change the library_name once it has been submitted**.
 
 You *should* also provide information pertinent to performing QC and filtering on your downstream analyses here, such as the version of the ARTIC protocol and primer pools (if used).
 
@@ -66,9 +70,11 @@ You *should* also provide information pertinent to performing QC and filtering o
 
 ### Sequencing Runs
 
-* A unique run name
+* A unique run name. It must be unique across the entire project, so consider prefixing yours with the date and or your site if you aren't using the run name from the sequencer.
 * The corresponding library name
 * The sequencing instrument make and model
+
+**You cannot change the run_name once it has been submitted**.
 
 The API will allow you to tag your sequencing runs with arbitrary key value pairs if you wish to provide more information about your sequencing run, or the downstream bioinformatics.
 
