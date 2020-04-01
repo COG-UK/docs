@@ -20,10 +20,9 @@ maintainer: samstudio8
     "library_layout_insert_length": 0,
 
     "metadata": {
-        "sop": {
-            "name": "ARTIC nCov-2019",
-            "version": 2,
-            "amplicons": 3,
+        "artic": {
+            "protocol": "bbmuik6w",
+            "primers": 3,
         }
     },
 
@@ -77,8 +76,16 @@ Each `biosample` is an object that contains the following keys:
 | barcode        |                               | No      | str        | Optional reference to barcode adapter or barcode number |
 
 
-Additionally, one may optionally provided metadata for a library.
+Additionally, one may optionally provid metadata for a library inside a `metadata` key.
+Each object inside `metadata` will be created as a tag to hold one or more key: value pairs.
 
+You can specify any tags you like. However, the following tags are used within the project and should be followed if you want to provide this information meaningfully.
 
+| Tag         | Name      | Description                           |
+|-------------|-----------|---------------------------------------|
+| `artic`     | `primers` | The version of primers used: `1` `2` or `3` |
+| `artic`     | `protocol`| The version of the lab protocol used |
+
+All metadata is optional. Metadata can be updated at any time.
 
 * These fields are for ENA submission and use a subset of the valid options available. If a valid ENA option is not listed here but you need it, please contact `Sam Nicholls` to have it added.
