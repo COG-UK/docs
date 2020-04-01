@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.library.add
 date_published: 2020-03-25 20:00:00 +0000
-date_modified:  2020-03-25 20:00:00 +0000
+date_modified:  2020-04-01 11:45:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -16,8 +16,6 @@ maintainer: samstudio8
     "library_seq_kit": "LSK109",
     "library_seq_protocol": "LIGATION",
     "library_layout_config": "SINGLE",
-    "library_layout_read_length": 0,
-    "library_layout_insert_length": 0,
 
     "metadata": {
         "artic": {
