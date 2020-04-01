@@ -14,7 +14,7 @@ Request access by filling out the [registration form](https://majora.covid19.cli
 **Your username will begin with <code>climb-covid19-</code>. Remember to use this prefix when accessing systems later.**
 **The server accepts public SSH keys only. You will not be allowed to login with a password.**
 
-### 1. Prepare you data
+### 1. Prepare your data
 We are accepting:
 
 * `.bam` Reads aligned to the `MN908947.3` \ `NC_045512` reference. The BAM must be **sorted** and unmapped reads must be **filtered**. If you used the ARTIC pipeline, provide the **untrimmed** BAM.
