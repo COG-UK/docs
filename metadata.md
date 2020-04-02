@@ -30,6 +30,8 @@ It is our intention that working between the health agencies, the NHS and HDR-UK
 * A sequencing run should be given a `run_name` that is unique across the whole project. Ideally this will be the name your sequencing software generates for the run. Otherwise, a string of at least five characters that helps you identify this run is fine. Consider using your site and the date if you don't have another identifier. "BIRM-RUN-20200402-1" is fine, "RUN1" "birm run" or "nanopore" are not.
 * If a library is sequenced multiple times, each run should be considered a separate and distinct sequencing run.
 
+* Be aware that once you have provided metadata, many fields can still be changed by resubmitting the data. **However, the primary keys: `central_sample_id`, `library_name` and `run_name` cannot be changed. Ensure they are correct before uploading your data to avoid complications.**
+
 * More generally, an object such as a biosample, sequencing library or data file may be referred to as an **artifact**. Something that causes a change or creates a new object (such as library pooling, or sequencing) is referred to as a **process**.
 
 * Insufficient metadata will preclude the use of your sample in downstream analyses and project reports. It may also prevent automated uploading of your data to ENA and GISAID.
