@@ -11,7 +11,7 @@
 
 ## Lab
 
-* [COG-UK sequencing protocols group on Protocols.io](https://protocols.io/groups/cogph)
+* [COG-UK sequencing protocols group on Protocols.io](https://protocols.io/groups/coguk)
 
 ## Bioinformatics pipelines
 
