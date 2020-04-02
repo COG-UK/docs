@@ -25,7 +25,9 @@ It is our intention that working between the health agencies, the NHS and HDR-UK
 * Where a biosample is split into **multiple aliquots** or **shared with other sequencing centres**, that biosample **should not be relabelled** by the receiving site. This ambiguity can be resolved later by providing a library and sequencing run name that corresponds to your site.
 
 * A **library** is a collection of extracted and processed **biosamples** that have been prepared for simultaneous sequencing.
+* A library should be given a `library_name` that is unique across the whole project. There are no limitations on what this name should look like but it should be at least five characters. Consider using the date, or site name if you don't have a generated identifier to use. "BIRM-001" would be reasonable, "1" would not.
 * A **sequencing run** corresponds to the sequencing of a single library. *e.g.* A flowcell.
+* A sequencing run should be given a `run_name` that is unique across the whole project. Ideally this will be the name your sequencing software generates for the run. Otherwise, a string of at least five characters that helps you identify this run is fine. Consider using your site and the date if you don't have another identifier. "BIRM-RUN-20200402-1" is fine, "RUN1" "birm run" or "nanopore" are not.
 * If a library is sequenced multiple times, each run should be considered a separate and distinct sequencing run.
 
 * More generally, an object such as a biosample, sequencing library or data file may be referred to as an **artifact**. Something that causes a change or creates a new object (such as library pooling, or sequencing) is referred to as a **process**.
