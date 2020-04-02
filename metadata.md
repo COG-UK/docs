@@ -2,7 +2,7 @@
 layout: docpost
 title: Providing metadata
 date_published: 2020-03-29 22:30:00 +0000
-date_modified:  2020-04-02 11:40:00 +0000
+date_modified:  2020-04-02 12:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -26,8 +26,10 @@ It is our intention that working between the health agencies, the NHS and HDR-UK
 
 * A **library** is a collection of extracted and processed **biosamples** that have been prepared for simultaneous sequencing.
 * A library should be given a `library_name` that is unique across the whole project. There are no limitations on what this name should look like but it should be at least five characters. Consider using the date, or site name if you don't have a generated identifier to use. "BIRM-001" would be reasonable, "1" would not.
+
 * A **sequencing run** corresponds to the sequencing of a single library. *e.g.* A flowcell.
-* A sequencing run should be given a `run_name` that is unique across the whole project. Ideally this will be the name your sequencing software generates for the run. Otherwise, a string of at least five characters that helps you identify this run is fine. Consider using your site and the date if you don't have another identifier. "BIRM-RUN-20200402-1" is fine, "RUN1" "birm run" or "nanopore" are not.
+* A sequencing run should be given a `run_name` that is unique across the whole project. Ideally this will be the name your sequencing software generates for the run. For example, an Illumina run: `<date>_<machine_id>_<run_no>_<some_zeros>_<flowcell>` or a Nanopore run `<date>_<time>_<position>_<flowcell>_<id>`.
+If for some reason you don't have these, a string of at least five characters that helps you identify this run is fine. Consider using your site and the date if you don't have another identifier. "BIRM-RUN-20200402-1" is fine, "RUN1" "birm run" or "nanopore" are not.
 * If a library is sequenced multiple times, each run should be considered a separate and distinct sequencing run.
 
 * Be aware that once you have provided metadata, many fields can still be changed by resubmitting the data. **However, the primary keys: `central_sample_id`, `library_name` and `run_name` cannot be changed. Ensure they are correct before uploading your data to avoid complications.**
