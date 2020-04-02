@@ -2,7 +2,7 @@
 layout: docpost
 title: Providing metadata
 date_published: 2020-03-29 22:30:00 +0000
-date_modified:  2020-04-01 08:30:00 +0000
+date_modified:  2020-04-02 11:40:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -62,6 +62,7 @@ For a library to be listed on CLIMB, you must provide the following:
 * Whether the run has single or paired reads
 
 **You cannot change the library_name once it has been submitted**.
+* You can use the `library_name` as your `run_name` (or vice versa) if they have a 1:1 mapping (*i.e.* A single library was sequencing on a single run). If you provide sample information row-by-row using the uploader, each biosample that is pooled into the same library should have the same library_name. Each library that is on the same run should have the same run_name.
 
 You *should* also provide information pertinent to performing QC and filtering on your downstream analyses here, such as the version of the ARTIC protocol and primer pools (if used).
 
@@ -74,6 +75,7 @@ You *should* also provide information pertinent to performing QC and filtering o
 * The sequencing instrument make and model
 
 **You cannot change the run_name once it has been submitted**.
+* You can use the `library_name` as your `run_name` (or vice versa) if they have a 1:1 mapping (*i.e.* A single library was sequencing on a single run). If you provide sample information row-by-row using the uploader, each biosample that is pooled into the same library should have the same library_name. Each library that is on the same run should have the same run_name.
 
 The API will allow you to tag your sequencing runs with arbitrary key value pairs if you wish to provide more information about your sequencing run, or the downstream bioinformatics.
 
