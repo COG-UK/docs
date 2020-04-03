@@ -22,7 +22,7 @@ maintainer: samstudio8
 * If multiple samples have come from the same patient, you have set the `biosample_source_id` to the first COGUK sample identifier for all of the related samples?
 * If you are re-sequencing a sample from another site, you have not changed the `central_sample_id`?
 
-* You are aware that once a record has been submitted, its `central_sample_id` (COGUK ID), `library_name` and `run_name` cannot be changed.
+* **You are aware that once a record has been submitted, its `central_sample_id` (COGUK ID), `library_name` and `run_name` cannot be changed.** If you were thinking about changing the COGUK ID, it is now or never.
 * For spreadsheet-like uploads, your data is in a CSV or XLSX with the right template for the webtool?
 
 * You have provided the GISAID strain ID and accession as `secondary_identifier` and `secondary_accession`, only if you have uploaded it to GISAID already?
