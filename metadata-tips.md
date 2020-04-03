@@ -55,6 +55,7 @@ maintainer: samstudio8
     * `ocarina put biosample`?
     * `ocarina put library`?
     * `ocarina put sequencing`?
+* So you know that for `ocarina` uploads, you have to provide a biosample*, then a library, then the sequencing run, in that order? (Ask @samstudio8 about generating dummy biosamples if you want to skip straight to libraries and sequencing...).
     
 ## You are ready to do this for real?
 
