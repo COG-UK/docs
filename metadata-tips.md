@@ -16,6 +16,7 @@ maintainer: samstudio8
 
 * You have provided at least the [minimum metadata](/metadata)?
 * Your samples have one and only one, single, unique, shareable identifier?
+* You know that the "COGUK ID" does not necessarily have to be a WSI "Heron" barcode, but that it should be consistent and is usually prefixed by some short code for your site?
 * Your pooled sample libraries have a name that is reasonably unique? (`BIRM-LIBRARY-001` good, `1` bad).
 * Your sequencing runs have a name that is reasonably unique? (`<date>_<machine_id>_<run_no>_<some_zeros>_<flowcell>` good, `my-run` bad)
 
