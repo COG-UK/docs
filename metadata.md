@@ -94,7 +94,10 @@ Metadata is stored by `Majora`. [You can log into Majora](https://majora.covid19
 
 ## Methods for metadata submission
 
-Metadata can be submitted in three ways:
+Metadata can be submitted in three ways.
+No matter which option you use, you will need to know your unified CLIMB user name and get an API token.
+Your username should have been emailed to you once your account was approved. You can see your token on your [user profile](https://majora.covid19.climb.ac.uk/accounts/profile/).
+
 * By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://docs.cog-uk.io/metadata/), supported by Anthony Underwood (CGPS)
     * [Uploading biosamples](https://docs.cog-uk.io/metadata/bulk-upload-1/bulk-upload)
     * [Uploading biosamples with library and sequencing](https://docs.cog-uk.io/metadata/bulk-upload-1/samples-and-sequencing)
