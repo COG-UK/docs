@@ -5,6 +5,7 @@
 
 ## Metadata
 
+* [You think you are ready to submit metadata?](metadata-tips)
 * [Providing metadata](metadata)
 * [Using the Majora metadata server API](majora-api)
 * [Validating a Heron barcode](heron-barcodes)
