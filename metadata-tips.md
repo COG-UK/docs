@@ -25,6 +25,8 @@ maintainer: samstudio8
 * You are aware that once a record has been submitted, its `central_sample_id` (COGUK ID), `library_name` and `run_name` cannot be changed.
 * For spreadsheet-like uploads, your data is in a CSV or XLSX with the right template for the webtool?
 
+* You have provided the GISAID strain ID and accession as `secondary_identifier` and `secondary_accession`, only if you have uploaded it to GISAID already?
+
 * It seemed to work when youn ran it on the test version of Majora? (See below)
 
 ## You have uploaded data to us at least once before?
@@ -54,11 +56,20 @@ maintainer: samstudio8
     * `ocarina put library`?
     * `ocarina put sequencing`?
     
-## You have an account on the real (non-testing) CLIMB?
+## You are ready to do this for real?
 
 * [You registered for a real unified CLIMB account](https://majora.covid19.climb.ac.uk/forms/register) and you've had an e-mail to tell you it was approved?
 * [You have an API key token on your CLIMB profile](https://majora.covid19.climb.ac.uk/accounts/profile/)?
 * You know that this account is your real account because the username does not start with `test-`?
 * You know that the API key for this account is different from the one for your test account?
 * You know that this username and API key will only work on the real Majora website?
+
+* For webtool uploads: provide your real username and token and upload as normal
+* For `ocarina` uploads: set `MAJORA_DOMAIN` to `https://majora.covid19.climb.ac.uk/` and update the `MAJORA_USER` and `MAJORA_TOKEN` to your real credentials?
+
+* You promise to be careful to not submit test data to the real database because it's really hard to get rid of data once it is there?
+* You know that we know who has uploaded bad metadata?
+* You know that without sufficient metadata, CLIMB will not publish your sample or consensus?
+
+
 
