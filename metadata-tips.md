@@ -19,6 +19,9 @@ maintainer: samstudio8
 * Your pooled sample libraries have a name that is reasonably unique? (`BIRM-LIBRARY-001` good, `1` bad).
 * Your sequencing runs have a name that is reasonably unique? (`<date>_<machine_id>_<run_no>_<some_zeros>_<flowcell>` good, `my-run` bad)
 
+* You are sure that you have permission to provide us this metadata?
+* You are sure that any identifiers are not personally identifiable?
+
 * If multiple samples have come from the same patient, you have set the `biosample_source_id` to the first COGUK sample identifier for all of the related samples?
 * If you are re-sequencing a sample from another site, you have not changed the `central_sample_id`?
 
