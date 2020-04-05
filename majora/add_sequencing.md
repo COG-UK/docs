@@ -20,8 +20,8 @@ maintainer: samstudio8
                 "instrument_model": "GridION",
                 "flowcell_type": "R9.4.1D",
                 "flowcell_id": "00000",
-                "start_time": "YYYY-MM-DD HH:MM:SS",
-                "end_time": "YYYY-MM-DD HH:MM:SS",
+                "start_time": "YYYY-MM-DD HH:MM",
+                "end_time": "YYYY-MM-DD HH:MM",
 
             },
             {
@@ -30,8 +30,8 @@ maintainer: samstudio8
                 "instrument_model": "GridION",
                 "flowcell_type": "R9.4.1D",
                 "flowcell_id": "00000",
-                "start_time": "YYYY-MM-DD HH:MM:SS",
-                "end_time": "YYYY-MM-DD HH:MM:SS",
+                "start_time": "YYYY-MM-DD HH:MM",
+                "end_time": "YYYY-MM-DD HH:MM",
             },
             {
                 "run_name": "BIRM-my_second_run",                
@@ -39,8 +39,8 @@ maintainer: samstudio8
                 "instrument_model": "GridION",
                 "flowcell_type": "R10.3",
                 "flowcell_id": "00001",
-                "start_time": "YYYY-MM-DD HH:MM:SS",
-                "end_time": "YYYY-MM-DD HH:MM:SS",
+                "start_time": "YYYY-MM-DD HH:MM",
+                "end_time": "YYYY-MM-DD HH:MM",
             }
         ]
 }
