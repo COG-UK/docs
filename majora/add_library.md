@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.library.add
 date_published: 2020-03-25 20:00:00 +0000
-date_modified:  2020-04-01 11:45:00 +0000
+date_modified:  2020-04-07 15:45:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -70,7 +70,7 @@ Each `biosample` is an object that contains the following keys:
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally generated "Heron" barcode assigned to this sample. This biosample must have already been added to Majora. |
 | library_selection*        |                               | **Yes**      | str        | **Options** `RANDOM`, `PCR` `RANDOM_PCR`, `OTHER` |
 | library_source*        |                               | **Yes**      | str        | **Options** `GENOMIC`, `TRANSCRIPTOMIC`, `METAGENOMIC`, `METATRANSCRIPTOMIC`, `VIRAL_RNA`, `OTHER` |
-| library_strategy*        |                               | **Yes**      | str        | **Options** `WGA`, `WGS`, `AMPLICON`, `OTHER` |
+| library_strategy*        |                               | **Yes**      | str        | **Options** `WGA`, `WGS`, `AMPLICON`, `TARGETED_CAPTURE`, `OTHER` |
 | barcode        |                               | No      | str        | Optional reference to barcode adapter or barcode number |
 
 
