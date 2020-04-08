@@ -55,7 +55,7 @@ maintainer: samstudio8
 | collection_date      |                               | No      | str | The date the sample was collected. **YYYY-MM-DD** only. |
 | collecting_org       |                               | No       | str       | The site (eg. hospital or surgery) that this sample was originally collected by. Use the first line of the 'sender' from the E28 form.
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
-| sample_type_collected          |                               | No       | str | Sample type. **Options** `dry swab`, `swab`,`sputum`,`BAL`|
+| sample_type_collected          |                               | No       | str | Sample type. **Options** `dry swab`, `swab`,`sputum`,`BAL`,`aspirate`|
 | sample_type_received         |                               | No       | str | Sample type. **Options** `primary`,`extract`,`culture`|
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | source_age           |                               | No      | int        | Age of the patient in years |
