@@ -48,3 +48,5 @@ The FASTA headers are encoded with metadata of most utility, using the format:
 `hCov-19/<adm1>/<central_sample_id>/2020||<adm1>|<adm2>|<collected_date> or R<received_date>|<sequenced_by>|<sequenced_date>`
 
 For all metadata, use `/cephfs/covid/bham/artifacts/published/majora.latest.metadata.tsv`.
+
+Note that the merged consensus FASTA will also include resequencing. That is, a biosample may have more than one genome in the consensus FASTA, you can identify them as they will have the same `central_sample_id` in their header.
