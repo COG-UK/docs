@@ -40,5 +40,5 @@ Data is automatically discarded by the following criteria:
 
 You need a CLIMB account to upload or access data. If you haven't got one, [see instructions on registering and uploading to CLIMB](upload-instructions). You will need to SSH into the CLIMB COVID server.
 
-The latest artifacts are published in `/cephfs/covid/artifacts/latest`.
+The latest artifacts are published in `/cephfs/covid/bham/artifacts/published/latest`.
 
