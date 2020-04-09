@@ -42,3 +42,4 @@ You need a CLIMB account to upload or access data. If you haven't got one, [see 
 
 The latest artifacts are published in `/cephfs/covid/bham/artifacts/published/latest`.
 
+For just the sequences, you can use `/cephfs/covid/bham/artifacts/published/elan.latest.consensus.fasta`.
