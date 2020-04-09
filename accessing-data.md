@@ -43,3 +43,8 @@ You need a CLIMB account to upload or access data. If you haven't got one, [see 
 The latest artifacts are published in `/cephfs/covid/bham/artifacts/published/latest`.
 
 For just the sequences, you can use `/cephfs/covid/bham/artifacts/published/elan.latest.consensus.fasta`.
+The FASTA headers are encoded with metadata of most utility, using the format:
+
+`hCov-19/<adm1>/<central_sample_id>/2020||<adm1>|<adm2>|<collected_date> or R<received_date>|<sequenced_by>|<sequenced_date>`
+
+For all metadata, use `/cephfs/covid/bham/artifacts/published/majora.latest.metadata.tsv`.
