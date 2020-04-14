@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-04-06 15:40:00 +0000
+date_modified:  2020-04-14 10:20:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -60,7 +60,7 @@ maintainer: samstudio8
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | source_age           |                               | No      | int        | Age of the patient in years |
 | source_sex           |                               | No      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
-| swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`|
+| swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`,`endotracheal`|
 
 
 Additionally, one may optionally provid metadata for a biosample using the `metadata` key.
