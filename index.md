@@ -12,7 +12,7 @@
 
 ## Outbound distribution
 
-* [How to opt-in to GISAID uploads](gisaid)
+* [How to opt-in to automated GISAID submissions](gisaid)
 
 ## Lab
 
