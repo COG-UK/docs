@@ -1,4 +1,4 @@
-## Data
+## CLIMB access and data uploads
 
 * [How to get SSH access and upload data to CLIMB](upload-instructions)
 * [Accessing and using CLIMB hosted data](accessing-data)
@@ -9,6 +9,10 @@
 * [You think you are ready to submit metadata?](metadata-tips)
 * [Using the Majora metadata server API](majora-api)
 * [Validating a Heron barcode](heron-barcodes)
+
+## Outbound distribution
+
+* [How to opt-in to GISAID uploads](gisaid)
 
 ## Lab
 
