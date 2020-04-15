@@ -5,8 +5,8 @@
 
 ## Metadata
 
+* [Basic terminology and minimal requirements](metadata)
 * [You think you are ready to submit metadata?](metadata-tips)
-* [Providing metadata](metadata)
 * [Using the Majora metadata server API](majora-api)
 * [Validating a Heron barcode](heron-barcodes)
 
