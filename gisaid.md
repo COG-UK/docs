@@ -22,6 +22,6 @@ You will need to provide:
 
 ## What will I have to do?
 
-Bulk uploads are generated Friday afternoon.
+Bulk uploads are generated first thing Monday, based on the data freeze from the previous Friday afternoon.
 Metadata is automatically gathered from Majora and manually inserted into a Google Sheet for sites to enter their authorship information and confirm the sequences.
 Once signed off by all sites, the bulk upload is sent directly to GISAID.
