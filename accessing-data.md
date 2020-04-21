@@ -36,8 +36,8 @@ Data is automatically discarded by the following criteria, according to the vers
     * **Reads softclipped more than 25% of their length are removed from the BAM**
     * **Reads that align with `mappy` (`-x sr`) to the human reference (`hs38d1`, `GRCh38.p13` or `IPD-IMGT/HLA 3.39`) are removed from the BAM**
 * Nanopore
-    * **Average BAM depth less than 20x**
-    * BAM depth less than 25x for over 50% of the reference positions
+    * Average BAM depth less than **20x**
+    * BAM depth less than **20x** for over 50% of the reference positions
     * Consensus FASTA containing more than 50% Ns
     * **Reads softclipped more than 10% of their length are removed from the BAM**
     * **Reads that align with `mappy` (`-x map-ont`) to the human reference (`hs38d1`, `GRCh38.p13` or `IPD-IMGT/HLA 3.39`) are removed from the BAM**
