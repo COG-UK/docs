@@ -2,7 +2,7 @@
 layout: docpost
 title: Accessing and using CLIMB data
 date_published: 2020-03-29 23:20:00 +0000
-date_modified:  2020-04-09 11:15:00 +0000
+date_modified:  2020-04-21 09:15:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -25,9 +25,25 @@ Once `elan` has finished, the following artifacts are automatically published wi
 * `alignment`: Each filtered, sorted and checked BAM with the naming strategy `<coguk_id>.<run_name>.climb.bam`
 * `qc`: A basic quality report for each COGUK ID.
 
-Data is automatically discarded by the following criteria:
+Data is automatically discarded by the following criteria, according to the version of the QC schema used:
 
-* Illumina
+### v1.1 2020-04-21
+
+* Illumina 
+    * Average BAM depth less than 10x
+    * BAM depth less than 10x for over 50% of the reference positions
+    * Consensus FASTA containing more than 50% Ns
+    * **Reads softclipped more than 25% of their length are removed from the BAM**
+    * **Reads that align with `mappy` (`-x sr`) to the human reference (`hs38d1`, `GRCh38.p13` or `IPD-IMGT/HLA 3.39`) are removed from the BAM**
+* Nanopore
+    * **Average BAM depth less than 20x**
+    * BAM depth less than 25x for over 50% of the reference positions
+    * Consensus FASTA containing more than 50% Ns
+    * **Reads softclipped more than 10% of their length are removed from the BAM**
+    * **Reads that align with `mappy` (`-x map-ont`) to the human reference (`hs38d1`, `GRCh38.p13` or `IPD-IMGT/HLA 3.39`) are removed from the BAM**
+
+### v1.0 2020-03-29
+* Illumina 
     * Average BAM depth less than 10x
     * BAM depth less than 10x for over 50% of the reference positions
     * Consensus FASTA containing more than 50% Ns
@@ -35,6 +51,7 @@ Data is automatically discarded by the following criteria:
     * Average BAM depth less than 25x
     * BAM depth less than 25x for over 50% of the reference positions
     * Consensus FASTA containing more than 50% Ns
+
 
 ## Accessing CLIMB data that has passed QC
 
