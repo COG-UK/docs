@@ -37,7 +37,7 @@ Data is automatically discarded by the following criteria, according to the vers
     * Consensus FASTA containing more than 50% Ns
     * **Reads softclipped more than 25% of their length are removed from the BAM**
     * **Reads that align with `mappy` (`-x sr`) to the human reference (`hs38d1`, `GRCh38.p13` or `IPD-IMGT/HLA 3.39`) are removed from the BAM**
-    * **Any remaining read labelled as 9606 (Homo sapiens) by `kraken2` is removed from the BAM
+    * **Any remaining read labelled as 9606 (Homo sapiens) by `kraken2` is removed from the BAM**
     * **Any read whose mate pair is removed, is also pruned from the BAM**
 * Nanopore
     * Average BAM depth less than **20x**
@@ -45,7 +45,7 @@ Data is automatically discarded by the following criteria, according to the vers
     * Consensus FASTA containing more than 50% Ns
     * **Reads softclipped more than 10% of their length are removed from the BAM**
     * **Reads that align with `mappy` (`-x map-ont`) to the human reference (`hs38d1`, `GRCh38.p13` or `IPD-IMGT/HLA 3.39`) are removed from the BAM**
-    * **Any remaining read labelled as 9606 (Homo sapiens) by `kraken2` is removed from the BAM
+    * **Any remaining read labelled as 9606 (Homo sapiens) by `kraken2` is removed from the BAM**
 
 ### v1.0 2020-03-29
 * Illumina 
