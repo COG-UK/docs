@@ -64,6 +64,7 @@ maintainer: samstudio8
 ## You are ready to do this for real?
 
 * [You registered for a real unified CLIMB account](https://majora.covid19.climb.ac.uk/forms/register) and you've had an e-mail to tell you it was approved?
+* You still know your password? ([Reset](https://majora.covid19.climb.ac.uk/accounts/password_reset/))
 * [You have an API key token on your CLIMB profile](https://majora.covid19.climb.ac.uk/accounts/profile/)?
 * You know that this account is your real account because the username does not start with `test-`?
 * You know that the API key for this account is different from the one for your test account?
