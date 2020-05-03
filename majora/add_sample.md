@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-05-03 13:15:00 +0000
+date_modified:  2020-05-03 13:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -74,6 +74,9 @@ You can specify any tags you like. However, the following tags are used within t
 | Tag         | Name      | Description                           |
 |-------------|-----------|---------------------------------------|
 | `epi`     | `cluster` | A local identifier for a known case cluster |
+| `investigation` | `name` | A named investigation (eg. a surveillance or directed case group) |
+| `investigation` | `site` | An optional site name (likely to be the same as `collecting_org`) to distinguish cases between sites if the investigation covers more than one site |
+| `investigation` | `cluster` | An optional identifier for a cluster within an investigation |
 
 All metadata is optional. Metadata can be updated at any time.
 
