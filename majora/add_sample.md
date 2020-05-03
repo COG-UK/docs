@@ -29,6 +29,11 @@ maintainer: samstudio8
             "metadata": {
                 "epi": {
                     "cluster": "my cluster identifier",
+                },
+                "investigation": {
+                    "name": "West Midlands HCW"
+                    "site": "QEB",
+                    "cluster": "Ward 0",
                 }
             }
         },
