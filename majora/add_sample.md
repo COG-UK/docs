@@ -31,7 +31,7 @@ maintainer: samstudio8
                     "cluster": "my cluster identifier",
                 },
                 "investigation": {
-                    "name": "West Midlands HCW"
+                    "name": "West Midlands HCW",
                     "site": "QEB",
                     "cluster": "Ward 0",
                 }
