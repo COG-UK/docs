@@ -2,13 +2,14 @@
 layout: docpost
 title: Automated GISAID submissions
 date_published: 2020-04-15 19:00:00 +0000
-date_modified:  2020-04-15 19:00:00 +0000
+date_modified:  2020-05-04 19:15:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
 
 Sequencing sites can opt-in to a process where consensus sequences uploaded to CLIMB are automatically submitted to GISAID on their behalf.
-To do this you will need to notify the `#outbound-distribution` Slack channel that your site would like to be included in bulk uploads to GISAID.
+You can opt-in via your [Institute profile on Majora](https://majora.covid19.climb.ac.uk/forms/institute/).
+One only user per site needs to provide this information and it is does not need to be the same person who provides the metadata or uploads the sequences.
 
 ## How do I opt-in?
 
@@ -23,5 +24,4 @@ You will need to provide:
 ## What will I have to do?
 
 Bulk uploads are generated first thing Monday, based on the data freeze from the previous Friday afternoon.
-Metadata is automatically gathered from Majora and manually inserted into a Google Sheet for sites to enter their authorship information and confirm the sequences.
-Once signed off by all sites, the bulk upload is sent directly to GISAID.
+Metadata is automatically gathered from Majora and automatically inserted into a Google Sheet for sites to quickly confirm their sequences. Once signed off by all sites, the bulk upload is sent directly to GISAID.
