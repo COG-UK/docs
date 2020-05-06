@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-05-03 13:30:00 +0000
+date_modified:  2020-05-06 10:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -35,7 +35,21 @@ maintainer: samstudio8
                     "site": "QEB",
                     "cluster": "Ward 0",
                 }
-            }
+            },
+            
+            "metrics": {
+                "ct": {
+                    "records": {
+                        "1": {
+                            "ct_value": "29.8",
+                            "test_kit": "TEST",
+                            "test_platform": "TEST",
+                            "test_target": "TEST"
+                        },
+                    }
+                }
+            },
+            
         },
         {...},
     ],
