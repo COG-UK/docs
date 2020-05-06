@@ -84,8 +84,9 @@ maintainer: samstudio8
 | source_sex           |                               | No      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
 | swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`,`endotracheal`,`rectal`|
 
+#### Metadata
 
-Additionally, one may optionally provid metadata for a biosample using the `metadata` key.
+Additionally, one may optionally provide simple key-value secondary-metadata for a biosample using the `metadata` key.
 Each object inside `metadata` will be created as a tag to hold one or more key: value pairs.
 
 You can specify any tags you like. However, the following tags are used within the project and should be followed if you want to provide this information meaningfully.
@@ -99,13 +100,25 @@ You can specify any tags you like. However, the following tags are used within t
 
 All metadata is optional. Metadata can be updated at any time.
 
+#### Metrics
 
-The following fields are also required, but are submitted automatically. **You do not need to provide these fields**.
+Finally, it is also possible to provide primary-metadata in the form of metrics using the `metrics` key.
+Metrics are not arbitrary and have a fixed set of fields that may or may not be optional.
+Metrics are identified with a key and the value is a complex object validated by the API.
+For a biosample you may submit the following metrics:
 
-| Key                  | COG-UK metadata equivalent (if different)   | Required | Type       | Description                           |
-|----------------------|-------------------------------|----------|------------|---------------------------------------|
-| submitting_user |              | Yes, but provided automatically       | str        | Your username 
-| submitting_org  |              | Yes, but provided automatically       | str        | Your organisation
+##### Sample cycle threshold (Ct)
+
+Add a `ct` key to the `metrics` structure. 
+There are no mandatory or optional fields, other than `records` which takes a dictionary of Ct tests. Each test must be identified with an arbitrary key that is ignored by the API. The value is a dictionary with the following fields:
+
+| Tag         | Name      | Description                           |
+|-------------|-----------|---------------------------------------|
+|  | `ct_value` | Cycle threshold value |
+|  | `test_kit` | The kit used to perform the assay |
+|  | `test_platform` | The platform used to perform the assay |
+|  | `test_target` | The target under assay |
+
 
 ### Frequently asked questions
 
