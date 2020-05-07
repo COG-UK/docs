@@ -104,7 +104,7 @@ Your username should have been emailed to you once your account was approved. Yo
 * Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/), supported by Sam Nicholls (UoB)
     * [Uploading metadata with Ocarina](majora/ocarina)
 * By sending POST requests to our [JSON endpoints directly](https://docs.covid19.climb.ac.uk/majora-api), supported by Sam Nicholls (UoB)
-    * [Submit a biosample](majora/add_sample)
+    * [Submit a biosample](majora-api)
     * [Submit a library](majora/add_library)
     * [Submit sequencing runs](majora/add_sequencing)
 
