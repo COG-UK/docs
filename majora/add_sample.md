@@ -76,11 +76,11 @@ maintainer: samstudio8
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
 | sample_type_collected          |                               | No       | str | Sample type. **Options** `dry swab`, `swab`,`sputum`,`BAL`,`aspirate`|
 | sample_type_received         |                               | No       | str | Sample type. **Options** `primary`,`extract`,`culture`|
-| sampling_strategy    |                               | No      | str        | Strategy this sample was collected under. **Options** `S` (SURVEILLANCE) |
+| sampling_strategy    |                               | No      | str        | Strategy this sample was collected under. **Options** `S` (SURVEILLANCE), `C` (CLUSTER) |
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | source_age           |                               | No      | int        | Age of the patient in years |
 | source_category      |                               | No      | str        | Patient category. **Options** `HCW` |
-| source_setting       |                               | No      | str        | Patient setting. **Options** `HOSPITAL`,`CAREHOME`|
+| source_setting       |                               | No      | str        | Patient setting. **Options** `HOSPITAL`,`CAREHOME`,`COMMUNITY`|
 | source_sex           |                               | No      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
 | swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`,`endotracheal`,`rectal`|
 
