@@ -98,9 +98,9 @@ Metadata can be submitted in three ways.
 No matter which option you use, you will need to know your unified CLIMB user name and get an API token.
 Your username should have been emailed to you once your account was approved. You can see your token on your [user profile](https://majora.covid19.climb.ac.uk/accounts/profile/).
 
-* By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://docs.cog-uk.io/metadata/), supported by Anthony Underwood (CGPS)
-    * [Uploading biosamples](https://docs.cog-uk.io/metadata/bulk-upload-1/bulk-upload)
-    * [Uploading biosamples with library and sequencing](https://docs.cog-uk.io/metadata/bulk-upload-1/samples-and-sequencing)
+* By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://metadata.docs.cog-uk.io/), supported by Anthony Underwood (CGPS)
+    * [Uploading biosamples](https://metadata.docs.cog-uk.io/bulk-upload-1/bulk-upload)
+    * [Uploading biosamples with library and sequencing](https://metadata.docs.cog-uk.io/bulk-upload-1/samples-and-sequencing)
 * Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/), supported by Sam Nicholls (UoB)
     * [Uploading metadata with Ocarina](majora/ocarina)
 * By sending POST requests to our [JSON endpoints directly](https://docs.covid19.climb.ac.uk/majora-api), supported by Sam Nicholls (UoB)
