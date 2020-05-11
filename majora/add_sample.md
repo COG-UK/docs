@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-05-06 10:00:00 +0000
+date_modified:  2020-05-11 12:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -75,7 +75,7 @@ maintainer: samstudio8
 | collecting_org       |                               | No       | str       | The site (eg. hospital or surgery) that this sample was originally collected by. Use the first line of the 'sender' from the E28 form.
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
 | sample_type_collected          |                               | No       | str | Sample type. **Options** `dry swab`, `swab`,`sputum`,`BAL`,`aspirate`|
-| sample_type_received         |                               | No       | str | Sample type. **Options** `primary`,`extract`,`culture`|
+| sample_type_received         |                               | No       | str | Sample type. **Options** `primary`,`extract`,`culture`,`lysate`|
 | sampling_strategy    |                               | No      | str        | Strategy this sample was collected under. **Options** `S` (SURVEILLANCE), `C` (CLUSTER) |
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | source_age           |                               | No      | int        | Age of the patient in years |
