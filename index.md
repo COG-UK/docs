@@ -23,5 +23,9 @@
 
 * [Nextflow workflows for amplicon Illumina and nanopore](https://github.com/connor-lab/ncov2019-artic-nf)
 
+## CoV-GLUE
+
+* [Accessing CoV-GLUE on CLIMB](cov-glue/climb-glue.md)
+
 ## Meta
 * [Adding a page to this site](how-to-page)
