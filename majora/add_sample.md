@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-05-20 14:00:00 +0000
+date_modified:  2020-05-20 15:20:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -63,6 +63,7 @@ maintainer: samstudio8
 |----------------------|-------------------------------|----------|------------|---------------------------------------|
 | adm1          | adm1_region                              | **Yes**      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally shared ID that you will use to refer to this sample inside the consortium. |
+| is_surveillance    |                             | **Yes**           | str        | Whether this sample was collected under the COGUK surveillance protocol. **Options** `Y`, `N` |
 | received_date      |                               | **Yes**, if collection_date not available      | str | The date the sample was received. **YYYY-MM-DD** only. |
 | adm2          | adm2_county                              | No       | str        | The county that the patient lives in (no abbreviations or short hand) |
 | adm2_private          | adm2_postcode                              | No       | str        | The outer postcode for the patient's home address (**first half of the postcode only**) |
@@ -76,6 +77,18 @@ maintainer: samstudio8
 | source_age           |                               | No      | int        | Age of the patient in years |
 | source_sex           |                               | No      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
 | swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`,`endotracheal`,`rectal`|
+| is_hcw               || No | str | **Options** `Y`, `N` or blank |
+| employing_hospital_name || No | str ||
+| employing_hospital_trust_or_board || No | str ||
+| is_hospital_patient              || No | str | **Options** `Y`, `N` or blank |
+| admitted_date      || No      | str | The date the patient was admitted to hospital. **YYYY-MM-DD** only. |
+| admitted_hospital_name || No | str ||
+| admitted_hospital_trust_or_board || No | str ||
+| is_care_home_worker              || No | str | **Options** `Y`, `N` or blank |
+| is_care_home_resident              || No | str | **Options** `Y`, `N` or blank |
+| anonymised_care_home_code || No | str(3) ||
+| admitted_with_covid_diagnosis || No | str | **Options** `Y`, `N` or blank |
+
 
 #### Metadata
 
