@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-05-11 12:00:00 +0000
+date_modified:  2020-05-20 14:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -17,8 +17,6 @@ maintainer: samstudio8
             "collection_date": "2020-03-22",
             "source_age": 29,
             "source_sex": "M",
-            "secondary_accession": "EPI_ISL_XXXXXX",
-            "secondary_identifier": "hCov-19/England/Patient0/2020",
             "adm2": "WEST MIDLANDS",
             "collecting_org": "Queen Elizabeth Hospital Birmingham",
             "root_sample_id": "H20XXXXXXXX",
@@ -66,8 +64,6 @@ maintainer: samstudio8
 | adm1          | adm1_region                              | **Yes**      | str | **Options** `UK-ENG`,`UK-SCT`,`UK-WLS`,`UK-NIR`|
 | central_sample_id    | coguk_sample_id               | **Yes**      | str        | The centrally shared ID that you will use to refer to this sample inside the consortium. |
 | received_date      |                               | **Yes**, if collection_date not available      | str | The date the sample was received. **YYYY-MM-DD** only. |
-| secondary_accession     | gisaid_accession              | **Yes**, if in GISAID | str | GISAID accession if the sample has already been uploaded to GISAID |
-| secondary_identifier    | gisaid_identifier             | **Yes**, if in GISAID | str | GISAID identifier (eg. hCov-19/.../2020) if the sample has already been uploaded to GISAID
 | adm2          | adm2_county                              | No       | str        | The county that the patient lives in (no abbreviations or short hand) |
 | adm2_private          | adm2_postcode                              | No       | str        | The outer postcode for the patient's home address (**first half of the postcode only**) |
 | biosample_source_id  |                               | No       | str        | Unique identifier of patient or environmental sample. **Do not use an NHS number here**. This field will be backfilled later by PHx and HDR-UK. |
@@ -76,11 +72,8 @@ maintainer: samstudio8
 | root_sample_id       | phx_sample_id                 | No       | str        | Identifier assigned to this sample from one of the health agencies (eg. PHE samples will be prefixed with `H20`). This is necessary for linking samples to private patient metadata later. |
 | sample_type_collected          |                               | No       | str | Sample type. **Options** `dry swab`, `swab`,`sputum`,`BAL`,`aspirate`|
 | sample_type_received         |                               | No       | str | Sample type. **Options** `primary`,`extract`,`culture`,`lysate`|
-| sampling_strategy    |                               | No      | str        | Strategy this sample was collected under. **Options** `S` (SURVEILLANCE), `C` (CLUSTER) |
 | sender_sample_id     | local_sample_id               | No      | str        | If this sample was renamed by a local organisation (eg. hospital virology lab, sequencing lab), provide this identifier here. Otherwise leave blank. |
 | source_age           |                               | No      | int        | Age of the patient in years |
-| source_category      |                               | No      | str        | Patient category. **Options** `HCW` |
-| source_setting       |                               | No      | str        | Patient setting. **Options** `HOSPITAL`,`CAREHOME`,`COMMUNITY`|
 | source_sex           |                               | No      | str | Sex of the patient. **Options** `F`,`M`,`Other` |
 | swab_site            |                               | No       | str | Swab site. **Options** `nose`,`throat`,`nose-throat`,`endotracheal`,`rectal`|
 
