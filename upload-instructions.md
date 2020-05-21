@@ -25,7 +25,7 @@ We **strongly recommend** that you provide a passphrase for the key when prompte
 **Your username will begin with <code>climb-covid19-</code>. Remember to use this prefix when accessing systems later.**
 **The server accepts public SSH keys only. You will not be allowed to login with a password.**
 
-For questions and assistance with registration, please contact use the `#account-requests` Slack channel.
+For questions and assistance with registration, please use the `#account-requests` Slack channel.
 
 ### 1. Prepare your data
 We are accepting:
