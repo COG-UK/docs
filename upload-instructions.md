@@ -10,6 +10,17 @@ maintainer: samstudio8
 ### 0. Request access to CLIMB
 Request access by filling out the [registration form](https://majora.covid19.climb.ac.uk/forms/register/).
 
+If you are only providing metadata you can leave the SSH Public Key box empty.
+
+If you need access to CLIMB for uploading sequence data or performing analysis you will need to provide an SSH key.
+The system only accepts `ed25519` keys. You can generate one from the command line with the following command:
+
+```
+ssh-keygen -o -a 100 -t ed25519
+```
+
+We **strongly recommend** that you provide a passphrase for the key when prompted, rather than leaving it blank.
+
 **You will not be able to upload data until your key has been added to the server.**  
 **Your username will begin with <code>climb-covid19-</code>. Remember to use this prefix when accessing systems later.**
 **The server accepts public SSH keys only. You will not be allowed to login with a password.**
