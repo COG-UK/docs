@@ -7,6 +7,14 @@ author: samstudio8
 maintainer: samstudio8
 ---
 # Basics
+Majora is the system that stores all sample metadata for the consortium. It is composed of three main parts:
+
+* a database that defines "models" that represent artifacts such as samples and files,
+* a web interface that allows access to basic metadata shared about samples within the consortium,
+* an "API" that provides an interface for other tools and programs to view and edit information about artifacts within the consortium.
+
+This documentation is for the API. If you don't plan to write a computer program to use the API and just want to upload metadata, please refer to the documentation for the [metadata uploader](https://metadata.docs.cog-uk.io/) instead.
+
 ## Requests
 All requests have the following mandatory keys:
 
