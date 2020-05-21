@@ -2,7 +2,7 @@
 layout: docpost
 title: Upload instructions
 date_published: 2020-03-17 10:00:00 +0000
-date_modified:  2020-04-01 08:15:00 +0000
+date_modified:  2020-05-21 12:45:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -24,6 +24,8 @@ We **strongly recommend** that you provide a passphrase for the key when prompte
 **You will not be able to upload data until your key has been added to the server.**  
 **Your username will begin with <code>climb-covid19-</code>. Remember to use this prefix when accessing systems later.**
 **The server accepts public SSH keys only. You will not be allowed to login with a password.**
+
+For questions and assistance with registration, please contact use the `#account-requests` Slack channel.
 
 ### 1. Prepare your data
 We are accepting:
