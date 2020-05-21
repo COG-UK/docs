@@ -19,7 +19,7 @@ The system only accepts `ed25519` keys. You can generate one from the command li
 ssh-keygen -o -a 100 -t ed25519
 ```
 
-We **strongly recommend** that you provide a passphrase for the key when prompted, rather than leaving it blank.
+You should enter a passphrase for the key when prompted, rather than leaving it blank.
 
 **You will not be able to upload data until your key has been added to the server.**  
 **Your username will begin with <code>climb-covid19-</code>. Remember to use this prefix when accessing systems later.**
