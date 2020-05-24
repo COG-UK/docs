@@ -19,7 +19,11 @@ There is a special CLIMB VM `glue.covid19.climb.ac.uk` for running GLUE. You can
 `$ ssh -i climb_cog_id_rsa climb-covid19-singerj@glue.covid19.climb.ac.uk`
 
 Once you have connected, you need to perform a one-time task to set up your personal GLUE instance within the VM:
-`$ initGlue.sh`
+
+```
+$ initGlue.sh
+```
+
 You should see some log messages ending with:
 
 ```
