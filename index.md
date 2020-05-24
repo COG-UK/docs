@@ -26,6 +26,7 @@
 ## CoV-GLUE
 
 * [Accessing CoV-GLUE on CLIMB](cov-glue/climb-glue.md)
+* [Reporting primer and probe mismatches using CoV-GLUE](cov-glue/cov-glue-primers-reporting.md)
 
 ## Meta
 * [Adding a page to this site](how-to-page)
