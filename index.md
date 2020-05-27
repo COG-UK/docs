@@ -17,7 +17,7 @@
 ## Lab protocols
 
 * [COG-UK sequencing protocols group on Protocols.io](https://protocols.io/groups/coguk)
-* [WSI COVID-19 ARTIC v3 Illumina library construction and sequencing protocol](https://dx.doi.org/10.17504/protocols.io.be3wjgpe)
+* [WSI COVID-19 ARTIC v3 Illumina library construction and sequencing protocol (version:bgq3jvyn)](https://dx.doi.org/10.17504/protocols.io.bgq3jvyn)
 
 ## Bioinformatics pipelines
 
