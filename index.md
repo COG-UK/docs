@@ -1,6 +1,7 @@
 ## Uploading and accessing data
 
 * [How to get SSH access and upload data to CLIMB](upload-instructions)
+* [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [What happens to uploaded data and how to access it](accessing-data)
 
 ## Providing metadata
