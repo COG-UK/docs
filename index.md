@@ -8,7 +8,7 @@
 
 * [Basic terminology and minimal requirements](metadata)
 * [You think you are ready to submit metadata?](metadata-tips)
-* [Using the Majora metadata server API](majora-api)
+* [Majora API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
 * [Validating a Heron barcode](heron-barcodes)
 
 ## Outbound distribution
