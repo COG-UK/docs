@@ -2,7 +2,7 @@
 layout: docpost
 title: api.artifact.biosample.add
 date_published: 2020-03-22 13:00:00 +0000
-date_modified:  2020-05-20 15:20:00 +0000
+date_modified:  2020-06-04 14:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -88,6 +88,7 @@ maintainer: samstudio8
 | is_care_home_resident              || No | str | **Options** `Y`, `N` or blank |
 | anonymised_care_home_code || No | str(3) ||
 | admitted_with_covid_diagnosis || No | str | **Options** `Y`, `N` or blank |
+| is_icu_patient              || No | str | **Options** `Y`, `N` or blank |
 
 
 #### Metadata
@@ -120,10 +121,10 @@ There are no mandatory or optional fields, other than `records` which takes a di
 
 | Tag         | Name      | Description                           |
 |-------------|-----------|---------------------------------------|
-|  | `ct_value` | Cycle threshold value |
-|  | `test_kit` | The kit used to perform the assay |
-|  | `test_platform` | The platform used to perform the assay |
-|  | `test_target` | The target under assay |
+| ct | `ct_value` | Cycle threshold value. Cannot be negative. Code an inconclusive or negative test as 0 |
+| ct | `test_kit` | The kit used to perform the assay. **Options** `ALTONA`, `ABBOTT`, `ROCHE`, `AUSDIAGNOSTICS`, `BOSPHORE`, `INHOUSE` `SEEGENE` |
+| ct | `test_platform` | The platform used to perform the assay **Options** `ALTOSTAR_AM16`, `ABBOTT_M2000`, `ROCHE_FLOW`, `ROCHE_COBAS`, `ROCHE_LIGHTCYCLER`, `ELITE_INGENIUS`, `CEPHEID_XPERT`, `QIASTAT_DX`, `AUSDIAGNOSTICS`, `INHOUSE`, `ALTONA`, `PANTHER`, `SEEGENE_NIMBUS` |
+| ct | `test_target` | The target under assay **Options** `S`, `E`, `N`, `RDRP`, `ORF1AB`, `ORF8`, `RDRP+N` |
 
 
 ### Frequently asked questions
