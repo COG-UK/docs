@@ -113,5 +113,6 @@ We anticipate that sites will find using the CSV/TSV interface for uploading bio
 ## Help and support
 
 * For questions about metadata collection and minimum reporting, see `#metadata`
-* For questions about metadata submission or using the APIs, see `#metadata-apis`
+* For questions about metadata submission, see `#inbound-distribution`.
+* If you are specifically developing against the JSON API, see `#metadata-apis`.
 
