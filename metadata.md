@@ -102,8 +102,9 @@ Your username should have been emailed to you once your account was approved. Yo
     * [Uploading biosamples](https://metadata.docs.cog-uk.io/bulk-upload-1/bulk-upload)
     * [Uploading biosamples with library and sequencing](https://metadata.docs.cog-uk.io/bulk-upload-1/samples-and-sequencing)
 * Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/), supported by Sam Nicholls (UoB)
+
 * By sending POST requests to our JSON endpoints directly, supported by Sam Nicholls (UoB)
-    * [Submit a biosample](majora/add_biosample)
+    * [Submit a biosample](majora/add_sample)
     * [Submit a library](majora/add_library)
     * [Submit sequencing runs](majora/add_sequencing)
 
