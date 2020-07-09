@@ -2,7 +2,7 @@
 layout: docpost
 title: When is metadata and sequence data processed on CLIMB?
 date_published: 2020-05-29 10:50:00 +0000
-date_modified:  2020-05-29 10:50:00 +0000
+date_modified:  2020-07-09 12:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -10,7 +10,7 @@ maintainer: samstudio8
 # Timeline
 ## Inbound pipeline
 
-The inbound distribution pipeline (called `Elan`) currently runs once a week on `Friday`.  
+The inbound distribution pipeline (called `Elan`) currently runs twice a week: on `Tuesday` and `Friday`.  
 The pipeline currently consists of the following events:
 
 | Time    | Event | Descirption |
@@ -23,6 +23,9 @@ The pipeline currently consists of the following events:
 | `1315` | Pull message | The `Majora` bot announces in `#inbound-distribution` the number of sequences pulled for each site, the week's total and the new cumulative upload total. |
 | `1330` | Pipeline starts | If nothing horrible has gone wrong, the pipeline will start. |
 | ~`1500`  | Pipeline ends | After a few hours, the Majora bot will annouce to `#inbound-distribution` the number of sequences that made it through the pipeline and passed basic QC. |
+
+## Outbound pipeline
+GISAID and ENA pipelines typically run on Mondays. All sites are automatically enrolled for ENA uploads. You must however [opt-in for GISAID uploads](gisaid).
 
 #### Note
 
