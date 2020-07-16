@@ -26,6 +26,20 @@ A basic client that can access `Tael`, subscribe to a topic and run a shell comm
 
 A very simple program to send a message through Tael [has also been implemented by Sam](https://github.com/SamStudio8/elan-nextflow/blob/master/bin/ipc/mqtt-message.py).
 
+# Testing the network
+
+Every five minutes, a client on the network sends a message to the `COGUK/test` topic.
+The payload is a string that can be coerced to JSON (e.g. in Python you can use `json.loads(msg.payload)`) that contains three keys: `date`, `time` and `status`. The `date` and `time` values are strings containing the undelmited current date and time of the shared server (note the server time is `UTC`).
+The `status` value of the test message is always `hoot` because owls are great.
+
+```
+{
+    "date": "20200716",
+    "status": "hoot",
+    "time": "115001"
+}
+```
+
 # Status
 
 This subproject of COGUK is under development. Sam has been working with downstream pipeline authors to connect the inbound pipeline to other core components of the consortium response.
