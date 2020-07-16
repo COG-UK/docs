@@ -8,12 +8,16 @@
 
 * [Basic terminology and minimal requirements](metadata)
 * [You think you are ready to submit metadata?](metadata-tips)
-* [Majora API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
 * [Validating a Heron barcode](heron-barcodes)
 
 ## Outbound distribution
 
 * [How to opt-in to automated GISAID submissions](gisaid)
+
+## Infrastructure
+
+* [The COGUK Transport for Announcing Ephemeral Logs (TAEL)](tael)
+* [Majora API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
 
 ## Lab protocols
 
