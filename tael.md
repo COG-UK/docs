@@ -20,7 +20,7 @@ For example, a client that controls a downstream pipeline might subscribe to a t
 ### Implementing a client
 
 To join the Tael network, you need a valid client.
-A basic client that can access `Tael`, subscribe to a topic and run a shell command based on the payload inside the message [has been implemented by Sam](https://github.com/SamStudio8/elan-nextflow/blob/master/bin/ipc/mqtt-client.py).
+A basic client that can access `Tael`, subscribe to a topic, automatically export the payload to the current OS environment, and run a shell command [has been implemented by Sam](https://github.com/SamStudio8/elan-nextflow/blob/master/bin/ipc/mqtt-client.py).
 
 ### Sending a message
 
