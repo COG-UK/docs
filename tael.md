@@ -33,3 +33,5 @@ Tael's primary goal and focus will be to facilitate interpipeline communication,
 That said, Sam will provide no active support for developing clients and messages at this time.
 Note that Tael is running only as a proof of concept at this time and should not be relied upon for any element of service.
 Be aware that the properties of the network can and will change at any time.
+
+You can watch the messages being sent around the network with fascination by joining `#tael-stream`
