@@ -16,7 +16,7 @@
 
 ## Infrastructure
 
-* [The COGUK Transport for Announcing Ephemeral Logs (TAEL)](tael)
+* [Joining and using the interpipeline communucation network](tael)
 * [Majora API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
 
 ## Lab protocols
