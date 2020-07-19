@@ -2,7 +2,7 @@
 layout: docpost
 title: Providing metadata
 date_published: 2020-03-29 22:30:00 +0000
-date_modified:  2020-04-02 12:00:00 +0000
+date_modified:  2020-07-19 14:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -10,18 +10,17 @@ maintainer: samstudio8
 # Basics and terminology
 
 * A **biosample** refers to a single, physical sample taken from a patient or environment, such as a swab. It should be assigned a COGUK identifier as soon as possible.
-* A **COGUK identifier** (alternatively known as a Heron barcode, or central sample ID) is a randomly generated string prefixed with a four letter site name. Where it is impractical for a site to use these identifiers, you may use your own, providing that you use those identifiers consistently.
+* A **COGUK identifier** (alternatively known as a Heron barcode, or central sample ID) is a randomly generated string prefixed with a four letter site name. Where it is impractical for a site to use these identifiers, you may use your own, providing that you use those identifiers consistently. We call this the `central_sample_id`.
 * A **biosample source** refers to the physical patient or environment from where a sample was taken.
-It is not possible (for various reasons) for a patient to be identified with a single, unique, shareable identifier when a sample is made available to the consortium.
-It is our intention that working between the health agencies, the NHS and HDR-UK, that such identifiers can be made available to the project in the near future.
+It is usually not possible (for various reasons) for a patient to be identified with a single, unique, shareable identifier when a sample is made available to the consortium. It is our intention that working between the health agencies, the NHS and HDR-UK, that such identifiers can be made available to the project in the near future. If there is an appropriate unique identifier for a patient, we call this the `biosample_source_id`.
 
 * To ensure a biosample can be correctly matched to its biosample source later, we must try to record:
-    * If possible, the **PHx sample ID**: an identifier assigned to the sample by a health agency. For example, in this context, Public Health England samples IDs are prefixed with `H20`.
-    * Otherwise, a **local lab ID**: this could be any identifier used at the hospital or point of origin. Ideally this identifier will be used by the hospital to submit information about positive samples to SGSS. You must ensure you have permission to use these identifiers in case they are considered personally identifiable.
+    * If possible, the **PHx sample ID**: an identifier assigned to the sample by a health agency. For example, in this context, Public Health England samples IDs are prefixed with `H20`. We call this the `root_sample_id`.
+    * Otherwise, a **local lab ID**: this could be any identifier used at the hospital or point of origin. Ideally this identifier will be used by the hospital to submit information about positive samples to SGSS. You must ensure you have permission to use these identifiers in case they are considered personally identifiable. We call this the `sender_sample_id`.
 * Providing these identifiers is not a requirement of the consortium, but consider that being unable to provide them will mean it is unlikely they will ever be linked back to their source.
 * Where possible, the **local lab ID** should be an identifier that can be mapped quickly and securely. Sites should not be encouraged to hold this linkage information themselves.
 
-* Where a patient or environment has been **sampled multiple times**: each biosample should have its own COGUK identifier. You can use the *first* COGUK identifier for that patient or environment as the **biosample source** as a means to link them together in the interim.
+* Where a patient or environment has been **sampled multiple times**: each biosample should have its own COGUK identifier. You can use the *first* COGUK identifier (`central_sample_id`) taken form that patient as the `biosample_source_id` as a means to link them together in the interim.
 * Where a biosample is split into **multiple aliquots** or **shared with other sequencing centres**, that biosample **should not be relabelled** by the receiving site. This ambiguity can be resolved later by providing a library and sequencing run name that corresponds to your site.
 
 * A **library** is a collection of extracted and processed **biosamples** that have been prepared for simultaneous sequencing.
@@ -44,10 +43,9 @@ If for some reason you don't have these, a string of at least five characters th
 
 For a sample to be accepted for upload to CLIMB, and used in downstream analyses, you must provide the following:
 
-* A single, unique, shareable identifier the "COGUK ID" (either a Heron barcode, or a suitable barcode from your own lab)
-* Country of origin (UK-ENG, UK-SCT, UK-WLS, UK-NIR)
+* A single, unique, shareable identifier. This is usually the "COG-UK ID" (either a Heron barcode, or a suitable barcode from your own lab)
+* Country of origin (one of, UK-ENG, UK-SCT, UK-WLS, UK-NIR)
 * Either a sample collection date (YYYY-MM-DD) **or** a sample `received_date` (YYYY-MM-DD). Do not attempt to impute the collection date. You must provide the day of the month.
-* A GISAID strain ID and GISAID strain accession **if** you have already made the sequence available on GISAID yourself. **If you do not provide a strain ID and accession, and your organisation has requested that we upload strains for you, it will be automatically uploaded after it passes QC**. If you have submitted to GISAID, please provide this identifier to prevent duplicate strains being added to public databases. If you have submitted to GISAID and you are waiting on the accession, set the secondary_accession in your request to "PENDING".
 
 **You cannot change the COGUK ID once it has been submitted**.
 
