@@ -12,6 +12,8 @@ Request access by filling out the [registration form](https://majora.covid19.cli
 
 If you are only providing metadata you can leave the SSH Public Key box empty.
 
+Provide an email address that matches the domain one would expect to see for your organisation. We will ignore requests from personal email accounts (e.g. hotmail).
+
 If you need access to CLIMB for uploading sequence data or performing analysis you will need to provide an SSH key.
 The system only accepts `ed25519` keys. You can generate one from the command line with the following command:
 
