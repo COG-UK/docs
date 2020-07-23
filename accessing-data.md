@@ -22,9 +22,8 @@ The latest artifacts are published in `/cephfs/covid/bham/artifacts/published/la
 For just the sequences, you can use `/cephfs/covid/bham/artifacts/published/elan.latest.consensus.fasta`.
 The FASTA headers are encoded with the `central_sample_id`, `sequencing_center` and `run_name`:
 
-```
-COG-UK/`central_sample_id`/`sequencing_center`:`run_name`|`row_number`
-```
+* COG-UK/`central_sample_id`/`sequencing_center`:`run_name`|`row_number`
+
 
 Basic metadata is provided in the table `/cephfs/covid/bham/artifacts/published/majora.latest.metadata.tsv`.
 
