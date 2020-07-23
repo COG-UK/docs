@@ -7,7 +7,12 @@ author: samstudio8
 maintainer: samstudio8
 ---
 
-## Accessing CLIMB data that has passed basic QC
+## Using public sources to access samples that have passed high-quality QC
+
+* FASTA are routinely uploaded to  [GISAID](https://gisaid.org/), and are also downloadable from the [consortium data page](https://www.cogconsortium.uk/data/).
+* Aligned BAMs are further purged of potential human reads and uploaded to [ENA Project PRJEB37886](https://www.ebi.ac.uk/ena/data/view/PRJEB37886)
+
+## Using CLIMB to access FASTA, BAM and metadata for samples that have passed basic QC
 
 You need a CLIMB account to upload or access data. If you haven't got one, [see instructions on registering](register).
 You will need to SSH into the CLIMB COVID server.
