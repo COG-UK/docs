@@ -22,7 +22,8 @@ COG-UK/`central_sample_id`/`sequencing_center`:`run_name`|`row_number`
 ```
 
 Basic metadata is provided in the table `/cephfs/covid/bham/artifacts/published/majora.latest.metadata.tsv`.
-The FASTA consensus and metadata table are perfectly paired. The sequence records in the FASTA and metadata rows in the table are in the same order.
-Additionally, the table contains a `fasta_header` column that can be used to map the records in the FASTA file; and likewise, the end of each FASTA header ends with the numeric index of the corresponding row in the metadata table (starting at 1).
 
-Note that the merged consensus FASTA will also include resequencing. That is, a biosample may have more than one genome in the consensus FASTA, you can identify them as they will have the same `central_sample_id` in their header.
+The FASTA consensus and metadata table are perfectly paired. The sequence records in the FASTA and metadata rows in the table are in the same order.
+Additionally, the table contains a `fasta_header` column that can be used to map the records in the FASTA file; and likewise, the end of each FASTA header ends with the numeric index of the corresponding row in the metadata table (starting at 1). Note that the order is not guaranteed between different runs of the pipeline (i.e., the FASTA will not be in the same order each time the inbound pipeline finishes).
+
+Note also that the merged consensus FASTA will also include resequencing. That is, a biosample may have more than one genome in the consensus FASTA, you can identify them as they will have the same `central_sample_id` in their header.
