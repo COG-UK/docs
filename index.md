@@ -1,9 +1,10 @@
 ## Uploading and accessing data
 
-* [How to register for an account to provide metadata and/or sequence data](register)
-* [How to get SSH access to upload sequences to CLIMB](upload-instructions)
+* [How to register to provide metadata and/or sequence data](register)
+* [How to upload sequences to CLIMB](upload-instructions)
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
-* [What happens to uploaded data and how to access it](accessing-data)
+* [What happens to data uploaded to CLIMB](how-data)
+* [How to access data stored on CLIMB](accessing-data)
 
 ## Providing metadata
 
