@@ -26,8 +26,3 @@ The FASTA consensus and metadata table are perfectly paired. The sequence record
 Additionally, the table contains a `fasta_header` column that can be used to map the records in the FASTA file; and likewise, the end of each FASTA header ends with the numeric index of the corresponding row in the metadata table (starting at 1).
 
 Note that the merged consensus FASTA will also include resequencing. That is, a biosample may have more than one genome in the consensus FASTA, you can identify them as they will have the same `central_sample_id` in their header.
-
-
-For all metadata, use `/cephfs/covid/bham/artifacts/published/majora.latest.metadata.tsv`.
-
-Note that the merged consensus FASTA will also include resequencing. That is, a biosample may have more than one genome in the consensus FASTA, you can identify them as they will have the same `central_sample_id` in their header.
