@@ -10,6 +10,7 @@
 
 * [Basic terminology and minimal requirements](metadata)
 * [You think you are ready to submit metadata?](metadata-tips)
+* [Cycle threshold validators](https://docs.google.com/spreadsheets/d/1UWGvjfj-u0g5-N_DtYwqyGTrS5duOOqwg3jr28Y4hLw/edit?usp=sharing)
 * [Validating a Heron barcode](heron-barcodes)
 
 ## Outbound distribution
