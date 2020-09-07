@@ -31,4 +31,11 @@ We focus on the authorisation flow for an external web application (such as the 
     * The App ID and App Owner (below the buttons), match what you believe to be true about the application in question
     * The footer will read `You are authenticated and 2FA verified as USER`, where `USER` is your username
 * If you are happy, click the green Authorize button and you will be directed to the service.
+* Bask in the happinness that your life is no longer dominated by rotating API keys.
+
+### Remember
+
+* You are responsible for anything an application does on your behalf.
+* Through ease of use comes extra responsibility, you must be vigilant when you are being asked to give permission for a service to use your Majora account.
 * If you are unsure, speak to `#account-requests`.
+* Never authorize an application if you don't know why you're being asked to authorise it.
