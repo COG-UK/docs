@@ -7,8 +7,6 @@ author: samstudio8
 maintainer: samstudio8
 ---
 
-## OAuth
-
 At the start of September, we began the process of phasing out the use of the rotating API keys with an easier to use, well known, industry standard protocol for authorisation, called `OAuth`. Specifically, we use OAuth v2.0. This will change how you use external services that use your Majora account, such as the metadata uploader. **It is important for you to remember that you are responsible for anything an authorised application does with your account**, so you must take care when asked whether to authorise your Majora account. We provide some advice below.
 
 ### What's changed?
