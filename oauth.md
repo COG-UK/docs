@@ -31,6 +31,12 @@ We focus on the authorisation flow for an external web application (such as the 
 * If you are happy, click the green Authorize button and you will be directed to the service.
 * Bask in the happinness that your life is no longer dominated by rotating API keys.
 
+### Example
+
+An example authorisation page looks like this:
+
+![image](images/oauth_example.png)
+
 ### Remember
 
 * You are responsible for anything an application does on your behalf.
