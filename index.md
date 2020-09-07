@@ -20,6 +20,7 @@
 
 ## Infrastructure
 
+* [Authorising applications to use your Majora account using OAuth](oauth)
 * [Joining and using the interpipeline communucation network](tael)
 * [Majora API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
 
