@@ -5,6 +5,7 @@
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [What happens to data uploaded to CLIMB](how-data)
 * [How to access data stored on CLIMB](accessing-data)
+* [How to access a dataview using the API](accessing-dataviews)
 
 ## Providing metadata
 
