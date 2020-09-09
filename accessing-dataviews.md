@@ -2,7 +2,7 @@
 layout: docpost
 title: Accessing metadata through a data view using Ocarina
 date_published: 2020-09-07 16:00:00 +0000
-date_modified:  2020-09-07 16:00:00 +0000
+date_modified:  2020-09-09 11:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -66,7 +66,7 @@ Where:
 * `CLIENT_ID` is the Client ID of your registered application
 * `CLIENT_SECRET` is the Client Secret of your registered application
 
-### 4. Use Ocarina to request the data from the view
+### 5. Use Ocarina to request the data from the view
 
 Once this has been set up, you are ready to retrieve data. 
 
