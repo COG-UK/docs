@@ -22,13 +22,53 @@ This document has been written ahead of time and we are not currently granting p
 [Ocarina](https://github.com/SamStudio8/ocarina/tree/master/ocarina) is a command line tool that is used to connect to Majora and perform actions with elevated privileges that are not possible on the website.
 It is not terribly difficult to use, but ideally you will have used a command line tool before.
 
-You can install the latest version with the Python package manager:
+You can install the latest version with the Python package manager. You'll probably want to install it into a conda environment on the shared node.
 
 ```
+conda create -n mdv-ocarina python=3.7
+conda activate mdv-ocarina
 pip install git+https://github.com/samstudio8/ocarina.git
 ```
 
-### 3. Use Ocarina to request the data from the view
+### 3. Register your Ocarina instance as an OAuth application
+
+You must register an instance of Ocarina with Majora so that it can authenticate as you through OAuth.
+Note that the testing and real versions of Majora are entirely separate, and so are the OAuth systems.
+The locations to register an application are:
+
+* [Test Majora (MAGENTA)](https://covid.majora.ironowl.it/o/applications/)
+* [Real Majora (COG-UK)](https://majora.covid19.climb.ac.uk/o/applications/)
+
+Click "New application" and fill out the form as appropriate:
+
+* `Name` A name for your application, we do not enforce naming but suggest: `username-ocarina` so that you can distinguish your application from others.
+* `Client ID` Do not alter this
+* `Client Secret` Do not alter this
+* `Client type` set to `confidential`
+* `Grant type` set to `authorization code`
+* `Callback` should be set to one of the following, based on whether this is a testing or production application:
+    * Test: https://covid.majora.ironowl.it/o/callback/
+    * Real: https://majora.covid19.climb.ac.uk/o/callback/
+    * Do not skip `https://` or the final `/`.
+
+### 4. Set your Ocarina credentials
+
+Create a JSON file in your home directory named `.ocarina`. Note the starting dot.
+
+```
+{"MAJORA_DOMAIN": "https://majora.covid19.climb.ac.uk", "MAJORA_USER": "your-username", "MAJORA_TOKEN": "OAUTH", "CLIENT_ID": "your-client-id", "CLIENT_SECRET": "your-client-secret"}
+```
+
+Where:
+* `MAJORA_DOMAIN` points to either the domain of the real, or test Majora
+* `MAJORA_USER` is your username on the appropriate Majora instance
+* `MAJORA_TOKEN` is set to `OAUTH` (note that you will not be able to use the `v2+` API without a rotating token)
+* `CLIENT_ID` is the Client ID of your registered application
+* `CLIENT_SECRET` is the Client Secret of your registered application
+
+### 4. Use Ocarina to request the data from the view
+
+Once this has been set up, you are ready to retrieve data. 
 
 ```
 ocarina --oauth get dataview --mdv CODE --task-wait --output-table -o my_data.tsv
@@ -46,5 +86,6 @@ When you submit this command, you will need to authenticate yourself through the
 * Ocarina will use the link you have provided to request an access token on your behalf, and request the data view.
 * It may take a little while for your data to be ready, Ocarina will check every minute with the message: `[WAIT] Giving Majora a minute to finish task`.
 * When your data is ready, it will be saved to whatever output file you specify with `-o`.
+* **If you are requesting restricted data, it is your responsibility to protect it. Save it somewhere secure. Do not save it to a location that is group or world readable.**
 
 This is an experimental feature and can change at any time. Please visit `#metadata-apis` if you have questions or trouble.
