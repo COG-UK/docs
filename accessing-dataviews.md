@@ -56,11 +56,11 @@ Click "New application" and fill out the form as appropriate:
 Create a JSON file in your home directory named `.ocarina`. Note the starting dot.
 
 ```
-{"MAJORA_DOMAIN": "https://majora.covid19.climb.ac.uk", "MAJORA_USER": "your-username", "MAJORA_TOKEN": "OAUTH", "CLIENT_ID": "your-client-id", "CLIENT_SECRET": "your-client-secret"}
+{"MAJORA_DOMAIN": "https://majora.covid19.climb.ac.uk/", "MAJORA_USER": "your-username", "MAJORA_TOKEN": "OAUTH", "CLIENT_ID": "your-client-id", "CLIENT_SECRET": "your-client-secret"}
 ```
 
 Where:
-* `MAJORA_DOMAIN` points to either the domain of the real, or test Majora
+* `MAJORA_DOMAIN` points to either the domain of the real, or test Majora. Do not miss the `/` at the end of the URL.
 * `MAJORA_USER` is your username on the appropriate Majora instance
 * `MAJORA_TOKEN` is set to `OAUTH` (note that you will not be able to use the `v2+` API without a rotating token)
 * `CLIENT_ID` is the Client ID of your registered application
