@@ -2,7 +2,7 @@
 layout: docpost
 title: Creating an OAuth application
 date_published: 2020-09-11 10:00:00 +0000
-date_modified:  2020-09-11 10:00:00 +0000
+date_modified:  2020-09-11 10:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -85,6 +85,35 @@ If successful, you'll see the same JSON struct as step 3. Store the new access t
 
 * Refreshing a token will immediately invalidate the corresponding access token.
 * Currently, refresh tokens do not expire, but we plan to introduce a longetivity (weeks+).
+
+
+### Scopes 
+You must request at least one `scope` from a user. Every scope maps to a user permission in Majora.
+A user can only authorize an application if they have been granted all the permissions for all scopes requested.
+When specifying `scope` in Step 1, scopes must be separated by an URL-encoded space (`%20`).
+
+Currently, OAuth scopes only cover the functionality provided by the uploader tool (e.g. biosamples and their collections, sequencing libraries and their pooling events and seqencing runs). To simplify matters during this trial phase, just request all scopes to cover these activities:
+
+```
+majora2.add_biosampleartifact
+majora2.change_biosampleartifact
+majora2.add_biosamplesource
+majora2.change_biosamplesource
+majora2.add_biosourcesamplingprocess
+majora2.change_biosourcesamplingprocess
+majora2.add_libraryartifact
+majora2.change_libraryartifact
+majora2.add_librarypoolingprocess
+majora2.change_librarypoolingprocess
+majora2.add_dnasequencingprocess
+majora2.change_dnasequencingprocess
+```
+
+These will change and be expanded as we continue to integrate OAuth to the rest of the system.
+
+### More information
+
+* [NHS digital on APIs with helpful cURL examples these requests](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis#user-completes-authentication-and-authorisation)
     
 ### Common pitfalls
 
