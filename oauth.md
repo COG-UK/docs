@@ -15,7 +15,7 @@ Instead of visiting the API key page on your profile, rotating your token and us
 
 ### How will it work?
 
-We focus on the authorisation flow for an external web application (such as the metadata uploader), guidance on using the API with OAuth will be coming soon. The flow is as so:
+We focus on the authorisation flow for an external web application (such as the metadata uploader), but you are able to [register your own application to interact with the API too](oauth-app). The flow is as so:
 
 * Visit the external service which previously requested an API key
 * Click the "Sign in with Majora" button
