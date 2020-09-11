@@ -33,23 +33,7 @@ pip install git+https://github.com/samstudio8/ocarina.git
 ### 3. Register your Ocarina instance as an OAuth application
 
 You must register an instance of Ocarina with Majora so that it can authenticate as you through OAuth.
-Note that the testing and real versions of Majora are entirely separate, and so are the OAuth systems.
-The locations to register an application are:
-
-* [Test Majora (MAGENTA)](https://covid.majora.ironowl.it/o/applications/)
-* [Real Majora (COG-UK)](https://majora.covid19.climb.ac.uk/o/applications/)
-
-Click "New application" and fill out the form as appropriate:
-
-* `Name` A name for your application, we do not enforce naming but suggest: `username-ocarina` so that you can distinguish your application from others.
-* `Client ID` Do not alter this
-* `Client Secret` Do not alter this
-* `Client type` set to `confidential`
-* `Grant type` set to `authorization code`
-* `Callback` should be set to one of the following, based on whether this is a testing or production application:
-    * Test: https://covid.majora.ironowl.it/o/callback/
-    * Real: https://majora.covid19.climb.ac.uk/o/callback/
-    * Do not skip `https://` or the final `/`.
+[Read the instructions for registering an application](oauth-app).
 
 ### 4. Set your Ocarina credentials
 
