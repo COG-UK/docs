@@ -1,0 +1,96 @@
+---
+layout: docpost
+title: Creating an OAuth application
+date_published: 2020-09-11 10:00:00 +0000
+date_modified:  2020-09-11 10:00:00 +0000
+author: samstudio8
+maintainer: samstudio8
+---
+
+### Registering an OAuth application with Majora
+
+If you want an applicaton to perform actions as a Majora account holder, you need to register an application.
+Note that the testing and real versions of Majora are entirely separate, and so are the OAuth systems.
+The locations to register an application are:
+
+* [Test Majora (MAGENTA)](https://covid.majora.ironowl.it/o/applications/)
+* [Real Majora (COG-UK)](https://majora.covid19.climb.ac.uk/o/applications/)
+
+Click "New application" and fill out the form as appropriate:
+
+* `Name` A name for your application, we do not enforce naming but suggest: `username-ocarina` so that you can distinguish your application from others.
+* `Client ID` Do not alter this
+* `Client Secret` Do not alter this
+* `Client type` set to `confidential`
+* `Grant type` set to `authorization code`
+
+Finally, if your application has a web-based front end, you can specify a callback for authorised requests to automatically flow to - along with a grant token.
+If you do not have one, we provide a basic callback that will expose the grant code. 
+
+* `Callback` should be set to one of the following, based on whether this is a testing or production application:
+    * Test: https://covid.majora.ironowl.it/o/callback/
+    * Real: https://majora.covid19.climb.ac.uk/o/callback/
+    * Do not skip `https://` or the final `/`.
+    
+ [As per NHS digital guidelines](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis#top), we only allow applications that use the authorization code flow.
+
+### Basics
+
+Once you have an application, the authorisation flow can be summarised as follows:
+
+#### 1. Ask for a user to give permissions to your application
+
+* You must direct a user to the `/o/authorize/` endpoint, specifying the following URL parameters:
+    * `response_type`: must be `code`, no other options are permitted
+    * `client_id` : your application's public client id (do not send the secret)
+    * `state`: your application should generate a random value, it will be returned to the callback for comparison later
+    * `redirect_uri`: the URL-encoded `callback` endpoint
+    * `scope`: the permissions (see later) to request from the user
+* The user will log-in with their password and 2FA, then see a page describing the your application and the permissions requested.
+* If the user authorises your application, they will be directed to the specified callback and receive a `grant` and a copy of `state`. Your application should determine the `state` received is the same as the `state` you sent.
+
+#### 2. Convert the new grant token to an access token
+
+* You must act quickly, the `grant` is valid for 60 seconds. Your application is responsible for converting the grant token into an access token.
+* To convert a grant token into an access token you must `POST` to the `/o/token/` endpoint, with the following payload:
+    * `grant_type`: must be `authorization_code`
+    * `code`: the grant code sent to the callback in the previous step
+    * `redirect_uri`: the same URL-encoded callback endpoint
+    * `client_id`: your application's Client ID
+    * `client_secret`: your application's secret (you must keep this safe)
+    
+#### 3. Receive an access token
+
+* If all is well, the token endpoint will reply with a JSON struct:
+    * `access_token`: your access token
+    * `expires_in`: the number of seconds the access_token is valid for
+    * `refresh_token`: the refresh token to use to get a new token
+    * `token_type`: should be `Bearer`
+    
+    
+#### 4. Use the access token
+
+You will need to send a `Authorization` header formatted: `Bearer TOKEN` where `TOKEN` is your `access_token`.
+All API endpoints in the `v2` API support OAuth and rotating API keys.
+
+#### 5. Refresh the access token
+
+To refresh a token you must post to the `/o/token/` endpoint with the following payload:
+    * `grant_type`: must be `refresh_token`
+    * `refresh_token`: your `refresh_token`
+    * `client_id`: your application's Client ID
+    * `client_secret`: your application's secret (you must keep this safe)
+
+If successful, you'll see the same JSON struct as step 3. Store the new access token and refresh token to repeat. You can automate this process easily through `cron` to keep your token rotated.
+
+* Refreshing a token will immediately invalidate the corresponding access token.
+* Currently, refresh tokens do not expire, but we plan to introduce a longetivity (weeks+).
+    
+### Common pitfalls
+
+* Incorrectly URL-encoded `redirect_uri`, or the callback URL you have registered is missing a terminating `/`.
+* Taking too long to convert the grant code to an access token, they are valid for 60 seconds.
+* Trying to use a grant code to authorize yourself against the API, you need to convert a grant to an access token.
+* Trying to use a grant code after you have asked for another one (requesting a new grant will invalidate existing grants).
+* Not sendng the `Authorization` header to the API.
+* Trying to use an access token that you have refreshed.
