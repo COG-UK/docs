@@ -75,7 +75,7 @@ All API endpoints in the `v2` API support OAuth and rotating API keys.
 
 #### 5. Refresh the access token
 
-To refresh a token you must post to the `/o/token/` endpoint with the following payload:
+* To refresh a token you must post to the `/o/token/` endpoint with the following payload:
     * `grant_type`: must be `refresh_token`
     * `refresh_token`: your `refresh_token`
     * `client_id`: your application's Client ID
