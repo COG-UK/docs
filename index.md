@@ -13,6 +13,7 @@
 * [You think you are ready to submit metadata?](metadata-tips)
 * [Cycle threshold validators](https://docs.google.com/spreadsheets/d/1UWGvjfj-u0g5-N_DtYwqyGTrS5duOOqwg3jr28Y4hLw/edit?usp=sharing)
 * [Validating a Heron barcode](heron-barcodes)
+* [Uploading a library and sequencing run without the biosample](uploading-nosample)
 
 ## Outbound distribution
 
