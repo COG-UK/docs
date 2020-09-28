@@ -73,6 +73,9 @@ Once you have an application, the authorisation flow can be summarised as follow
 You will need to send a `Authorization` header formatted: `Bearer TOKEN` where `TOKEN` is your `access_token`.
 All API endpoints in the `v2` API support OAuth and rotating API keys.
 
+API requests must continue to include the `username` and `token` in the request data, though these are not
+checked (this is just a feature that enables backward compatibility).
+
 #### 5. Refresh the access token
 
 * To refresh a token you must post to the `/o/token/` endpoint with the following payload:
