@@ -80,4 +80,4 @@ ocarina put sequencing --library-name BIRM-20200326-1844 \
 ### Troubleshooting
 
 * If `ocarina` reports a `STATUS CODE 400`, you have not authenticated correctly. Check the API key in your config file (`~/.ocarina`) has not expired.
-
+* If you get the following message `At least one Biosample in your Library was not registered. No samples have been added to this Library. Register the missing samples, or remove them from your request and try again`, it means that the organisation that sent the sample has not registered the biosample in time. You must chase them on this until it has been uploaded.
