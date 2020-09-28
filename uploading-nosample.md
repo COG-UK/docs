@@ -14,7 +14,7 @@ Currently, the metadata uploader does not support uploading sequencing libraries
 ## Notes
 
 * Do not relabel the sample, use the `central_sample_id` that was provided to you 
-* Sequencing metadata consists of two parts: a library pool and a sequencing run. You must provide both to register a valid sequencing run.
+* Sequencing metadata consists of two parts: a library pool and a sequencing run. You must provide both to register a valid sequencing run. The library must be registered before the sequencing run.
 * If the sample has been sent to you from WSI for backlog sequencing, you **should never upload the biosample metadata**.
 
 ## Uploading metadata with Ocarina
@@ -45,7 +45,7 @@ ocarina put library --library-name "BIRM-20200326-1844" \
                 --library-seq-protocol "LIGATION" \
                 --library-layout-config "SINGLE" \
                 --biosamples HOOT-OCARINA-101 HOOT-OCARINA-102 \
-                --apply-all-library VIRAL_RNA PCR AMPLICON PROTOCOL1 PRIMERS1
+                --apply-all-library VIRAL_RNA PCR AMPLICON MYPROTOCOL MYPRIMERS
 ```
 
 * `library-name` is the name of the library pool, it needs to be unique and is only used to map sequencing runs to libraries
@@ -72,7 +72,7 @@ ocarina put sequencing --library-name BIRM-20200326-1844 \
                    --instrument-model "GRIDION"
 ```
 
-* `library-name` is the name of the library pool that you registered in the previous step
+* `library-name` is the name of the library pool that you registered in the previous step (you must have registered the library first)
 * `run-name` is the name of the sequencing run, as named by your sequencer
 * `instrument-make` should be `OXFORD_NANOPORE` or `ILLUMINA`
 * `instrument-model` is the model of your sequencer (e.g. `GRIDION`)
@@ -81,3 +81,5 @@ ocarina put sequencing --library-name BIRM-20200326-1844 \
 
 * If `ocarina` reports a `STATUS CODE 400`, you have not authenticated correctly. Check the API key in your config file (`~/.ocarina`) has not expired.
 * If you get the following message `At least one Biosample in your Library was not registered. No samples have been added to this Library. Register the missing samples, or remove them from your request and try again`, it means that the organisation that sent the sample has not registered the biosample in time. You must chase them on this until it has been uploaded.
+* The library must be registered in order for the sequencing run to be registered.
+* The order in which the `apply-all-library` parameter matters, any deviation from this will cause an error.
