@@ -80,6 +80,6 @@ ocarina put sequencing --library-name BIRM-20200326-1844 \
 ### Troubleshooting
 
 * If `ocarina` reports a `STATUS CODE 400`, you have not authenticated correctly. Check the API key in your config file (`~/.ocarina`) has not expired.
-* If you get the following message `At least one Biosample in your Library was not registered. No samples have been added to this Library. Register the missing samples, or remove them from your request and try again`, it means that the organisation that sent the sample has not registered the biosample in time. You must chase them on this until it has been uploaded.
+* If you get the following message `At least one Biosample in your Library was not registered. No samples have been added to this Library. Register the missing samples, or remove them from your request and try again`, it indicates that your barcode is missing from Majora. **If the sample originated from WSI it is guaranteed they will exist, so this error indicates a barcode has been entered incorrectly in your request**.
 * The library must be registered in order for the sequencing run to be registered.
 * The order in which the `apply-all-library` parameter matters, any deviation from this will cause an error.
