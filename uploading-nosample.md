@@ -2,13 +2,13 @@
 layout: docpost
 title: Uploading library and run metadata with Ocarina
 date_published: 2020-09-28 16:30:00 +0000
-date_modified:  2020-09-28 16:30:00 +0000
+date_modified:  2020-10-02 13:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
 
 In the case where a sample has been transferred from one site to another to be sequenced, the sequencing site should not need to upload any biosample metadata.
-Currently, the metadata uploader does not support uploading sequencing libraries and sequencing runs without a biosample, so this process must be completed on the command line with Ocarina.
+This document describes how to upload library and sequencing metadata with Ocarina on the command line. **If you want to use the web-based metadata uploader to do this, [see the documentation here](https://metadata.docs.cog-uk.io/bulk-upload-1/library-run-metadata-only)**.
 
 
 ## Notes
