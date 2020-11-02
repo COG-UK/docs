@@ -116,7 +116,7 @@ These will change and be expanded as we continue to integrate OAuth to the rest 
 
 ### More information
 
-* [NHS digital on APIs with helpful cURL examples these requests](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis#user-completes-authentication-and-authorisation)
+* [NHS digital tutorial on user restricted APIs with helpful cURL examples for requesting tokens](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-identity-combined-authentication-and-authorisation#tutorial)
     
 ### Common pitfalls
 
