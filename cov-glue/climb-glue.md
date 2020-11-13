@@ -16,7 +16,7 @@ You can run the [GLUE command line tool](http://glue-tools.cvr.gla.ac.uk) on CLI
 ## Getting started
 There is a special CLIMB GLUE VM `glue.covid19.climb.ac.uk` for running GLUE. You can ssh to it using the same user ID (e.g. `climb-covid19-singerj`) and private key file (e.g. `climb_cog_id_rsa`) you would use for COG-UK CLIMB generally:
 
-If this does not work you should contact Radoslaw Poplawski (R.Poplawski@bham.ac.uk)
+If this does not work you should post on the COG-UK Slack [#account-requests channel](https://cogphuk.slack.com/archives/C010324SMHB).
 
 `$ ssh -i climb_cog_id_rsa climb-covid19-singerj@glue.covid19.climb.ac.uk`
 
