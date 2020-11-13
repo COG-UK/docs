@@ -14,15 +14,20 @@ You can run the [GLUE command line tool](http://glue-tools.cvr.gla.ac.uk) on CLI
 * Access datasets based on COG-UK data as well as GISAID data 
 
 ## Getting started
-There is a special CLIMB VM `glue.covid19.climb.ac.uk` for running GLUE. You can ssh to it using the same user ID (e.g. `climb-covid19-singerj`) and private key file (e.g. `climb_cog_id_rsa`) you would use for COG-UK CLIMB generally:
+There is a special CLIMB GLUE VM `glue.covid19.climb.ac.uk` for running GLUE. You can ssh to it using the same user ID (e.g. `climb-covid19-singerj`) and private key file (e.g. `climb_cog_id_rsa`) you would use for COG-UK CLIMB generally:
+
+If this does not work you should post on the COG-UK Slack [#account-requests channel](https://cogphuk.slack.com/archives/C010324SMHB).
 
 `$ ssh -i climb_cog_id_rsa climb-covid19-singerj@glue.covid19.climb.ac.uk`
 
-Once you have connected, you need to perform a one-time task to set up your personal GLUE instance within the VM:
+Once you are able to access the GLUE VM you need to contact one of the GLUE VM admininstrators and have them set up your GLUE database for you. They will send you a new password for this database.
+
+You then need to connect to the GLUE VM and perform a one-time task to set up your personal GLUE instance within the VM:
 
 ```
-$ initGlue.sh
+$ initGlue.sh -p <glueDbPassword>
 ```
+(note that the password here is the one that the GLUE VM administrator sent)
 
 You should see some log messages ending with:
 
