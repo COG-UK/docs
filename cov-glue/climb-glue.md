@@ -20,14 +20,14 @@ If this does not work you should post on the COG-UK Slack [#account-requests cha
 
 `$ ssh -i climb_cog_id_rsa climb-covid19-singerj@glue.covid19.climb.ac.uk`
 
-Once you are able to access the GLUE VM you need to contact one of the GLUE VM admininstrators and have them set up your GLUE database for you. They will send you a new password for this database.
+Once you are able to access the GLUE VM you need to contact one of the GLUE VM admininstrators and have them set up your GLUE database for you. They will send you a new username and password for this database.
 
 You then need to connect to the GLUE VM and perform a one-time task to set up your personal GLUE instance within the VM:
 
 ```
-$ initGlue.sh -p <glueDbPassword>
+$ initGlue.sh -u <glueDbUsername>-p <glueDbPassword>
 ```
-(note that the password here is the one that the GLUE VM administrator sent)
+(note that glueDbUsername and glueDbPassword here are credentials that the GLUE VM administrator will have sent you)
 
 You should see some log messages ending with:
 
@@ -42,6 +42,12 @@ Now do:
 
 This adds the `gluetools.sh` command to your PATH. On future logins to the VM it will always be there. 
 
+## Multiple GLUE installations
+
+It is possible for one user of the CLIMB VM to run multiple isolated GLUE installations each with their own separate databases.
+This could be useful if for example on the HOCI project you are responsible for multiple HOCI sites. If you require this set-up, 
+contact one of the GLUE VM administrators on the COG-UK Slack [#cov-glue channel](https://cogphuk.slack.com/archives/C010AQBFVM1).
+
 ## Installing a CoV-GLUE dataset
 You now have a personal GLUE instance but it contains no data. You have two options:
 1. `$ installGlueProject.sh cov_glue` 
@@ -49,7 +55,7 @@ installs the dataset backing the CoV-GLUE web application, based purely on GISAI
 1. `$ installGlueProject.sh coguk_cov_glue` 
 installs a larger dataset, containing `cov_glue` plus COG-UK sequences/metadata and various items relating to the HOCI project.
 
-These datasets are being updated approximately weekly.
+The cov_glue dataset is being updated approximately weekly. The coguk_cov_glue dataset is no longer being updated.
 
 ## Some example GLUE commands
 To give a flavour of what CoV-GLUE can do, try this:
