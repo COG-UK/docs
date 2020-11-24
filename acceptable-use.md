@@ -28,7 +28,7 @@ The key requirements are summarised below but it is your responsibility to famil
 *	You must follow the instructions for uploading data available from the [COG-UK Docs](https://docs.covid19.climb.ac.uk/) site.
 
 ### Use of data
-*  The data items in the CLIMB-COVID system are classified as ‘public’, ‘consortium’ or ‘restricted’ access. (See [classification of data items](data-classification)).<sup>3</sup>
+*  The data items in the CLIMB-COVID system are classified as ‘public’, ‘consortium’ or ‘restricted’ access.<sup>3</sup>
 *  You must only use data made available through CLIMB-COVID to support the work of the COG-UK consortium. Access to restricted datasets requires specific approval from the Steering Group and Public Health Agencies. Restricted data may only be used for the approved purpose.<sup>4</sup>
 *  **All analysis must be conducted on CLIMB-COVID or within a public health agency. You must not download datasets for analysis elsewhere.**<sup>5</sup>
     *  Sequences, any variables derived solely from the sequence data and a small number of other variables (central sample ID, adm1 and date of sample collection / receipt) are in the public domain and may be analysed outside CLIMB-COVID.
