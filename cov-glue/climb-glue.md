@@ -47,6 +47,7 @@ This adds the `gluetools.sh` command to your PATH. On future logins to the VM it
 It is possible for one user of the CLIMB VM to run multiple isolated GLUE installations each with their own separate databases.
 This could be useful if for example on the HOCI project you are responsible for multiple HOCI sites. If you require this set-up, 
 contact one of the GLUE VM administrators on the COG-UK Slack [#cov-glue channel](https://cogphuk.slack.com/archives/C010AQBFVM1).
+Do not register for multiple COG-UK/Majora accounts.
 
 ## Installing a CoV-GLUE dataset
 You now have a personal GLUE instance but it contains no data. You have two options:
