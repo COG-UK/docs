@@ -1,5 +1,6 @@
 ## Uploading and accessing data
 
+* [Acceptable Use Policy for CLIMB-COVID](acceptable-use)
 * [How to register to provide metadata and/or sequence data](register)
 * [How to upload sequences to CLIMB](upload-instructions)
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
