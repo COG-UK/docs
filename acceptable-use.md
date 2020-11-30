@@ -7,8 +7,6 @@ author: michaelrchapman
 maintainer: michaelrchapman
 ---
 
-# CLIMB-COVID Acceptable Use Policy
-
 Use of the CLIMB-COVID system is bound by:
 * The conditions of the COG-UK Consortium Agreement.
 * The overall [CLIMB Big Data Acceptable Use Policy](https://discourse.climb.ac.uk/t/climb-big-data-terms-and-conditions-for-users-may-2020/1236)
