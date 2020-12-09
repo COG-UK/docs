@@ -57,8 +57,10 @@ Once identified, you can suppress the PAGs using the Ocarina client.
 Using the `ocarina pag suppress` command, pass your list of PAGs to suppress:
 
 ```
-ocarina pag suppress --publish-group 'COGUK\SAMPLE1\SITE:MY_FIRST_RUN' 'COGUK/SAMPLE2/SITE:MY_FIRST_RUN'
+ocarina pag suppress --reason XXXX --publish-group 'COGUK\SAMPLE1\SITE:MY_FIRST_RUN' 'COGUK/SAMPLE2/SITE:MY_FIRST_RUN'
 ```
+
+You must choose a reason to suppress with `--reason`, which can be one of the following: `WRONG_BARCODE`, `WRONG_METADATA`, `WRONG_SEQUENCE`.
 
 The API will respond with any problems inside the `messages` list. If you're using Ocarina, this will automatically be printed to your terminal.
 You can verify the PAG has been suppressed via the Majora web interface.
