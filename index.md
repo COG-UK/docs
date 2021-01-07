@@ -1,7 +1,10 @@
+## Majora and CLIMB-COVID user accounts
+
+* [How to register for Majora and CLIMB-COVID accounts](register)
+* [Acceptable Use Policy for CLIMB-COVID](acceptable-use)
+
 ## Uploading and accessing data
 
-* [Acceptable Use Policy for CLIMB-COVID](acceptable-use)
-* [How to register to provide metadata and/or sequence data](register)
 * [How to upload sequences to CLIMB](upload-instructions)
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [What happens to data uploaded to CLIMB](how-data)
