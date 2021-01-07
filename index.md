@@ -7,6 +7,7 @@
 * [What happens to data uploaded to CLIMB](how-data)
 * [How to access data stored on CLIMB](accessing-data)
 * [How to access a dataview using the API](accessing-dataviews)
+* [Analysing data and submitting jobs on CLIMB](analysis)
 
 ## Providing metadata
 
