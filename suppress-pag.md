@@ -2,7 +2,7 @@
 layout: docpost
 title: Suppressing sequences inside COG
 date_published: 2020-12-09 15:30:00 +0000
-date_modified:  2020-12-09 15:30:00 +0000
+date_modified:  2021-01-11 11:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -60,7 +60,7 @@ Using the `ocarina pag suppress` command, pass your list of PAGs to suppress:
 ocarina pag suppress --reason XXXX --publish-group 'COGUK\SAMPLE1\SITE:MY_FIRST_RUN' 'COGUK/SAMPLE2/SITE:MY_FIRST_RUN'
 ```
 
-You must choose a reason to suppress with `--reason`, which can be one of the following: `WRONG_BARCODE`, `WRONG_METADATA`, `WRONG_SEQUENCE`.
+You must choose a reason to suppress with `--reason`, which can be one of the following: `WRONG_BARCODE`, `WRONG_METADATA`, `WRONG_SEQUENCE`, `CONTROL_FAIL`.
 
 The API will respond with any problems inside the `messages` list. If you're using Ocarina, this will automatically be printed to your terminal.
 You can verify the PAG has been suppressed via the Majora web interface.
