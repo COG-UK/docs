@@ -17,7 +17,7 @@ You will need to provide:
 
 * your COG-UK barcode prefix as assigned by WSI, or your own prefix that you will use consistently
 * your e-mail address (we will pass this on to GISAID curators to contact you about your entries)
-* a valid GISAID username (**if you have not registered, [you will need to get a GISAID account first](https://www.gisaid.org/registration/register/)**) 
+* a valid GISAID username (**if you have not registered, [you will need to get a GISAID account first](https://www.gisaid.org/registration/register/)**), this username **is not your email address**, failing to provide the username for your account will cause errors for your submissions
 * the name of the lab or labs that you wish to credit as the originating lab (this will include your sequencing lab)
 * a list of people you wish you credit
 
