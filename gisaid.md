@@ -8,17 +8,19 @@ maintainer: samstudio8
 ---
 
 Sequencing sites can opt-in to a process where consensus sequences uploaded to CLIMB that pass high quality QC are automatically submitted to GISAID on their behalf.
-You can opt-in via your [Institute profile on Majora](https://majora.covid19.climb.ac.uk/forms/institute/).
-One only user per site needs to provide this information and it is does not need to be the same person who provides the metadata or uploads the sequences.
 
 ## How do I opt-in?
 
+You can opt-in via your [Institute profile on Majora](https://majora.covid19.climb.ac.uk/forms/institute/).
+One only user per site needs to provide this information and it is does not need to be the same person who provides the metadata or uploads the sequences.
 You will need to provide:
 
 * your e-mail address (we will pass this on to GISAID curators to contact you about your entries)
 * a valid GISAID username (**if you have not registered, [you will need to get a GISAID account first](https://www.gisaid.org/registration/register/)**), this username **is not your email address**, failing to provide the username for your account will cause errors for your submissions
 * the name of the lab or labs that you wish to credit as the originating lab (this will include your sequencing lab)
 * a list of people you wish you credit
+
+You will also need to raise this to Sam in `#outbound-distribution` as we must notify GISAID of your username.
 
 ## How does it work?
 
