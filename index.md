@@ -16,7 +16,7 @@
 * [Uploading a library and sequencing run without the biosample](uploading-nosample)
 * [API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
 
-## Accessing data
+## Accessing data on CLIMB-COVID
 
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [What happens to data uploaded to CLIMB](how-data)
@@ -37,6 +37,7 @@
 
 * [Automated GISAID submissions FAQ](gisaid)
 * [ENA Bioproject PRJEB37886](https://www.ebi.ac.uk/ena/browser/view/PRJEB37886)
+* [Public accessions interface](https://majora.covid19.climb.ac.uk/public/accessions)
 
 ## Infrastructure
 
