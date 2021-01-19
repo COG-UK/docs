@@ -23,7 +23,8 @@
 
 ## Outbound distribution
 
-* [How to opt-in to automated GISAID submissions](gisaid)
+* [Automated GISAID submissions FAQ](gisaid)
+* [ENA Bioproject PRJEB37886](https://www.ebi.ac.uk/ena/browser/view/PRJEB37886)
 
 ## Infrastructure
 
