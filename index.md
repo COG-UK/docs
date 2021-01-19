@@ -3,23 +3,35 @@
 * [How to register for Majora and CLIMB-COVID accounts](register)
 * [Acceptable Use Policy for CLIMB-COVID](acceptable-use)
 
-## Uploading and accessing data
+## Uploading sequences
 
 * [How to upload sequences to CLIMB](upload-instructions)
+
+## Uploading metadata
+
+* [Basic terminology and minimal requirements](metadata)
+* [You think you are ready to submit metadata?](metadata-tips)
+* [How to upload metadata to CLIMB with the metadata uploader](https://metadata.docs.cog-uk.io/bulk-upload-1)
+* [Easy explainer for biosample metadata fields](https://metadata.docs.cog-uk.io/bulk-upload-1/bulk-upload)
+* [Uploading a library and sequencing run without the biosample](uploading-nosample)
+* [API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
+
+## Accessing data
+
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [What happens to data uploaded to CLIMB](how-data)
 * [How to access data stored on CLIMB](accessing-data)
 * [How to access a dataview using the API](accessing-dataviews)
 * [Analysing data and submitting jobs on CLIMB](analysis)
 
-## Providing metadata
+## Fixing bad data
 
-* [Basic terminology and minimal requirements](metadata)
-* [You think you are ready to submit metadata?](metadata-tips)
-* [Cycle threshold validators](https://docs.google.com/spreadsheets/d/1UWGvjfj-u0g5-N_DtYwqyGTrS5duOOqwg3jr28Y4hLw/edit?usp=sharing)
-* [Validating a Heron barcode](heron-barcodes)
-* [Uploading a library and sequencing run without the biosample](uploading-nosample)
 * [Suppressing a sequence from the COG data set](suppress-pag)
+
+## Meta-metadata
+
+* [Cycle threshold validators](https://docs.google.com/spreadsheets/d/1UWGvjfj-u0g5-N_DtYwqyGTrS5duOOqwg3jr28Y4hLw/edit?usp=sharing)
+* [Validating a centrally assigned Heron barcode](heron-barcodes)
 
 ## Outbound distribution
 
@@ -31,7 +43,6 @@
 * [Authorising applications to use your Majora account using OAuth](oauth)
 * [Registering and using an OAuth application](oauth-app)
 * [Joining and using the interpipeline communucation network](tael)
-* [Majora API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
 
 ## Lab protocols
 
