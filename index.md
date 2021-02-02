@@ -14,7 +14,7 @@
 * [How to upload metadata to CLIMB with the metadata uploader](https://metadata.docs.cog-uk.io/bulk-upload-1)
 * [Easy explainer for biosample metadata fields](https://metadata.docs.cog-uk.io/bulk-upload-1/bulk-upload)
 * [Uploading a library and sequencing run without the biosample](uploading-nosample)
-* [API documentation for developers and advanced users](https://redocly.github.io/redoc/?url=http://majora.covid19.climb.ac.uk/static/majora.yaml)
+* [API documentation for developers and advanced users](https://samstudio8.github.io/majora-docs/#introduction)
 
 ## Accessing data on CLIMB-COVID
 
