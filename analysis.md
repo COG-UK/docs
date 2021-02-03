@@ -2,7 +2,7 @@
 layout: docpost
 title: Analysing data and submitting jobs on CLIMB-COVID
 date_published: 2021-01-07 11:30:00 +0000
-date_modified:  2021-01-07 11:30:00 +0000
+date_modified:  2021-02-03 10:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -26,4 +26,20 @@ You can copy this configuration and change parameters as required (for example t
 
 ### Submitting jobs directly to the SLURM scheduler
 
-For Slurm command reference and an example submission script, see [how to submit jobs to the Slurm scheduler](https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/bluebear/bluebear-job-submission.aspx). The `QoS` account for submissions on CLIMB-COVID is `lomannj` (do not use the `bbdefault` or `bbshort` account from the linked example).
+For Slurm command reference see [how to submit jobs to the Slurm scheduler](https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/bluebear/bluebear-job-submission.aspx). The `QoS` account for submissions on CLIMB-COVID is `lomannj` (do not use the `bbdefault` or `bbshort` account from the linked example). An example `sbatch` script is included below:
+
+#### Example sbatch incantation
+
+```
+#!/bin/bash
+#SBATCH --cpus-per-task=1
+#SBATCH --job-name=my_first_job
+#SBATCH --account=lomannj-covid-19-realtime-epidemiology
+#SBATCH --qos=lomannj
+#SBATCH --time 10:0:0
+#SBATCH --mem 10G
+#SBATCH --nodes=1
+
+# Magic conda hack to correctly init conda
+eval "$(conda shell.bash hook)"
+```
