@@ -37,9 +37,10 @@ For Slurm command reference see [how to submit jobs to the Slurm scheduler](http
 #SBATCH --account=lomannj-covid-19-realtime-epidemiology
 #SBATCH --qos=lomannj
 #SBATCH --time 10:0:0
-#SBATCH --mem 10G
 #SBATCH --nodes=1
 
 # Magic conda hack to correctly init conda
 eval "$(conda shell.bash hook)"
 ```
+
+You can adjust `--time` for jobs that you expect to run longer. Additionally `--mem-per-cpu nnG` will request `nn` GB of RAM for each requested CPU (or `--mem nnG` will request `nn` GB of RAM total). `--nodes=1` ensures that multicore jobs will be assigned CPU cores on the same machine.
