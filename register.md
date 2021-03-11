@@ -2,7 +2,7 @@
 layout: docpost
 title: Registering to upload metadata and/or sequence
 date_published: 2020-07-20 12:30:00 +0000
-date_modified:  2021-01-07 12:00:00 +0000
+date_modified:  2021-03-11 10:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -12,7 +12,7 @@ maintainer: samstudio8
 * [Majora/CLIMB-COVID registration form](https://majora.covid19.climb.ac.uk/forms/register/)
 * Users who registered without an SSH key need to [to update their Majora profile](https://majora.covid19.climb.ac.uk/forms/account/) **and** notify the `#account-requests` Slack channel. Please do not raise issues about permission denied errors if you did not provide an SSH key with your initial registration.
 * Slack requests must be made through the Slack interface. To do this, click the name of the Slack instance on the top left and select "Invite people to...". Make sure you provide full name, institutional email and a valid reason for invite, or the request will be ignored. The CLIMB team are not responsible for approving Slack invitations so please do not message about Slack requests in `#account-requests`.
-
+* If you have updated your SSH key on Majora, please notify `#account-requests` as updates are not yet automated.
 
 ### Request access to CLIMB to upload metadata and/or sequence data
 Request access by filling out the [registration form](https://majora.covid19.climb.ac.uk/forms/register/). If your organisation is not listed, please speak to Sonia Goncalves.
