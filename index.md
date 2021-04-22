@@ -23,6 +23,8 @@
 * [How to access data stored on CLIMB](accessing-data)
 * [How to access a dataview using the API](accessing-dataviews)
 * [Analysing data and submitting jobs on CLIMB](analysis)
+* [Data changelog](https://data.covid19.climb.ac.uk/changelog)
+* [Data integrity incidents](https://github.com/COG-UK/dipi-group/tree/official/postmortems)
 
 ## Fixing bad data
 
@@ -44,6 +46,7 @@
 * [Authorising applications to use your Majora account using OAuth](oauth)
 * [Registering and using an OAuth application](oauth-app)
 * [Joining and using the interpipeline communucation network](tael)
+* [CLIMB-COVID Status](http://status.covid19.climb.ac.uk/)
 
 ## Lab protocols
 
