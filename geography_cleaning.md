@@ -72,7 +72,7 @@ The file that defines this is "adm2_aggregation.csv" in the "geography_utils" fo
 
 ### Safe location:
 
-While adm2-level data usually isn't viewed as identifying, if data is sparse, it may be. If there are fewer than 5 sequences in an epiweek in the sequence's adm2, then the aggregated adm2 is checked. If there are still less than five sequences in this grouping, then the NUTS1 region is given. If the adm2 or grouping is ambiguous one (ie it has a "|"), then the counts are combined. Eg if the adm2 is "EAST_SUSSEX|WEST_SUSSEX", then there must be five sequences between the two locations or the aggregated adm2 will be provided.
+While adm2-level data usually isn't viewed as identifying, if data is sparse, it may be. If there are fewer than 5 sequences in an epiweek in the sequence's adm2, then the aggregated adm2 is checked. If there are still less than five sequences in this grouping, then the NUTS1 region is given. If the adm2 or grouping is ambiguous one (ie it has a "\|"), then the counts are combined. Eg if the adm2 is "EAST_SUSSEX\|WEST_SUSSEX", then there must be five sequences between the two locations or the aggregated adm2 will be provided.
 
 ### Files in geography_utilities folder:
 
@@ -81,23 +81,24 @@ While adm2-level data usually isn't viewed as identifying, if data is sparse, it
 - nuts_to_adm2.tsv: definition of the NUTS1 regions in terms of adm2.
 - outer_postcode_cleaning.csv: known errors in input postcodes. Usually spelling mistakes and mis-transcription.
 - outer_postcode_latlongs_region.csv: lookup table for postcode district to region and centroid. Those without latitudes and longitudes are non-geographic postcodes
-- postcode_to_adm2: Lookup table to match outer postcodes to one or more GADM adm2s, ambiguities denoted by "|".
+- postcode_to_adm2: Lookup table to match outer postcodes to one or more GADM adm2s, ambiguities denoted by "\|".
 
 
 ### Groupings:
 
-- BIRMINGHAM|COVENTRY|DUDLEY|SANDWELL|SOLIHULL|WALSALL|WOLVERHAMPTON: West Midlands
-- DERBY|DERBYSHIRE|LEICESTER|LEICESTERSHIRE|LINCOLNSHIRE|NORTHAMPTONSHIRE|NOTTINGHAM|NOTTINGHAMSHIRE|RUTLAND: East Midlands
-- BOLTON|BURY|MANCHESTER|OLDHAM|ROCHDALE|SALFORD|STOCKPORT|TAMESIDE|TRAFFORD|WIGAN: Greater Manchester
-- EAST_SUSSEX|WEST_SUSSEX: Sussex
-- BRADFORD|CALDERDALE|KIRKLEES|LEEDS|WAKEFIELD: West Yorkshire
-- GATESHEAD|NEWCASTLE_UPON_TYNE|NORTH_TYNESIDE|SOUTH_TYNESIDE|SUNDERLAND: Tyne and Wear
-- BARNSLEY|DONCASTER|ROTHERHAM|SHEFFIELD: South Yorkshire
-- BRACKNELL_FOREST|READING|SLOUGH|WEST_BERKSHIRE|WINDSOR_AND_MAIDENHEAD|WOKINGHAM: Berkshire
-- KNOWSLEY|SAINT_HELENS|SEFTON|WIRRAL: Merseyside
-- CHESHIRE_EAST|CHESHIRE_WEST_AND_CHESTER: Cheshire
-- CORNWALL|ISLES_OF_SCILLY: Cornwall and Isles of Scilly
-- DENBIGHSHIRE|CONWY|FLINTSHIRE|WREXHAM: Clwyd
+- BIRMINGHAM\|COVENTRY\|DUDLEY\|SANDWELL\|SOLIHULL\|WALSALL\|WOLVERHAMPTON: West Midlands
+- DERBY\|DERBYSHIRE\|LEICESTER\|LEICESTERSHIRE\|LINCOLNSHIRE\|NORTHAMPTONSHIRE\|NOTTINGHAM\|NOTTINGHAMSHIRE\|RUTLAND: East Midlands
+- BOLTON\|BURY\|MANCHESTER\|OLDHAM\|ROCHDALE\|SALFORD\|STOCKPORT\|TAMESIDE\|TRAFFORD\|WIGAN: Greater Manchester
+- EAST_SUSSEX\|WEST_SUSSEX: Sussex
+- BRADFORD\|CALDERDALE\|KIRKLEES\|LEEDS\|WAKEFIELD: West Yorkshire
+- GATESHEAD\|NEWCASTLE_UPON_TYNE\|NORTH_TYNESIDE\|SOUTH_TYNESIDE\|SUNDERLAND: Tyne and Wear
+- BARNSLEY\|DONCASTER\|ROTHERHAM\|SHEFFIELD: South Yorkshire
+- BRACKNELL_FOREST\|READING\|SLOUGH\|WEST_BERKSHIRE\|WINDSOR_AND_MAIDENHEAD\|WOKINGHAM: Berkshire
+- KNOWSLEY\|SAINT_HELENS\|SEFTON\|WIRRAL: Merseyside
+- CHESHIRE_EAST\|CHESHIRE_WEST_AND_CHESTER: Cheshire
+- CORNWALL\|ISLES_OF_SCILLY: Cornwall and Isles of Scilly
+- DENBIGHSHIRE\|CONWY\|FLINTSHIRE\|WREXHAM: Clwyd
+
 
 NUTS1 regions:
 - EAST_MIDLANDS:	DERBY	DERBYSHIRE	NOTTINGHAMSHIRE	NOTTINGHAM	LEICESTERSHIRE	LEICESTER	RUTLAND	NORTHAMPTONSHIRE	LINCOLNSHIRE	SWADLINCOTE
