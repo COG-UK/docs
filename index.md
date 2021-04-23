@@ -29,6 +29,7 @@
 ## Fixing bad data
 
 * [Suppressing a sequence from the COG data set](suppress-pag)
+*[Geographical metadata cleaning information](geography_cleaning)
 
 ## Meta-metadata
 
