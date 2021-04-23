@@ -16,10 +16,14 @@
 * [Uploading a library and sequencing run without the biosample](uploading-nosample)
 * [API documentation for developers and advanced users](https://samstudio8.github.io/majora-docs/#introduction)
 
+## Quality control and post-processing
+
+* [What quality control is done on data uploaded to CLIMB?](how-data)
+* [Geographical metadata cleaning information](geography_cleaning)
+
 ## Accessing data on CLIMB-COVID
 
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
-* [What happens to data uploaded to CLIMB](how-data)
 * [How to access data stored on CLIMB](accessing-data)
 * [How to access a dataview using the API](accessing-dataviews)
 * [Analysing data and submitting jobs on CLIMB](analysis)
@@ -29,7 +33,6 @@
 ## Fixing bad data
 
 * [Suppressing a sequence from the COG data set](suppress-pag)
-*[Geographical metadata cleaning information](geography_cleaning)
 
 ## Meta-metadata
 
