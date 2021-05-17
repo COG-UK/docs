@@ -2,7 +2,7 @@
 layout: docpost
 title: Consensus sequence uploads to ENA
 date_published: 2021-05-17 10:50:00 +0000
-date_modified:  2021-05-17 10:50:00 +0000
+date_modified:  2021-05-17 11:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -13,7 +13,7 @@ Following a huge effort from CLIMB-COVID, ENA and WSI; CLIMB-COVID can now autom
 
 ### Opt in
 As with GISAID uploads you must opt-in from your [Institute profile](https://majora.covid19.climb.ac.uk/forms/institute/).
-You must fill in the lab name, lab address and lab authors (even though they are labelled for GISAID).
+You must fill in the lab name, lab address and lab authors (under the "GISAID and ENA" headers).
 
 ### Provide basic bioinformatics information
 The metadata uploader and Ocarina now have optional fields for describing the bioinformatics pipeline used to process the sequence:
