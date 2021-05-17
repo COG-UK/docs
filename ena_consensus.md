@@ -21,7 +21,8 @@ The metadata uploader and Ocarina now have optional fields for describing the bi
 * `bioinfo_pipe_name`
 * `bioinfo_pipe_version`
 
-These fields do not (currently) use a controlled vocabulary but we recommend the following:
+These fields do not (currently) use a controlled vocabulary -- please send your comments and concerns about this to `#metadata` and not DIPI or the Data Working Group.
+We do however recommend using the following entries for commonly used pipelines:
 
 | Pipeline | `bioinfo_pipe_name` | `bioinfo_pipe_version` |
 |----------|---------------------|------------------------|
