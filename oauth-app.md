@@ -35,8 +35,7 @@ For Real Majora (COG-UK)
 
 Then press `Save`
 
-
-
+***
 
 ### Registering an OAuth application with Majora (Advanced)
 
