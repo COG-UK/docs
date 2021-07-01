@@ -37,6 +37,7 @@ Then press `Save`
 
 
 
+
 ### Registering an OAuth application with Majora (Advanced)
 
 If you want an applicaton to perform actions as a Majora account holder, you need to register an application.
