@@ -3,6 +3,11 @@
 * [How to register for Majora and CLIMB-COVID accounts](register)
 * [Acceptable Use Policy for CLIMB-COVID](acceptable-use)
 
+## User Authentification and Security
+
+* [User Authentification Methods](user-authentification)
+* [Introduction to OAuth](intro-to-oauth)
+
 ## Uploading sequences
 
 * [How to upload sequences to CLIMB](upload-instructions)
