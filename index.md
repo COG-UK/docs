@@ -23,10 +23,9 @@
 
 ## Accessing data on CLIMB-COVID
 
-* [Setting up Ocarina](setting-up-ocarina.md)
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [How to access data stored on CLIMB](accessing-data)
-* [How to access a dataview using the API](accessing-dataviews)
+* [How to access a dataview using the API (Ocarina)](accessing-dataviews)
 * [Analysing data and submitting jobs on CLIMB](analysis)
 * [Data changelog](https://data.covid19.climb.ac.uk/changelog)
 * [Data integrity incidents](https://github.com/COG-UK/dipi-group/tree/official/postmortems)
