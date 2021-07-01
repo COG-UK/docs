@@ -23,7 +23,7 @@
 
 ## Accessing data on CLIMB-COVID
 
-* [Setting up Ocarina](setting-up-ocarina)
+* [Setting up Ocarina](setting-up-ocarina.md)
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [How to access data stored on CLIMB](accessing-data)
 * [How to access a dataview using the API](accessing-dataviews)
