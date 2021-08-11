@@ -11,9 +11,9 @@ maintainer: samstudio8
 
 [Follow these instructions to set up Ocarina for the first time](setting-up-ocarina)
 
-### 1. Use Ocarina to request the data from the view
-
 Once this has been set up, you are ready to retrieve data. 
+
+### 1. Use Ocarina to request the data from the view
 
 ```
 ocarina --oauth get dataview --mdv CODE --task-wait --output-table -o my_data.tsv
