@@ -95,7 +95,15 @@ Now you have fully set up OAuth and Ocarina in order to keep using the same toke
 
 Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience, the example below will refresh your OAuth token every 6 hours.
 
-To set this up first activate your ocarina conda environment then enter the command `which ocarina`, copy this location.
+To set this up first enter the commands below:
+
+```
+$ conda activate ocarina
+$ which ocarina
+/home/sam/miniconda3/envs/ocarina/bin/ocarina #This is my ocarina path make sure you use your own!
+
+```
+Then copy the resulting path.
 
 Enter the command `crontab -e` to edit your crontab and add the command below
 
@@ -107,6 +115,6 @@ Enter the command `crontab -e` to edit your crontab and add the command below
 
 Now you are ready to use Ocarina please see the following pages for more information:
 
-*[How to upload a sample](https://samstudio8.github.io/majora-docs/?shell--ocarina#biosamples)
-*[How to upload a library](https://samstudio8.github.io/majora-docs/?shell--ocarina#library)
-*[How to upload a sequencing run](https://samstudio8.github.io/majora-docs/?shell--ocarina#sequencing)
+* [How to upload a sample](https://samstudio8.github.io/majora-docs/?shell--ocarina#biosamples)
+* [How to upload a library](https://samstudio8.github.io/majora-docs/?shell--ocarina#library)
+* [How to upload a sequencing run](https://samstudio8.github.io/majora-docs/?shell--ocarina#sequencing)
