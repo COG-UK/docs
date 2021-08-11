@@ -1,6 +1,6 @@
 ---
 layout: docpost
-title: Setting up Ocarina
+title: Setting up Ocarina and OAuth
 date_published: 
 date_modified:  2021-07-05 15:01:00 +0000
 author: BioWilko
