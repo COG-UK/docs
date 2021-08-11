@@ -60,34 +60,7 @@ Attempt to access a biosample with the following command
 ocarina --oauth get biosample --central-sample-id *Insert COG ID here*
 ```
 
-You should then see the following message in your terminal
-
-```
-                                 .@ 888S
-                            ;@S8888:8%tX
- :XS.                 .;8: @8t88888t8888
-X8%%S:              .8 8S888    :8.88S@:
-8;8;888:        :@; 888888@8    88%888
-%8:8%X8 t8. ;8 888.X8    88S@88888S %
- 888S@@888  8@888@S8C    888    S%S:
- .@%888%@@t.888@@8@8@8::X88C   88 %
-  ;S@X8@888S8X@@X8X88X888888%@888;
-  Xt88X@8@@XX8S8X88@88888S888S.;
-  t S888X8S8S8888X88@88%8@:@8%;
-  :888X   @888    @88S88S888X
- .88;.     %X8    8@88S8X8:
- S8@S8@   8t8888%8@:8%S@88
- 8%8;88888S@%.8S88;@8% %.
- :8.8    888    8XS:%:
- ::8St   88;   88S8;
-   ;t 8X.8;%8 8%
-Hello YOUR-USERNAME.
-Please request a grant via:
-https://majora.covid19.climb.ac.uk/o/authorize/.................
-Enter the full callback URL as seen in your browser window
-```
-
-Then Ctrl + click the majora URL to request a grant via OAuth, your browser should then open a page which looks similar to this:
+You should see a message asking you to 'request a grant'. Open the link (or copy it into your a browser on your local machine) to see an approval screen like this:
 
 ![image](images/oauth_example.png)
 
@@ -103,4 +76,12 @@ Now paste the copied return URL into Ocarina which should now return your reques
 
 Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after **10 hours after which you will have to repeat the process of generating a token by following step 4 again.**
 
-Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience.
+Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience, the example below will refresh your OAuth token every 6 hours.
+
+To set this up first activate your ocarina conda environment then enter the command `which ocarina`, copy this location.
+
+Enter the command `crontab -e` to edit your crontab and add the command below
+
+```
+0 0,6,12,18 * * * {YOUR_OCARINA_PATH} oauth refresh
+```
