@@ -23,6 +23,8 @@ conda activate ocarina
 pip install git+https://github.com/samstudio8/ocarina.git
 ```
 
+Please remember to check the [ocarina changelog](https://github.com/SamStudio8/ocarina/blob/master/CHANGELOG.md) periodically and update your client as necessary.
+
 ### 2. Register your Ocarina instance as an OAuth application
 
 Instructions to do this are located [here](oauth-app). Only the first section is necessary to set up ocarina but must be done before moving to the next step.
