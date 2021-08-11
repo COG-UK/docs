@@ -7,7 +7,7 @@ author: BioWilko
 maintainer: BioWilko
 ---
 
-## Generating and accessing an API key from Majora
+## Generating a legacy API key from Majora
 
 *You must have two-factor authentification `2FA` enabled to access the API*
 
