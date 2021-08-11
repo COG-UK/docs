@@ -7,49 +7,11 @@ author: samstudio8
 maintainer: samstudio8
 ---
 
-### 0. Register for an account via Majora
-[Read the instructions for how to register](register)
+### 0. Set up Ocarina
 
-### 1. Acquire permission to access a data view
-A data view is basically a list of metadata fields. If you are granted access to a data view, you can see all of the fields covered by that data view.
-Every data view is associated with a short name, which we sometimes call a `code` or Majora data view code (`mdv` code).
+[Follow these instructions to set up Ocarina for the first time](setting-up-ocarina)
 
-Guidance on how to obtain access to a view is in progress, check back after the consortium agreement has been distributed.
-This document has been written ahead of time and we are not currently granting permissions to any restricted views. Do not attempt to contact anyone to arrange access at this time.
-
-### 2. Install the Ocarina client
-
-[Ocarina](https://github.com/SamStudio8/ocarina/tree/master/ocarina) is a command line tool that is used to connect to Majora and perform actions with elevated privileges that are not possible on the website.
-It is not terribly difficult to use, but ideally you will have used a command line tool before.
-
-You can install the latest version with the Python package manager. You'll probably want to install it into a conda environment on the shared node.
-
-```
-conda create -n mdv-ocarina python=3.7
-conda activate mdv-ocarina
-pip install git+https://github.com/samstudio8/ocarina.git
-```
-
-### 3. Register your Ocarina instance as an OAuth application
-
-Instructions to do this are located [here](oauth-app). Only the first section is necessary to set up ocarina but must be done before moving to the next step.
-
-### 4. Set your Ocarina credentials
-
-Create a JSON file in your home directory named `.ocarina`. Note the starting dot. [Download the example here](.ocarina).
-
-```
-{"MAJORA_DOMAIN": "https://majora.covid19.climb.ac.uk/", "MAJORA_USER": "your-username", "MAJORA_TOKEN": "OAUTH", "CLIENT_ID": "your-client-id", "CLIENT_SECRET": "your-client-secret"}
-```
-
-Where:
-* `MAJORA_DOMAIN` points to either the domain of the real, or test Majora. Do not miss the `/` at the end of the URL.
-* `MAJORA_USER` is your username on the appropriate Majora instance
-* `MAJORA_TOKEN` is set to `OAUTH` (note that you will not be able to use the `v2+` API without a rotating token)
-* `CLIENT_ID` is the Client ID of your registered application
-* `CLIENT_SECRET` is the Client Secret of your registered application
-
-### 5. Use Ocarina to request the data from the view
+### 1. Use Ocarina to request the data from the view
 
 Once this has been set up, you are ready to retrieve data. 
 
