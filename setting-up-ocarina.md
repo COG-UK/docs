@@ -18,8 +18,8 @@ It is not terribly difficult to use, but ideally you will have used a command li
 You can install the latest version with the Python package manager. You'll probably want to install it into a conda environment on the shared node.
 
 ```
-conda create -n mdv-ocarina python=3.7
-conda activate mdv-ocarina
+conda create -n ocarina python=3.7
+conda activate ocarina
 pip install git+https://github.com/samstudio8/ocarina.git
 ```
 
@@ -49,7 +49,7 @@ OAuth has been the standard way to authenticate since September 2020 but legacy 
 Activate your Ocarina conda environment
 
 ```
-conda activate mdv-ocarina
+conda activate ocarina
 ```
 
 Attempt to access a biosample with the following command
