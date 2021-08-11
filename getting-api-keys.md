@@ -1,6 +1,6 @@
 ---
 layout: docpost
-title: Getting and accessing an API key from Majora
+title: Getting and accessing a legacy API key from Majora
 date_published: 2021-08-11 11:30:00 +0000
 date_modified:  2021-08-11 10:00:00 +0000
 author: BioWilko
