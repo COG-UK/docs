@@ -2,18 +2,25 @@
 layout: docpost
 title: Accessing metadata through a data view using Ocarina
 date_published: 2020-09-07 16:00:00 +0000
-date_modified:  2021-07-01 15:01:00 +0000
-author: samstudio8
-maintainer: samstudio8
+date_modified:  2021-08-11 15:01:00 +0000
+author: samstudio8, BioWilko
+maintainer: samstudio8, BioWilko
 ---
 
 ### 0. Set up Ocarina
 
 [Follow these instructions to set up Ocarina for the first time](setting-up-ocarina)
 
+### 1. Acquire permission to access a data view
+A data view is basically a list of metadata fields. If you are granted access to a data view, you can see all of the fields covered by that data view.
+Every data view is associated with a short name, which we sometimes call a `code` or Majora data view code (`mdv` code).
+
+Guidance on how to obtain access to a view is in progress, check back after the consortium agreement has been distributed.
+This document has been written ahead of time and we are not currently granting permissions to any restricted views. Do not attempt to contact anyone to arrange access at this time.
+
 Once this has been set up, you are ready to retrieve data. 
 
-### 1. Use Ocarina to request the data from the view
+### 2. Use Ocarina to request the data from the view
 
 ```
 ocarina --oauth get dataview --mdv CODE --task-wait --output-table -o my_data.tsv
