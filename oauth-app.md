@@ -25,6 +25,8 @@ Click "New application" and fill out the form as appropriate:
 * `Client type` set to `confidential`
 * `Grant type` set to `authorization code`
 
+In almost all cases, you will not need to provide your own `Redirect Uris` callback and should use the one we provide below.
+
 For Test Majora (MAGENTA)
 * `Redirect Uris` set to `https://covid.majora.ironowl.it/o/callback/`
 
