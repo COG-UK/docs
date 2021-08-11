@@ -49,7 +49,7 @@ Where:
 * `CLIENT_ID` is the Client ID of your registered application
 * `CLIENT_SECRET` is the Client Secret ID of your registered application
 
-### 5. Submit an ocarina query and generate and OAuth token
+### 5. Submit an ocarina query and generate an OAuth token
 
 Activate your Ocarina conda environment
 
