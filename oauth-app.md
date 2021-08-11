@@ -7,39 +7,7 @@ author: samstudio8
 maintainer: samstudio8
 ---
 
-### Registering Ocarina with Majora
-
-You must register an instance of Ocarina with Majora so that it can authenticate as you through OAuth.
-
-Note that the testing and real versions of Majora are entirely separate, and so are the OAuth systems.
-The locations to register an application are:
-
-* [Test Majora (MAGENTA)](https://covid.majora.ironowl.it/o/applications/)
-* [Real Majora (COG-UK)](https://majora.covid19.climb.ac.uk/o/applications/)
-
-Click "New application" and fill out the form as appropriate:
-
-* `Name` A name for your application, we do not enforce naming but suggest: `username-ocarina` so that you can distinguish your application from others.
-* `Client ID` Do not alter this
-* `Client Secret` Do not alter this
-* `Client type` set to `confidential`
-* `Grant type` set to `authorization code`
-
-In almost all cases, you will not need to provide your own `Redirect Uris` callback and should use the one we provide below.
-
-For Test Majora (MAGENTA)
-* `Redirect Uris` set to `https://covid.majora.ironowl.it/o/callback/`
-
-For Real Majora (COG-UK)
-* `Redirect Uris` set to `https://majora.covid19.climb.ac.uk/o/callback/`
-
-**NOTE** The approprite URL must be entered into the box **exactly** as listed here or it will not work.
-
-Then press `Save`
-
-***
-
-### Registering an OAuth application with Majora
+### Registering an OAuth application (e.g. your copy of Ocarina) with Majora
 
 If you want an applicaton to perform actions as a Majora account holder, you need to register an application.
 Note that the testing and real versions of Majora are entirely separate, and so are the OAuth systems.
@@ -57,7 +25,7 @@ Click "New application" and fill out the form as appropriate:
 * `Grant type` set to `authorization code`
 
 Finally, if your application has a web-based front end, you can specify a callback for authorised requests to automatically flow to - along with a grant token.
-If you do not have one, we provide a basic callback that will expose the grant code.
+In almost all cases, you will not need to provide your own `Redirect Uris` callback and should use the one we provide below.
 
 * `Callback` should be set to one of the following, based on whether this is a testing or production application:
     * Test: https://covid.majora.ironowl.it/o/callback/
