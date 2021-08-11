@@ -94,7 +94,10 @@ Then Ctrl + click the majora URL to request a grant via OAuth, your browser shou
 
 ![image](images/oauth_example.png)
 
-Then click "Authorize" to confirm that you have indeed requested an OAuth token and you should see a page which looks like this:
+Then click "Authorize" to confirm that you have indeed requested an OAuth token and you should see a page which looks like this apart from the text boxes will be populated:
 
 ![image](images/ocarina_example.png)
 
+Now click the copy button next to the the upper text box to copy the callback URL.
+
+Now paste the copied return URL into Ocarina which should now return your requested dataview.
