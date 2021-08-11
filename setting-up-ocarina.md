@@ -49,6 +49,8 @@ Where:
 * `CLIENT_ID` is the Client ID of your registered application
 * `CLIENT_SECRET` is the Client Secret ID of your registered application
 
+OAuth has been the standard way to authenticate since September 2020 but legacy API keys are still supported, [instructions here.](getting-api-keys)
+
 ### 5. Submit an ocarina query and generate an OAuth token
 
 Activate your Ocarina conda environment
