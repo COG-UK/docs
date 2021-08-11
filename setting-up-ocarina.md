@@ -29,7 +29,7 @@ Please remember to check the [ocarina changelog](https://github.com/SamStudio8/o
 
 Instructions to do this are located [here](oauth-app). Only the first section is necessary to set up ocarina but must be done before moving to the next step.
 
-### 3. Set your Ocarina credentials
+### 3a. Set your Ocarina credentials with OAuth (Recommended)
 
 Create a JSON file in your home directory named `.ocarina`. Note the starting dot.
 
@@ -40,9 +40,26 @@ Create a JSON file in your home directory named `.ocarina`. Note the starting do
 Where:
 * `MAJORA_DOMAIN` points to either the domain of the real, or test Majora. Do not miss the `/` at the end of the URL.
 * `MAJORA_USER` is your username on the appropriate Majora instance
-* `MAJORA_TOKEN` is set to `OAUTH` (note that you will not be able to use the `v2+` API without a rotating token)
-* `CLIENT_ID` is the Client ID of your registered application
-* `CLIENT_SECRET` is the Client Secret ID of your registered application
+* `MAJORA_TOKEN` must be set to `OAUTH`
+* `CLIENT_ID` is the ocarina Client ID registered with majora [accessible at this majora page](https://majora.covid19.climb.ac.uk/o/applications/)
+* `CLIENT_SECRET` is the ocarina Secret ID registered with majora [accessible at this majora page](https://majora.covid19.climb.ac.uk/o/applications/)
+
+OAuth has been the standard way to authenticate since September 2020 but legacy API keys are still supported, [instructions here.](getting-api-keys)
+
+### 3b. Set your Ocarina credentials with a legacy API key
+
+[Generate a legacy API key](getting-api-keys) if you haven't already.
+
+Create a JSON file in your home directory named `.ocarina`. Note the starting dot.
+
+```
+{"MAJORA_DOMAIN": "https://majora.covid19.climb.ac.uk/", "MAJORA_USER": "your-username", "MAJORA_TOKEN": "YOUR_API_KEY", "CLIENT_ID": "", "CLIENT_SECRET": ""}
+```
+
+Where:
+* `MAJORA_DOMAIN` points to either the domain of the real, or test Majora. Do not miss the `/` at the end of the URL.
+* `MAJORA_USER` is your username on the appropriate Majora instance
+* `MAJORA_TOKEN` taken from [this majora page](https://majora.covid19.climb.ac.uk/keys/list/)
 
 OAuth has been the standard way to authenticate since September 2020 but legacy API keys are still supported, [instructions here.](getting-api-keys)
 
@@ -85,3 +102,11 @@ Enter the command `crontab -e` to edit your crontab and add the command below
 ```
 0 0,6,12,18 * * * {YOUR_OCARINA_PATH} oauth refresh
 ```
+
+### Further reading
+
+Now you are ready to use Ocarina please see the following pages for more information:
+
+*[How to upload a sample](https://samstudio8.github.io/majora-docs/?shell--ocarina#biosamples)
+*[How to upload a library](https://samstudio8.github.io/majora-docs/?shell--ocarina#library)
+*[How to upload a sequencing run](https://samstudio8.github.io/majora-docs/?shell--ocarina#sequencing)
