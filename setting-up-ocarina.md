@@ -10,14 +10,7 @@ maintainer: BioWilko
 ### 0. Register for an account via Majora
 [Read the instructions for how to register](register)
 
-### 1. Acquire permission to access a data view
-A data view is basically a list of metadata fields. If you are granted access to a data view, you can see all of the fields covered by that data view.
-Every data view is associated with a short name, which we sometimes call a `code` or Majora data view code (`mdv` code).
-
-Guidance on how to obtain access to a view is in progress, check back after the consortium agreement has been distributed.
-This document has been written ahead of time and we are not currently granting permissions to any restricted views. Do not attempt to contact anyone to arrange access at this time.
-
-### 2. Install the Ocarina client
+### 1. Install the Ocarina client
 
 [Ocarina](https://github.com/SamStudio8/ocarina/tree/master/ocarina) is a command line tool that is used to connect to Majora and perform actions with elevated privileges that are not possible on the website.
 It is not terribly difficult to use, but ideally you will have used a command line tool before.
@@ -30,11 +23,11 @@ conda activate mdv-ocarina
 pip install git+https://github.com/samstudio8/ocarina.git
 ```
 
-### 3. Register your Ocarina instance as an OAuth application
+### 2. Register your Ocarina instance as an OAuth application
 
 Instructions to do this are located [here](oauth-app). Only the first section is necessary to set up ocarina but must be done before moving to the next step.
 
-### 4. Set your Ocarina credentials
+### 3. Set your Ocarina credentials
 
 Create a JSON file in your home directory named `.ocarina`. Note the starting dot. [Download the example here](.ocarina).
 
@@ -51,7 +44,7 @@ Where:
 
 OAuth has been the standard way to authenticate since September 2020 but legacy API keys are still supported, [instructions here.](getting-api-keys)
 
-### 5. Submit an ocarina query and generate an OAuth token
+### 4. Submit an ocarina query and generate an OAuth token
 
 Activate your Ocarina conda environment
 
@@ -104,8 +97,8 @@ Now click the copy button next to the the upper text box to copy the callback UR
 
 Now paste the copied return URL into Ocarina which should now return your requested dataview.
 
-### 6. Refreshing OAuth tokens
+### 5. Refreshing OAuth tokens
 
-Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after **10 hours after which you will have to repeat the process of generating a token by following step 5 again.**
+Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after **10 hours after which you will have to repeat the process of generating a token by following step 4 again.**
 
 Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience.
