@@ -104,6 +104,6 @@ Now paste the copied return URL into Ocarina which should now return your reques
 
 ### 6. Refreshing OAuth tokens
 
-Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after 10 hours after which you will have to repeat the process of generating a token by following step 5 again.
+Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after **10 hours after which you will have to repeat the process of generating a token by following step 5 again.**
 
 Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience.
