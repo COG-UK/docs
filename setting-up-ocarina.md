@@ -31,7 +31,7 @@ Instructions to do this are located [here](oauth-app). Only the first section is
 
 ### 3. Set your Ocarina credentials
 
-Create a JSON file in your home directory named `.ocarina`. Note the starting dot. [Download the example here](.ocarina).
+Create a JSON file in your home directory named `.ocarina`. Note the starting dot.
 
 ```
 {"MAJORA_DOMAIN": "https://majora.covid19.climb.ac.uk/", "MAJORA_USER": "your-username", "MAJORA_TOKEN": "OAUTH", "CLIENT_ID": "your-client-id", "CLIENT_SECRET": "your-client-secret"}
