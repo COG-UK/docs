@@ -49,7 +49,7 @@ Where:
 * `CLIENT_ID` is the Client ID of your registered application
 * `CLIENT_SECRET` is the Client Secret ID of your registered application
 
-### 5. Test Ocarina
+### 5. Submit an ocarina query and generate and OAuth token
 
 Activate your Ocarina conda environment
 
@@ -101,3 +101,9 @@ Then click "Authorize" to confirm that you have indeed requested an OAuth token 
 Now click the copy button next to the the upper text box to copy the callback URL.
 
 Now paste the copied return URL into Ocarina which should now return your requested dataview.
+
+### 6. Refreshing OAuth tokens
+
+Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after 10 hours after which you will have to repeat the process of generating a token by following step 5 again.
+
+Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience.
