@@ -47,7 +47,7 @@ Where:
 * `MAJORA_USER` is your username on the appropriate Majora instance
 * `MAJORA_TOKEN` is set to `OAUTH` (note that you will not be able to use the `v2+` API without a rotating token)
 * `CLIENT_ID` is the Client ID of your registered application
-* `CLIENT_SECRET` is the Client Secret of your registered application
+* `CLIENT_SECRET` is the Client Secret ID of your registered application
 
 ### 5. Test Ocarina
 
@@ -90,4 +90,11 @@ https://majora.covid19.climb.ac.uk/o/authorize/.................
 Enter the full callback URL as seen in your browser window
 ```
 
-Then Ctrl + click the majora URL to request a grant via OAuth, you should be 
+Then Ctrl + click the majora URL to request a grant via OAuth, your browser should then open a page which looks similar to this:
+
+![image](images/oauth_example.png)
+
+Then click "Authorize" to confirm that you have indeed requested an OAuth token and you should see a page which looks like this:
+
+![image](images/ocarina_example.png)
+
