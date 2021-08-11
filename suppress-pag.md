@@ -2,7 +2,7 @@
 layout: docpost
 title: Suppressing sequences inside COG
 date_published: 2020-12-09 15:30:00 +0000
-date_modified:  2021-01-11 11:30:00 +0000
+date_modified:  2021-08-11 11:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -24,20 +24,9 @@ This will forever mark a (central_sample_id, run_name) pair as suppressed. If yo
 
 ### 0. Install Ocarina
 
-Run the following command in your shell. You should be running python 3.7 and have pip installed. Feel free to do this from a virtualenv or conda environment.
+Set up Ocarina by following [these instructions](setting-up-ocarina)
 
-```
-pip install git+https://github.com/samstudio8/ocarina.git
-```
-
-This will install the latest version of Ocarina, which almost always works.
-
-### 1. Configure Ocarina
-
-[See the Ocarina README for configuration instructions](https://github.com/SamStudio8/ocarina). You will need your API key from your Majora profile.
-The suppression API does not use OAuth yet.
-
-### 2. Work out which Published Artifact Groups to suppress
+### 1. Work out which Published Artifact Groups to suppress
 
 When a sequence and biosample are united by Elan, the result is pushed to Majora and called a "Published Artifact Group" (PAG, for short).
 PAGs are used to help distinguish sequences generated from the same sample, whether by multiple sequencing centres, multiple runs, or both.
@@ -57,7 +46,7 @@ Once identified, you can suppress the PAGs using the Ocarina client.
 Using the `ocarina pag suppress` command, pass your list of PAGs to suppress:
 
 ```
-ocarina pag suppress --reason XXXX --publish-group 'COGUK\SAMPLE1\SITE:MY_FIRST_RUN' 'COGUK/SAMPLE2/SITE:MY_FIRST_RUN'
+ocarina pag suppress --oauth --reason XXXX --publish-group 'COGUK\SAMPLE1\SITE:MY_FIRST_RUN' 'COGUK/SAMPLE2/SITE:MY_FIRST_RUN'
 ```
 
 You must choose a reason to suppress with `--reason`, which can be one of the following: `WRONG_BARCODE`, `WRONG_METADATA`, `WRONG_SEQUENCE`, `CONTROL_FAIL`.
