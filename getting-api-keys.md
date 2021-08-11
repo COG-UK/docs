@@ -18,4 +18,4 @@ Then navigate to the API key page by clicking the `Manage API Keys` button, you 
 ![image](images/api_key_page.png)
 
 If your key does not need to be renewed (must be done every three days) you should then press the `copy` button to copy the key to your clipboard,
-then you should paste the key into the `MAJORA_TOKEN` field of your `.ocarina` file in your home directory.
+then you should paste the key into the `MAJORA_TOKEN` field of your `.ocarina` file in your home directory or use the key with the metadata uploader.
