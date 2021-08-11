@@ -24,7 +24,7 @@
 ## Accessing data on CLIMB-COVID
 
 * [Setting up Ocarina and OAuth](setting-up-ocarina)
-* [Generating a legacy API key in Majora](
+* [Generating a legacy API key in Majora](getting-api-keys)
 * [What is the timeline for the automated CLIMB pipelines?](when-metadata)
 * [How to access data stored on CLIMB](accessing-data)
 * [How to access a dataview using the API (Ocarina)](accessing-dataviews)
