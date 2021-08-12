@@ -46,7 +46,7 @@ Where:
 
 OAuth has been the standard way to authenticate since September 2020.
 
-**OAuth tokens expire every 10 hours, see section 5 for instructions on refreshing them and automating this process**
+**OAuth tokens expire every 10 hours, instructions for refreshing tokens can be found in section 5 as well as how this can be automated**
 
 ### 3b. Set your Ocarina credentials with a legacy API key
 
