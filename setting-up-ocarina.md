@@ -63,6 +63,8 @@ Where:
 
 OAuth has been the standard way to authenticate since September 2020 but legacy API keys are still supported, [instructions here.](getting-api-keys)
 
+**API keys expire every 3 days and must be renewed by following the legacy API key documentation**
+
 ### 4. Submit an ocarina query and generate an OAuth token
 
 Activate your Ocarina conda environment
@@ -91,7 +93,9 @@ Now paste the copied return URL into Ocarina which should now return your reques
 
 ### 5. Refreshing OAuth tokens
 
-Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after **10 hours after which you will have to repeat the process of generating a token by following step 4 again.**
+**Please note that this will not refresh a legacy API key, this must be done by following the [legacy API documentation](getting-api-keys)
+
+Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after **10 hours after which you will have to repeat the process of generating a token by following step 4 again, unless you refresh by following the instructions below**
 
 Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience, the example below will refresh your OAuth token every 6 hours.
 
