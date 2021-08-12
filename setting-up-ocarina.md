@@ -44,7 +44,9 @@ Where:
 * `CLIENT_ID` is the ocarina Client ID registered with majora [accessible at this majora page](https://majora.covid19.climb.ac.uk/o/applications/)
 * `CLIENT_SECRET` is the ocarina Secret ID registered with majora [accessible at this majora page](https://majora.covid19.climb.ac.uk/o/applications/)
 
-OAuth has been the standard way to authenticate since September 2020 but legacy API keys are still supported, [instructions here.](getting-api-keys)
+OAuth has been the standard way to authenticate since September 2020.
+
+**OAuth tokens expire every 10 hours, see section 5 for instructions on refreshing them and automating this process**
 
 ### 3b. Set your Ocarina credentials with a legacy API key
 
