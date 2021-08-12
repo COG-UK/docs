@@ -15,7 +15,7 @@ maintainer: BioWilko
 [Ocarina](https://github.com/SamStudio8/ocarina/tree/master/ocarina) is a command line tool that is used to connect to Majora and perform actions with elevated privileges that are not possible on the website.
 It is not terribly difficult to use, but ideally you will have used a command line tool before.
 
-You can install the latest version with the Python package manager. You'll probably want to install it into a conda environment on the shared node.
+You can install the latest version with the Python package manager. You will probably want to install it into a conda environment on the shared node.
 
 ```
 conda create -n ocarina python=3.7
@@ -65,7 +65,7 @@ Where:
 
 Some features (such as reading secure dataviews) are only available via OAuth authentification and will not work with the legacy API keys.
 
-**API keys expire every 3 days and must be renewed by following the legacy API key documentation**
+**API keys expire every 3 days and must be renewed by following the [legacy API key documentation](getting-api-keys)**
 
 ### 4. Submit an ocarina query and generate an OAuth token
 
@@ -95,9 +95,11 @@ Now paste the copied return URL into Ocarina which should now return your reques
 
 ### 5. Refreshing OAuth tokens
 
-**Please note that this will not refresh a legacy API key, this must be done by following the [legacy API documentation](getting-api-keys)
+**Please note that this will not refresh a legacy API key, that must be done by following the [legacy API documentation](getting-api-keys)
 
-Now you have fully set up OAuth and Ocarina in order to keep using the same token you can refresh it with the command `ocarina oauth refresh`, these tokens expire after **10 hours** after which you will have to repeat the process of generating a token by following step 4 again, unless you refresh the token before 10 hours pass by following the instructions below
+Now you have fully set up OAuth and Ocarina! 
+
+OAuth tokens expire after **10 hours** after which you will have to generate a new token by following step 4 again. This can by avoided by refreshing your token with the command `ocarina oauth refresh`.
 
 Refreshing your OAuth token can be automated by using a `cron job` scheduled to run at any interval < 10 hours for convenience, the example below will refresh your OAuth token every 6 hours.
 
