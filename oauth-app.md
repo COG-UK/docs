@@ -7,7 +7,7 @@ author: samstudio8
 maintainer: samstudio8
 ---
 
-### Registering an OAuth application with Majora
+### Registering an OAuth application (e.g. your copy of Ocarina) with Majora
 
 If you want an applicaton to perform actions as a Majora account holder, you need to register an application.
 Note that the testing and real versions of Majora are entirely separate, and so are the OAuth systems.
@@ -18,14 +18,14 @@ The locations to register an application are:
 
 Click "New application" and fill out the form as appropriate:
 
-* `Name` A name for your application, we do not enforce naming but suggest: `username-ocarina` so that you can distinguish your application from others.
+* `Name` A name for your application, we do not enforce naming but suggest: `username-{application}` so that you can distinguish your application from others.
 * `Client ID` Do not alter this
 * `Client Secret` Do not alter this
 * `Client type` set to `confidential`
 * `Grant type` set to `authorization code`
 
 Finally, if your application has a web-based front end, you can specify a callback for authorised requests to automatically flow to - along with a grant token.
-If you do not have one, we provide a basic callback that will expose the grant code. 
+In almost all cases, you will not need to provide your own `Redirect Uris` callback and should use the one we provide below.
 
 * `Callback` should be set to one of the following, based on whether this is a testing or production application:
     * Test: https://covid.majora.ironowl.it/o/callback/
@@ -33,12 +33,14 @@ If you do not have one, we provide a basic callback that will expose the grant c
     * Do not skip `https://` or the final `/`.
     
  [As per NHS digital guidelines](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis#top), we only allow applications that use the authorization code flow.
+ 
+ **If you are following [setting up ocarina](setting-up-ocarina) go back to that document at this point.**
 
 ### Basics
 
 Once you have an application, the authorisation flow can be summarised as follows:
 
-#### 1. Ask for a user to give permissions to your application
+#### 1. Ask for a user to give permissions to your application (e.g. your copy of Ocarina)
 
 * You must direct a user to the `/o/authorize/` endpoint, specifying the following URL parameters:
     * `response_type`: must be `code`, no other options are permitted
