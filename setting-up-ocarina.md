@@ -63,7 +63,7 @@ Where:
 * `MAJORA_USER` is your username on the appropriate Majora instance
 * `MAJORA_TOKEN` taken from [this majora page](https://majora.covid19.climb.ac.uk/keys/list/)
 
-OAuth has been the standard way to authenticate since September 2020 but legacy API keys are still supported, [instructions here.](getting-api-keys)
+SOme features (such as reading secure dataviews) are only available via OAuth authentification and will not work with the legacy API keys.
 
 **API keys expire every 3 days and must be renewed by following the legacy API key documentation**
 
