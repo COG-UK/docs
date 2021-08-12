@@ -54,3 +54,6 @@ You must choose a reason to suppress with `--reason`, which can be one of the fo
 The API will respond with any problems inside the `messages` list. If you're using Ocarina, this will automatically be printed to your terminal.
 You can verify the PAG has been suppressed via the Majora web interface.
 
+### Further Reading
+
+For more information see the [Majora documentation on the PAG suppress interface](https://samstudio8.github.io/majora-docs/#published-artifact-group)
