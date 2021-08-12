@@ -95,7 +95,7 @@ Now paste the copied return URL into Ocarina which should now return your reques
 
 ### 5. Refreshing OAuth tokens
 
-**Please note that this will not refresh a legacy API key, that must be done by following the [legacy API documentation](getting-api-keys)**
+**Please note that this will not renew a legacy API key, that must be done by following the [legacy API documentation](getting-api-keys)**
 
 Now you have fully set up OAuth and Ocarina! 
 
