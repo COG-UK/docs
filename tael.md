@@ -2,9 +2,9 @@
 layout: docpost
 title: The COGUK Transport for Announcing Ephemeral Logs (TAEL)
 date_published: 2020-07-16 12:00:00 +0000
-date_modified:  2020-07-16 14:30:00 +0000
-author: samstudio8
-maintainer: samstudio8
+date_modified:  2021-08-16 14:30:00 +0000
+author: samstudio8, BioWilko
+maintainer: samstudio8, BioWilko
 ---
 
 # Basics
@@ -20,11 +20,35 @@ For example, a client that controls a downstream pipeline might subscribe to a t
 ### Implementing a client
 
 To join the Tael network, you need a valid client.
-A basic client that can access `Tael`, subscribe to a topic, automatically export the payload to the current OS environment, and run a shell command [has been implemented by Sam](https://github.com/SamStudio8/elan-nextflow/blob/master/bin/ipc/mqtt-client.py).
+A basic client that can access `Tael`, subscribe to a topic, automatically export the payload to the current OS environment, and run a shell command is available in the `/cephfs/covid/software/sam/public/mqtt-client.py` directory in CLIMB.
 
+This must be used from a clean conda environment which can be set up with the following commands:
+```
+$ conda create -n tael-messenger python=3.7
+$ conda activate tael-messenger
+$ pip install paho-mqtt
+```
+
+You can set up a client which will listen to a topic with the following commands:
+
+```
+$ conda activate tael-messenger
+$ python /cephfs/covid/software/sam/public/mqtt-client.py -c <COMMAND HERE> -t 'COGUK/<TOPIC HERE>/status' --who <YOUR USER HERE>
+```
+The `-c` argument should be a command which will be executed when the topic receives a message with the attribute `status finished`.
+
+---
 ### Sending a message
 
-A very simple program to send a message through Tael [has also been implemented by Sam](https://github.com/SamStudio8/elan-nextflow/blob/master/bin/ipc/mqtt-message.py).
+Send a test mesage with the following:
+
+```
+$ conda activate tael-messenger
+$ python /cephfs/covid/software/sam/public/mqtt-message.py -t 'COGUK/<TOPIC HERE>/status' -attr date YYYYMMDD -attr elan_date YYYYMMDD --attr status finished
+```
+Where `YYYYMMDD` is todays date in that format.
+
+This should trigger the client you set up in the previous step (as well as printing on `#tael-stream`.
 
 # Testing the network
 
