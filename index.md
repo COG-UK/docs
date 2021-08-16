@@ -44,7 +44,7 @@
 ## Outbound distribution
 
 * [Automated GISAID submissions FAQ](gisaid)
-* [Automated ENA consensus submissions FAQ](ena_consensus)
+* [Automated ENA consensus submissions FAQ](ena_sequences)
 * [ENA Bioproject PRJEB37886](https://www.ebi.ac.uk/ena/browser/view/PRJEB37886)
 * [Public accessions interface](https://majora.covid19.climb.ac.uk/public/accessions)
 
