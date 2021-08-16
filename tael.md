@@ -33,7 +33,7 @@ You can set up a client which will listen to a topic with the following commands
 
 ```
 $ conda activate tael-messenger
-$ python /cephfs/covid/software/sam/public/mqtt-client.py -c <COMMAND HERE> -t 'COGUK/<TOPIC HERE>/status' --who <YOUR USER HERE>
+$ python /cephfs/covid/software/sam/public/mqtt-client.py -c '<COMMAND>' -t 'COGUK/<TOPIC>/status' --who <CLIENT_NAME>
 ```
 The `-c` argument should be a command which will be executed when the topic receives a message with the attribute `status finished`.
 
@@ -44,11 +44,13 @@ Send a test mesage with the following:
 
 ```
 $ conda activate tael-messenger
-$ python /cephfs/covid/software/sam/public/mqtt-message.py -t 'COGUK/<TOPIC HERE>/status' -attr date YYYYMMDD -attr elan_date YYYYMMDD --attr status finished
+$ python /cephfs/covid/software/sam/public/mqtt-message.py -t 'COGUK/<TOPIC>/status' -attr date YYYYMMDD -attr elan_date YYYYMMDD --attr status finished
 ```
 Where `YYYYMMDD` is todays date in that format.
 
 This should trigger the client you set up in the previous step (as well as printing on `#tael-stream`).
+
+If your message includes the substring `test` it will be supressed from `#tael-stream` (the client will announce that it has received a message on the topic `COGUK/infrastructure/pipelines/<CLIEN_NAMET>/status` however).
 
 # Testing the network
 
