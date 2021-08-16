@@ -52,13 +52,13 @@ This should trigger the client you set up in the previous step (as well as print
 
 If your topic includes the substring `test` it will be supressed from `#tael-stream` (the client will announce that it has received a message on the topic `COGUK/infrastructure/pipelines/<CLIENT_NAME>/status` however).
 
-Running pipelines have a control topic `COGUK/infrastructure/pipelines/<PIPELINE>/control` which can be used to control the pipeline (e.g. re-raise it if it has failed), however this should not be accessed by anyone not directly responsible for the running of a pipeline.
+Running pipelines have a control topic `COGUK/infrastructure/pipelines/<PIPELINE>/control` which can be used to control the pipeline (e.g. re-raise it if it has failed).
 
 # Automatically running mqtt-client on reboot
 
 For mqtt-clients responsible for normal functions of CLIMB it is necesary for them to start automatically on a reboot in the event of a server restart without human intervention, this can be accomplished with a cron job.
 
-Unfortunately cron does not play nice with Anaconda so it is necessary to use a small workaround, create a bash script containing the following:
+Unfortunately cron does not play nice with conda so it is necessary to use a small workaround, create a bash script containing the following:
 
 ```
 #!/usr/bin/bash
@@ -74,7 +74,7 @@ Make the script executable with the command `chmod +x <MY_SCRIPT>.sh`.
 Enter the command `crontab -e` to edit your crontab then add this line to the bottom of your task list:
 
 ```
-@Reboot <PATH>/<MY_SCRIPT>.sh
+@reboot <PATH>/<MY_SCRIPT>.sh
 ```
 
 **Make sure you use the absolute path to your bash script here**
