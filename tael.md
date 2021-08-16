@@ -50,7 +50,7 @@ You can send any other key/value pair you like with `--attr <KEY> <VALUE>`
 
 This should trigger the client you set up in the previous step (as well as printing on `#tael-stream`).
 
-If your topic includes the substring `test` it will be supressed from `#tael-stream` (the client will announce that it has received a message on the topic `COGUK/infrastructure/pipelines/<CLIEN_NAMET>/status` however).
+If your topic includes the substring `test` it will be supressed from `#tael-stream` (the client will announce that it has received a message on the topic `COGUK/infrastructure/pipelines/<CLIENT_NAME>/status` however).
 
 # Testing the network
 
