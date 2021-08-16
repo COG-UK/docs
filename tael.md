@@ -40,7 +40,7 @@ The `-c` argument should be a command which will be executed when the topic rece
 ---
 ### Sending a message
 
-Send a test message with the following:
+Send a message with the following:
 
 ```
 $ conda activate tael-messenger
