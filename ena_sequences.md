@@ -1,13 +1,13 @@
 ---
 layout: docpost
-title: Consensus sequence uploads to ENA
+title: Sequence uploads to ENA
 date_published: 2021-05-17 10:50:00 +0000
 date_modified:  2021-05-17 11:30:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
 
-Following a huge effort from CLIMB-COVID, ENA and WSI; CLIMB-COVID can now automatically submit consensus sequences to ENA and the INSDC on your behalf.
+Following a huge effort from CLIMB-COVID, ENA and WSI; CLIMB-COVID can now automatically submit consensus sequences and BAM files containing the raw reads to ENA and the INSDC on your behalf.
 
 ## What do I need to do?
 
