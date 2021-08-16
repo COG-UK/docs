@@ -44,13 +44,13 @@ Send a test message with the following:
 
 ```
 $ conda activate tael-messenger
-$ python /cephfs/covid/software/sam/public/mqtt-message.py -t 'COGUK/<TOPIC>/status' -attr date YYYYMMDD -attr elan_date YYYYMMDD --attr status finished
+$ python /cephfs/covid/software/sam/public/mqtt-message.py -t 'COGUK/<TOPIC>/status' --attr status finished
 ```
-Where `YYYYMMDD` is todays date in that format.
+You can send any other key/value pair you like with `--attr <KEY> <VALUE>`
 
 This should trigger the client you set up in the previous step (as well as printing on `#tael-stream`).
 
-If your message includes the substring `test` it will be supressed from `#tael-stream` (the client will announce that it has received a message on the topic `COGUK/infrastructure/pipelines/<CLIEN_NAMET>/status` however).
+If your topic includes the substring `test` it will be supressed from `#tael-stream` (the client will announce that it has received a message on the topic `COGUK/infrastructure/pipelines/<CLIEN_NAMET>/status` however).
 
 # Testing the network
 
