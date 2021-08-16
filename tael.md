@@ -48,7 +48,7 @@ $ python /cephfs/covid/software/sam/public/mqtt-message.py -t 'COGUK/<TOPIC HERE
 ```
 Where `YYYYMMDD` is todays date in that format.
 
-This should trigger the client you set up in the previous step (as well as printing on `#tael-stream`.
+This should trigger the client you set up in the previous step (as well as printing on `#tael-stream`).
 
 # Testing the network
 
