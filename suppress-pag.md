@@ -46,7 +46,7 @@ Once identified, you can suppress the PAGs using the Ocarina client.
 Using the `ocarina pag suppress` command, pass your list of PAGs to suppress:
 
 ```
-ocarina pag suppress --oauth --reason XXXX --publish-group 'COGUK\SAMPLE1\SITE:MY_FIRST_RUN' 'COGUK/SAMPLE2/SITE:MY_FIRST_RUN'
+ocarina --oauth pag suppress --reason XXXX --publish-group 'COGUK\SAMPLE1\SITE:MY_FIRST_RUN' 'COGUK/SAMPLE2/SITE:MY_FIRST_RUN'
 ```
 
 You must choose a reason to suppress with `--reason`, which can be one of the following: `WRONG_BARCODE`, `WRONG_METADATA`, `WRONG_SEQUENCE`, `CONTROL_FAIL`.
