@@ -69,5 +69,6 @@
 * [Accessing CoV-GLUE on CLIMB](cov-glue/climb-glue.md)
 * [Reporting primer and probe mismatches using CoV-GLUE](cov-glue/cov-glue-primers-reporting.md)
 
-## Meta
+## Misc
+* [Slack channel new-user reference](slack)
 * [Adding a page to this site](how-to-page)
