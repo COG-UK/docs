@@ -11,7 +11,7 @@
 
 * [Basic terminology and minimal requirements](metadata)
 * [You think you are ready to submit metadata?](metadata-tips)
-* [How to upload metadata to CLIMB with the metadata uploader](https://metadata.docs.cog-uk.io/bulk-upload-1) **If when you log in to the uploader it hangs, and the URL bar contains `error=invalid_scope` please send a message to the `#account-requests` slack channel requesting metadata upload rights**
+* [How to upload metadata to CLIMB with the metadata uploader](https://metadata.docs.cog-uk.io/bulk-upload-1) 
 * [Easy explainer for biosample metadata fields](https://metadata.docs.cog-uk.io/bulk-upload-1/bulk-upload)
 * [Uploading a library and sequencing run without the biosample](uploading-nosample)
 * [API documentation for developers and advanced users](https://samstudio8.github.io/majora-docs/#introduction)
