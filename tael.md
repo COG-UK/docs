@@ -81,7 +81,7 @@ Enter the command `crontab -e` to edit your crontab then add this line to the bo
 
 # Testing the network
 
-Every five minutes, a client on the network sends a message to the `COGUK/test/beacon` topic.
+Every five minutes, a client on the network sends a message to the `COGUK/test/beacon/status` topic.
 The payload is a string that can be coerced to JSON (e.g. in Python you can use `json.loads(msg.payload)`) that contains three keys: `date`, `time` and `status`. The `date` and `time` values are strings containing the undelimited current date and time of the shared server (note the server time is `UTC`).
 The `status` value of the test message is always `finished` as the default behaviour of the example client performs actions only when the `status` in the payload is `finished`. 
 
