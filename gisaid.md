@@ -2,7 +2,7 @@
 layout: docpost
 title: Automated GISAID submissions
 date_published: 2020-04-15 19:00:00 +0000
-date_modified:  2021-01-19 10:15:00 +0000
+date_modified:  2022-01-14 14:00:00 +0000
 author: samstudio8
 maintainer: samstudio8
 ---
@@ -12,7 +12,7 @@ Sequencing sites can opt-in to a process where consensus sequences uploaded to C
 ## How do I opt-in?
 
 You can opt-in via your [Institute profile on Majora](https://majora.covid19.climb.ac.uk/forms/institute/).
-One only user per site needs to provide this information and it is does not need to be the same person who provides the metadata or uploads the sequences.
+One only user per site needs to provide this information and it does not need to be the same person who provides the metadata or uploads the sequences.
 You will need to provide:
 
 * your e-mail address (we will pass this on to GISAID curators to contact you about your entries)
@@ -20,11 +20,11 @@ You will need to provide:
 * the name of the lab or labs that you wish to credit as the originating lab (this will include your sequencing lab)
 * a list of people you wish you credit
 
-You will also need to raise this to Sam in `#outbound-distribution` as we must notify GISAID of your username.
+You will also need to contact GISAID and let them know you wish to allow the COG-UK consortium user to submit sequences on your behalf.
 
 ## How does it work?
 
-Bulk uploads are automatically generated at noon on Monday and will release all new seqeunces that pass high quality QC that have been uploaded in the past week.
+Bulk uploads are automatically generated at noon every day and will release all new seqeunces that passed high quality QC with a seven day lag.
 
 ## Do I have to do anything?
 
