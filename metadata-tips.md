@@ -29,8 +29,6 @@ maintainer: samstudio8
 * **You are aware that once a record has been submitted, its `central_sample_id` (COGUK ID), `library_name` and `run_name` cannot be changed.** If you were thinking about changing the COGUK ID, it is now or never.
 * For spreadsheet-like uploads, your data is in a CSV or XLSX with the right template for the webtool?
 
-* You have provided the GISAID strain ID and accession as `secondary_identifier` and `secondary_accession`, only if you have uploaded it to GISAID already?
-
 * It seemed to work when youn ran it on the test version of Majora? (See below)
 
 ## You have uploaded data to us at least once before?
