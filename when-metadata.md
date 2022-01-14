@@ -30,7 +30,7 @@ The pipeline currently consists of the following events:
 Elan can process approximately 1000 samples an hour on a good day. Combined with around 90 minutes for "post-Elan publishing", an average pipeline of 3000 samples should take around 5 hours to complete (ready for lunch). For PHA subscribed to `Asklepian`, processing time on a good day is around 90 minutes (mid afternoon).
 
 ## Outbound pipeline
-GISAID and ENA pipelines run on Mondays. All sites are automatically enrolled for ENA uploads. You must however [opt-in for GISAID uploads](gisaid). Data uploaded over the weekend will miss the official reporting cut-off, but will be included in Monday's outbound pipeline.
+The GISAID pipeline runs every day and releases sequences on a 7 day time lag. The ENA BAM pipeline runs on Mondays, the ENA consensus pipeline runs on Fridays. All sites are automatically enrolled for ENA BAM uploads. You must however [opt-in for GISAID uploads](gisaid) or ENA consensus uploads. Data uploaded over the weekend will miss the official reporting cut-off, but will be included in Monday's outbound pipeline.
 
 #### Note
 
