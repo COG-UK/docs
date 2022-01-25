@@ -19,8 +19,7 @@ You will need to SSH into the CLIMB-COVID server.
 
 * The latest artifacts are published in `/cephfs/covid/bham/artifacts/published/latest`
 * For just the sequences, you can use `/cephfs/covid/bham/artifacts/published/elan.latest.consensus.matched.fasta`
-* Individual `Fasta` files are kept in `/cephfs/covid/bham/artifacts/published/latest/fasta/` with the filename `{central_sample_id}.{run_name}.climb.fasta` (Values from the metadata TSV).
-* Individual `bam` / their associated `bam.bai` files are kept in `/cephfs/covid/bham/artifacts/published/latest/alignment/` with the filename `{central_sample_id}.{run_id}.climb.bam` / `.climb.bam.bai` (Values from the metadata TSV).
+* Individual `bam` / their associated `bam.bai` locations are accessible via the BAM file lookup table in `/cephfs/covid/artifacts/elan/latest/majora.pag_lookup.tsv` which will be updated by Elan daily.
 * Basic metadata is provided in the table `/cephfs/covid/bham/artifacts/published/majora.latest.metadata.matched.tsv`
 * COG-ID to public accession mappings are provided in `/cephfs/covid/bham/artifacts/published/latest.accessions.tsv`
 * Datapipe output can be found in `/cephfs/covid/bham/results/msa/latest/alignments/` which consists of:
@@ -35,7 +34,7 @@ You will need to SSH into the CLIMB-COVID server.
     * `best_refs.paired.ls`: A summary file containing the filename for the source fasta file included in the MSA and its original fasta header
 
 The FASTA consensus and metadata table are perfectly paired. The sequence records in the FASTA and metadata rows in the table are in the same order.
-Additionally, the table contains a `fasta_header` column that can be used to map the records in the FASTA file; and likewise, the end of each FASTA header ends with the numeric index of the corresponding row in the metadata table (starting at 1). Note that the order is not guaranteed between different runs of the pipeline (i.e., the FASTA will not be in the same order each time the inbound pipeline finishes).
+Additionally, the table contains a `fasta_header` column that can be used to map the records in the FASTA file. Note that the order is not guaranteed between different runs of the pipeline (i.e., the FASTA will not be in the same order each time the inbound pipeline finishes). The daily consensus FASTA is indexed to make sequence extraction quick, a simple script which allows you to do so using a list (or file) of either `central_sample_id`, `run_name`, `pag_name` or `central_sample_id, run_name` pairs is available from the [CLIMB-COVID/utilities repository](https://github.com/CLIMB-COVID/utilities).
 
 Note also that the merged consensus FASTA will also include resequencing. That is, a biosample may have more than one genome in the consensus FASTA.
 
