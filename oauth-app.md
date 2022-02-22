@@ -13,7 +13,7 @@ If you want an applicaton to perform actions as a Majora account holder, you nee
 Note that the testing and real versions of Majora are entirely separate, and so are the OAuth systems.
 The locations to register an application are:
 
-* [Test Majora (MAGENTA)](https://covid.majora.ironowl.it/o/applications/)
+* [Test Majora (MAGENTA)](https://majora-test.covid19.climb.ac.uk/o/applications/)
 * [Real Majora (COG-UK)](https://majora.covid19.climb.ac.uk/o/applications/)
 
 Click "New application" and fill out the form as appropriate:
@@ -28,7 +28,7 @@ Finally, if your application has a web-based front end, you can specify a callba
 In almost all cases, you will not need to provide your own `Redirect Uris` callback and should use the one we provide below.
 
 * `Callback` should be set to one of the following, based on whether this is a testing or production application:
-    * Test: https://covid.majora.ironowl.it/o/callback/
+    * Test: https://majora-test.covid19.climb.ac.uk/o/callback/
     * Real: https://majora.covid19.climb.ac.uk/o/callback/
     * Do not skip `https://` or the final `/`.
     

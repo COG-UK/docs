@@ -33,10 +33,10 @@ maintainer: samstudio8
 
 ## You have uploaded data to us at least once before?
 
-* You have [registered for a test account](https://covid.majora.ironowl.it/forms/register)?
+* You have [registered for a test account](https://majora-test.covid19.climb.ac.uk/forms/register)?
 * You know that this test account is different from your real CLIMB account and begins with `test-`?
 * You know that the testing version of Majora has a magenta coloured banner at the top to remind you that it's the test version?
-* You have your [API key token from your test profile](https://covid.majora.ironowl.it/accounts/profile/)?
+* You have your [API key token from your test profile](https://majora-test.covid19.climb.ac.uk/accounts/profile/)?
 * You have tried one of the two ways to upload metadata and checked it looked right on the website?
 
 ## (a) You have tested using the web tool before?
@@ -51,7 +51,7 @@ maintainer: samstudio8
 
 * You have [downloaded ocarina](https://github.com/SamStudio8/ocarina)
 * You know that the configration is saved to `~/.ocarina` by default and instructions for doing this appear the first time you run the tool?
-* You have set the `MAJORA_DOMAIN` to `https://covid.majora.ironowl.it/` for testing?
+* You have set the `MAJORA_DOMAIN` to `https://majora-test.covid19.climb.ac.uk/` for testing?
 * You set the `MAJORA_USER` and `MAJORA_TOKEN` to your testing username and token?
 * You have tried uploading data with:
     * `ocarina put biosample`?
