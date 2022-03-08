@@ -25,7 +25,7 @@ Run the following command in your shell. You should be running python 3.7 and ha
 Feel free to do this from a `virtualenv` or `conda` environment.
 
 ```
-pip install git+https://github.com/samstudio8/ocarina.git
+pip install git+https://github.com/climb-covid/ocarina2.git
 ```
 
 This will install the latest development version of Ocarina, which almost always works.

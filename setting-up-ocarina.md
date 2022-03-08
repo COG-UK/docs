@@ -20,7 +20,7 @@ You can install the latest version with the Python package manager. You will pro
 ```
 conda create -n ocarina python=3.7
 conda activate ocarina
-pip install git+https://github.com/samstudio8/ocarina.git
+pip install git+https://github.com/climb-covid/ocarina2.git
 ```
 
 Please remember to check the [ocarina changelog](https://github.com/climb-covid/ocarina2/blob/master/CHANGELOG.md) periodically and update your client as necessary.
