@@ -10,7 +10,7 @@ maintainer: samstudio8
 # Basics
 ## The CLIMB QC pipeline
 
-Data uploaded by users to CLIMB with sufficient metadata is periodically pulled through the [`elan` nextflow pipeline](https://github.com/SamStudio8/elan-nextflow).
+Data uploaded by users to CLIMB with sufficient metadata is periodically pulled through the [`elan` nextflow pipeline](https://github.com/climb-covid/elan-nextflow).
 `elan` is responsible for basic quality checking including the following:
 
 * Filtering unmapped reads to ensure this step is done, previously Elan also sorted BAMs but will now reject unsorted BAMs

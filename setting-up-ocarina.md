@@ -12,7 +12,7 @@ maintainer: BioWilko
 
 ### 1. Install the Ocarina client
 
-[Ocarina](https://github.com/SamStudio8/ocarina/tree/master/ocarina) is a command line tool that is used to connect to Majora and perform actions with elevated privileges that are not possible on the website.
+[Ocarina](https://github.com/climb-covid/ocarina2/tree/master/ocarina) is a command line tool that is used to connect to Majora and perform actions with elevated privileges that are not possible on the website.
 It is not terribly difficult to use, but ideally you will have used a command line tool before.
 
 You can install the latest version with the Python package manager. You will probably want to install it into a conda environment on the shared node.
@@ -23,7 +23,7 @@ conda activate ocarina
 pip install git+https://github.com/samstudio8/ocarina.git
 ```
 
-Please remember to check the [ocarina changelog](https://github.com/SamStudio8/ocarina/blob/master/CHANGELOG.md) periodically and update your client as necessary.
+Please remember to check the [ocarina changelog](https://github.com/climb-covid/ocarina2/blob/master/CHANGELOG.md) periodically and update your client as necessary.
 
 ### 2. Register your Ocarina instance as an OAuth application
 

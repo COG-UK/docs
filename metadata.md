@@ -99,7 +99,7 @@ Your username should have been emailed to you once your account was approved. Yo
 * By uploading a spreadsheet, or CSV/TSV file to [cog-uk.io](https://metadata.docs.cog-uk.io/), supported by Anthony Underwood (CGPS)
     * [Uploading biosamples](https://metadata.docs.cog-uk.io/bulk-upload-1/bulk-upload)
     * [Uploading biosamples with library and sequencing](https://metadata.docs.cog-uk.io/bulk-upload-1/samples-and-sequencing)
-* Via our [`ocarina` command line tool](https://github.com/SamStudio8/ocarina/), supported by Sam Nicholls (UoB)
+* Via our [`ocarina` command line tool](https://github.com/climb-covid/ocarina2/), supported by Sam Nicholls (UoB)
 
 * By sending POST requests to our JSON endpoints directly, supported by Sam Nicholls (UoB)
     * [Submit a biosample](majora/add_sample)

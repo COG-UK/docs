@@ -32,7 +32,7 @@ This will install the latest development version of Ocarina, which almost always
 
 ### 1. Configure Ocarina
 
-[See the Ocarina README](https://github.com/SamStudio8/ocarina#configuration) for configuration instructions.
+[See the Ocarina README](https://github.com/climb-covid/ocarina2#configuration) for configuration instructions.
 You will need your API key from your Majora profile.
 
 ### 2. Register a library

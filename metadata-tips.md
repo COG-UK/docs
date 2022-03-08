@@ -49,7 +49,7 @@ maintainer: samstudio8
 
 ## (b) You have tested the `ocarina` API before?
 
-* You have [downloaded ocarina](https://github.com/SamStudio8/ocarina)
+* You have [downloaded ocarina](https://github.com/climb-covid/ocarina2)
 * You know that the configration is saved to `~/.ocarina` by default and instructions for doing this appear the first time you run the tool?
 * You have set the `MAJORA_DOMAIN` to `https://majora-test.covid19.climb.ac.uk/` for testing?
 * You set the `MAJORA_USER` and `MAJORA_TOKEN` to your testing username and token?
