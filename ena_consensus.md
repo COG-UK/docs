@@ -43,4 +43,8 @@ You should [use Ocarina to suppress any bad sequences](suppress-pag) before they
 
 ## When will this happen?
 
-ENA consensus depositions occur daily in the working week (Monday - Friday) but sequences are not uploaded immediately to allow some time for errors to be corrected prior to upload to external databases where corrections are much harder. This lag was previously 8 days (prior to 2023-09-06) but has now been decreased to 3 days (from 2023-09-06).
+ENA consensus depositions occur daily in the working week (Monday - Friday) but sequences are not uploaded immediately to allow some time for errors to be corrected prior to upload to external databases where corrections are much harder. Samples are uploaded 3 days after they are ingested into the CLIMB-COVID dataset.
+
+## CHANGELOG
+
+* 2023-09-06: Upload lag changed to 3 days, down from >7 days.

@@ -24,8 +24,12 @@ You will also need to contact GISAID and let them know you wish to allow the COG
 
 ## How does it work?
 
-Bulk uploads are automatically generated at 12:30 (BST, not adjusted during winter) every working day (Mon - Fri) and will release all new seqeunces that passed high quality QC. Previously sequences were only submitted with an 8 day lag but as of 2023-09-06 this lag has been reduced to 3 days.
+Bulk uploads are automatically generated at 12:30 (BST, not adjusted during winter) every working day (Mon - Fri) and will release all new seqeunces that passed high quality QC. Samples are uploaded 3 days after they are ingested into the CLIMB-COVID dataset.
 
 ## Do I have to do anything?
 
 You should periodically check the "My Unreleased" tab on the GISAID website. Curators will flag sequences with frameshifts and other quality artefacts for you to approve before they are made public, we do not control this process.
+
+## CHANGELOG
+
+* 2023-09-06: Upload lag changed to 3 days, down from >7 days.
