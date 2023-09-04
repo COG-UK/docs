@@ -12,8 +12,7 @@ Following a huge effort from CLIMB-COVID, ENA and WSI; CLIMB-COVID can now autom
 ## What do I need to do?
 
 ### Opt in
-As with GISAID uploads you must opt-in from your [Institute profile](https://majora.covid19.climb.ac.uk/forms/institute/).
-You must fill in the lab name, lab address and lab authors (under the "GISAID and ENA" headers).
+Previously users were required to opt-in to ENA assembly uploads, however as of 2023-04-27 this process is now automatic and users are automatically opted-in.
 
 ### Provide basic bioinformatics information
 The metadata uploader and Ocarina now have optional fields for describing the bioinformatics pipeline used to process the sequence:
@@ -24,11 +23,11 @@ The metadata uploader and Ocarina now have optional fields for describing the bi
 These fields do not (currently) use a controlled vocabulary -- please send your comments and concerns about this to `#metadata` and not DIPI or the Data Working Group.
 We do however recommend using the following entries for commonly used pipelines:
 
-| Pipeline | `bioinfo_pipe_name` | `bioinfo_pipe_version` |
-|----------|---------------------|------------------------|
-| ARTIC pipeline tools (ONT) | ARTIC fieldbioinformatics (minimap2/nanopolish) | X.Y.Z (nanopolish X.Y.Z) |
-| ARTIC Connor Lab Nextflow (Illumina) | ncov2019-artic-nf (BWA/ivar) | X.Y.Z (ivar X.Y.Z) |
-| ARTIC Connor Lab Nextflow (ONT) | ncov2019-artic-nf (fieldbioinformatics/minimap2/nanopolish) |  X.Y.Z (nanopolish X.Y.Z) |
+| Pipeline                             | `bioinfo_pipe_name`                                         | `bioinfo_pipe_version`   |
+| ------------------------------------ | ----------------------------------------------------------- | ------------------------ |
+| ARTIC pipeline tools (ONT)           | ARTIC fieldbioinformatics (minimap2/nanopolish)             | X.Y.Z (nanopolish X.Y.Z) |
+| ARTIC Connor Lab Nextflow (Illumina) | ncov2019-artic-nf (BWA/ivar)                                | X.Y.Z (ivar X.Y.Z)       |
+| ARTIC Connor Lab Nextflow (ONT)      | ncov2019-artic-nf (fieldbioinformatics/minimap2/nanopolish) | X.Y.Z (nanopolish X.Y.Z) |
 
 This list will be updated for additional pipelines as needed.
 
@@ -37,13 +36,6 @@ For further information see the [CGPS uploader documentation](https://metadata.d
 ## What will be uploaded?
 
 Unlike GISAID which only receives High QC PASS seqeunces, ENA/INSDC will receive all Basic QC PASS sequences for deposition.
-Sequences will only be uploaded if:
-
-* The site has opted-in and provided the relevant authorship information
-* The sequence has non-empty, non-default entries for `bioinfo_pipe_name` and `bioinfo_pipe_version`
-* The raw reads BAM has been deposited into ENA (this should happen but there are rare cases where the upload files that need manual intervention)
-
-As of May 2021, we are currently uploading prospective data. Existing sequences will need the bioinformatics fields backfilled to be eligible for upload and we will work on a solution for this.
 
 ## What if I have bad data?
 
@@ -51,4 +43,4 @@ You should [use Ocarina to suppress any bad sequences](suppress-pag) before they
 
 ## When will this happen?
 
-ENA consensus depositions will happen weekly after the ENA raw data has been accessioned to allow for linking.
+ENA consensus depositions occur daily in the working week (Monday - Friday) but sequences are not uploaded immediately to allow some time for errors to be corrected prior to upload to external databases where corrections are much harder. This lag was previously 8 days (prior to 2023-09-06) but has now been decreased to 3 days (from 2023-09-06).

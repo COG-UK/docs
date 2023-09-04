@@ -24,7 +24,7 @@ You will also need to contact GISAID and let them know you wish to allow the COG
 
 ## How does it work?
 
-Bulk uploads are automatically generated at noon every day and will release all new seqeunces that passed high quality QC with a seven day lag.
+Bulk uploads are automatically generated at 12:30 (BST, not adjusted during winter) every working day (Mon - Fri) and will release all new seqeunces that passed high quality QC. Previously sequences were only submitted with an 8 day lag but as of 2023-09-06 this lag has been reduced to 3 days.
 
 ## Do I have to do anything?
 
