@@ -48,3 +48,4 @@ ENA consensus depositions occur daily in the working week (Monday - Friday) but 
 ## CHANGELOG
 
 * 2023-09-06: Upload lag changed to 3 days, down from >7 days.
+* 2023-12-04: Consensus fasta sequences are now sanitised on upload to ENA to remove illegal characters (characters except: A, C, G, T, a, c, g, t, N)
